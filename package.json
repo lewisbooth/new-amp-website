@@ -33,6 +33,7 @@
     "gulp-connect": "^2.3.1"
   },
   "devDependencies": {
+    "gulp-htmlmin": "^3.0.0",
     "gulp-pug": "^3.3.0",
     "gulp-rename": "^1.2.2"
   }
