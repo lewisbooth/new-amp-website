@@ -17,20 +17,11 @@ const base_path = './',
   src = base_path + '_dev/src',
   dist = base_path + 'assets',
   paths = {  
-      html: src + '/layouts/*',
+      html: './_site/**/*.html',
       js: src + '/js/*.js',
       stylus: src +'/css/style.styl',
       jekyll: ['index.html', '_posts/**/*', '_layouts/*', '_includes/*' , 'assets/*', 'assets/**/*', '_config.yml', '*.md']
   };
-
-// HTML Task
-gulp.task("compile-html", () => {
-  return gulp
-    .src(paths.html)
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('./_layouts/'));
-});
-
 
 // JS Task
 gulp.task("compile-scripts", () => {
@@ -81,7 +72,6 @@ gulp.task("server", () => {
 
 // Watch files
 gulp.task('watch', () => {  
-  gulp.watch(paths.html, ["compile-html"]);
   gulp.watch(paths.js, ["compile-scripts"]);
   gulp.watch(paths.stylus, ["compile-stylus"]);
   gulp.watch(paths.jekyll, ["build-jekyll"]);
@@ -89,4 +79,4 @@ gulp.task('watch', () => {
 });
 
 // Start Everything with the default task
-gulp.task('default', [ 'compile-html', 'compile-scripts', 'compile-stylus', 'build-jekyll', 'server', 'watch' ]);
+gulp.task('default', [ 'compile-scripts', 'compile-stylus', 'build-jekyll', 'server', 'watch' ]);
