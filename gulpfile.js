@@ -17,29 +17,27 @@ const base_path = './',
   src = base_path + '_dev/src',
   dist = base_path + 'assets',
   paths = {  
-      pug: src + '/layouts/**/*.pug',
-      pugPartials: src + '/layouts/_partials/**/*.pug',
+      pug: src + '/layouts/*.pug',
       js: src + '/js/*.js',
       stylus: src +'/css/style.styl',
-      jekyll: ['index.html', '_posts/**/*', '_layouts/*', '_includes/*' , 'assets/*', 'assets/**/*', '_config.yml', '*.md']
+      jekyll: ['index.html', '_posts/**/*', '_layouts/*.html', '_includes/*' , 'assets/*', 'assets/**/*', '_config.yml', '*.md']
   };
 
 // HTML task (layouts)
-gulp.task("pug", function() {
+gulp.task("pug", () => {
   return gulp
-    .src([paths.pug, !paths.pugPartials])
+    .src(paths.pug)
     .pipe(plumber())
     .pipe(pug())
-    .pipe(gulp.dest("dist"));
+    .pipe(gulp.dest("_layouts/"));
 });
 
-gulp.task("pug-build", function() {
+gulp.task("pug-build", () => {
   return gulp
     .src(paths.pug)
     .pipe(plumber())
     .pipe(pug({ locals: { production: true } }))
     .pipe(gulp.dest('_layouts/'));
-    browserSync.reload;
 });
 
 // JS Task
@@ -55,7 +53,6 @@ gulp.task("compile-scripts", () => {
     .pipe(minify({ noSource: true }))
     .pipe(rename({dirname: dist + '/js'}))
     .pipe(gulp.dest('./'));
-    browserSync.reload;
 });
 
 // CSS Task
@@ -71,7 +68,6 @@ gulp.task("compile-stylus", () => {
     .pipe(postcss(plugins))
     .pipe(rename({dirname: dist + '/css'}))
     .pipe(gulp.dest('./'));
-    browserSync.reload;
 });
 
 // Build Jekyll
@@ -93,11 +89,12 @@ gulp.task("server", () => {
 
 // Watch files
 gulp.task('watch', () => {  
+  gulp.watch(paths.pug, ["pug", "pug-build"]);
   gulp.watch(paths.js, ["compile-scripts"]);
   gulp.watch(paths.stylus, ["compile-stylus"]);
-  gulp.watch(paths.jekyll, ['build-jekyll']);
-  gulp.watch("./_site/assets/*").on("change", browserSync.reload);
+  gulp.watch(paths.jekyll, ["build-jekyll"]);
+  gulp.watch(["./_site/assets/*"]).on("change", browserSync.reload);
 });
 
 // Start Everything with the default task
-gulp.task('default', [ 'compile-scripts', 'compile-stylus', 'build-jekyll', 'server', 'watch' ]);
+gulp.task('default', [ 'pug', 'pug-build', 'compile-scripts', 'compile-stylus', 'build-jekyll', 'server', 'watch' ]);
