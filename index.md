@@ -1,6 +1,8 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
+# Don't change the layout
+layout: index
+
+# Meta Information
+title: Web Design, CGI & Online Marketing, Stoke-on-Trent
+description: We specialise in web design, CGI and online marketing – based in Stoke-on-Trent.
 ---

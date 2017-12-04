@@ -13,8 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: LOGO
-email: dan@amp.studio
+title: AMP Studio
+tel: 01782 853973
+email: enquiries@amp.studio
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -38,7 +39,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      permalink: /blog/:year/:categories/:title/
+      permalink: /:categories/:year/:title/
   -
     scope:
       path: ""
@@ -63,3 +64,8 @@ exclude: ["_dev",
             "gulpfile.js",
             "node_modules",
             "package.json"]
+
+# Include font assets
+assets:
+   sources:
+     -_assets/fonts
