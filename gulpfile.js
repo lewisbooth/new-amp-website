@@ -18,7 +18,7 @@ const base_path = "./",
   src = base_path + "_dev/src",
   dist = base_path + "assets",
   paths = {
-    html: ["./_site/**/*.html", "./_site/*.html"],
+    html: "./_site/**/*.html",
     js: src + "/js/*.js",
     stylus: src + "/css/style.styl",
     jekyll: [
@@ -29,7 +29,9 @@ const base_path = "./",
       "assets/*",
       "assets/**/*",
       "_config.yml",
-      "*.md"
+      "*.md",
+      "portfolio/**/*.md",
+      "blog/**/*.md"
     ]
   };
 
