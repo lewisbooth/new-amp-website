@@ -1,1 +1,0 @@
-"use strict";function toggleMenu(){nav.classList.contains("active")?(nav.classList.remove("active"),nav.setAttribute("aria-expanded","false")):(nav.classList.add("active"),nav.setAttribute("aria-expanded","true"))}var nav=$("nav"),navMenuToggle=$(".nav-menu-toggle");navMenuToggle.addEventListener("click",toggleMenu);

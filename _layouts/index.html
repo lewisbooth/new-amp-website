@@ -4,7 +4,10 @@
 
 <body>
     {% include navigation.html %}
-    <section class="header-1 index-bg">
+    <section class="header-1">
+        <div id="header-image" class="index-bg header-fade"></div>
+        <div class="container">
+        </div>
     </section>
 
     <section class="latest-work">
@@ -12,7 +15,7 @@
             <img src="assets/img/arrow-white.svg">
         </span>
         <div class="container">
-            <div class="latest-work-header">
+            <div class="latest-work-header header-fade">
                 <span class="sub-header">Welcome to AMP Studio</span>
                 <h1>We create bespoke websites and imagery
                     <br>for growing businesses.</h1>
@@ -177,13 +180,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="social-feed-instagram-wrapper">
-                    <div class="social-feed-instagram-post"></div>
-                    <div class="social-feed-instagram-post"></div>
-                    <div class="social-feed-instagram-post"></div>
-                    <div class="social-feed-instagram-post"></div>
-                    <div class="social-feed-instagram-post"></div>
-                    <div class="social-feed-instagram-post"></div>
+                <div id="instafeed" class="social-feed-instagram-wrapper">
                 </div>
             </div>
             <div class="line-break"></div>
@@ -211,11 +208,31 @@
                     </div>
                 </div>
                 <div class="social-feed-cta">
-
+                    <div class="social-feed-cta-wrapper">
+                        <h2>Ready to work with us?</h2>
+                        <a class="button-2" href="/contact/">
+                            <span>Start a Project</span>
+                            <span>
+                                <img src="assets/img/arrow-white.svg">
+                            </span>
+                        </a>
+                        <div class="social-feed-cta-details">
+                            <h3>Feel free to contact us:</h3>
+                            <p>enquiries@amp.studio</p>
+                            <p>01782 853973</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    {% include footer.html %}
+
+    <script async src="assets/js/navigation-min.js"></script>
+    <script async src="assets/js/header-min.js"></script>
+    <script async src="assets/js/instafeed-min.js"></script>
+    <script async src="assets/js/twitterapi-min.js"></script>
 
 </body>
 

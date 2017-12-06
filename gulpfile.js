@@ -47,7 +47,7 @@ gulp.task("compile-html", () => {
 // JS Task
 gulp.task("compile-scripts", () => {
   return gulp
-    .src(paths.js)
+    .src([paths.js])
     .pipe(plumber())
     .pipe(
       babel({
@@ -87,7 +87,11 @@ gulp.task("server", () => {
   browserSync.init({
     server: {
       proxy: 4000,
-      baseDir: "./_site"
+      baseDir: "./_site",
+      middleware: function(req, res, next) {
+        res.setHeader("Access-Control-Allow-Origin", "https://api.twitter.com");
+        next();
+      }
     }
   });
 });

@@ -1,6 +1,22 @@
+
+
+/* Grid variables */
+
+gutter = 0 20px
+marginLarge = 12em
+marginMedium = 10em
+marginSmall = 6em
+
+breakpoint1400 = 1400px
+breakpoint1200= 1200px
+breakpoint960 = 960px
+breakpoint600 = 600px
+breakpoint350 = 350px
+
+
 .container
     box-sizing border-box
-    max-width "calc(%s - 40px)" % breakpointLarge
+    max-width breakpoint1400
     padding gutter
     margin 0 auto
 
@@ -8,3 +24,21 @@
     margin 7em 0
     border-bottom 1px solid lineGrey
     width 100%
+
+
+@media screen and (max-width: breakpoint1400)
+
+    .container
+        max-width breakpoint1200
+
+
+@media screen and (max-width: breakpoint1200)
+
+    .container
+        max-width breakpoint960
+
+
+@media screen and (max-width: breakpoint960)
+
+    .container
+        max-width 100%

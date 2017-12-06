@@ -1,0 +1,1 @@
+"use strict";window.addEventListener("load",function(){var e=document.querySelectorAll(".sticky-nav-animation");window.addEventListener("scroll",function(){if(window.pageYOffset>window.innerHeight)for(n=0;n<e.length;n++)e[n].classList.add("active");else for(var n=0;n<e.length;n++)e[n].classList.remove("active")})});

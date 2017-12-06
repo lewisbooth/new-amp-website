@@ -23,15 +23,35 @@
         right -3px
         bottom -3px
         left -3px
-        background linear-gradient(to right, ampBlue, ampPink)
         content ''
-        z-index -1
         border-radius 2em
+        transition all .3s ease-in-out
+        background linear-gradient(to right, ampBlue, ampPink)
+        z-index -1 
+        filter blur(0)
 
     span
         img
-            width 12px
             margin-left 10px
+            transition all .2s linear
+            width 12px
+
+.button-1:hover
+
+    :after
+        filter blur(10px)
+        opacity 0
+
+    span
+        img
+            transform translateX(5px)
+
+
+// Footer variation of button with fancy gradient border
+.button-1.dark
+    color #ffffff
+    background darkGrey
+    background-clip padding-box
 
 
 // White button
@@ -53,6 +73,13 @@
         img
             width 12px
             margin-left 10px
+            transition all .2s linear
+
+.button-2:hover
+
+    span
+        img
+            transform translateX(5px)
 
 
 .text-link
