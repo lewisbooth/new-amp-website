@@ -4,6 +4,7 @@
 .header-1
     width 100%
     min-height 700px
+    max-height 1000px
     height calc(100vh - 13em)
     margin-top -165px
     position relative
@@ -13,13 +14,26 @@
 
     #header-image
         position absolute
+        top 50px
         height calc(100vh - 13em)
         min-width 100%
         min-height 700px
+        max-height 1000px
+
 
 @media screen and (max-width: breakpoint1200)
-    .header-1, #header-image
+    /* Header 1 */
+    .header-1
+        height calc(100vh - 8em)
+        margin-top -165px
         min-height 400px
+        max-height 800px
+
+        #header-image
+            position absolute
+            height calc(100vh - 8em)
+            min-height 400px
+            max-height 800px
 
 
 /* scroll down button */

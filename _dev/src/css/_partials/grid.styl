@@ -1,7 +1,6 @@
 
 
 /* Grid variables */
-
 gutter = 0 20px
 marginLarge = 12em
 marginMedium = 10em
@@ -14,6 +13,31 @@ breakpoint600 = 600px
 breakpoint350 = 350px
 
 
+/* Vertical margin and padding */
+.ml
+    margin 12em 0
+
+.pl
+    padding 12em 0
+
+.mm
+    margin 7em 0
+
+.pm
+    padding 7em 0
+
+.ms
+    margin 6em 0
+
+.ps
+    padding 6em 0
+
+
+/* Show and hide */
+.show-960, .show-800, .show-600, .show-350
+    display none
+
+
 .container
     box-sizing border-box
     max-width breakpoint1400
@@ -21,7 +45,6 @@ breakpoint350 = 350px
     margin 0 auto
 
 .line-break
-    margin 7em 0
     border-bottom 1px solid lineGrey
     width 100%
 
@@ -34,11 +57,88 @@ breakpoint350 = 350px
 
 @media screen and (max-width: breakpoint1200)
 
+    html, body
+        font-size 9px
+
     .container
         max-width breakpoint960
+
+    /* Vertical margin and padding */
+    .ml
+        margin 8em 0
+
+    .pl
+        padding 8em 0
+
+    .mm
+        margin 5em 0
+
+    .pm
+        padding 5em 0
+
+    .ms
+        margin 4em 0
+
+    .ps
+        padding 4em 0
 
 
 @media screen and (max-width: breakpoint960)
 
+    .show-960
+        display block !important
+    
+    .hide-960
+        display none !important
+
     .container
         max-width 100%
+
+
+@media screen and (max-width: 800px)
+
+    .show-800
+        display block !important
+    
+    .hide-800
+        display none !important
+
+
+@media screen and (max-width: breakpoint600)
+
+    html, body
+            font-size 8px
+
+    .show-600
+        display block !important
+    
+    .hide-600
+        display none !important
+
+    /* Vertical margin and padding */
+    .ml
+        margin 6em 0
+
+    .pl
+        padding 6em 0
+
+    .mm
+        margin 4em 0
+
+    .pm
+        padding 4em 0
+
+    .ms
+        margin 3em 0
+
+    .ps
+        padding 3em 0
+
+
+@media screen and (max-width: breakpoint350)
+
+    .show-600
+        display block !important
+    
+    .hide-600
+        display none !important

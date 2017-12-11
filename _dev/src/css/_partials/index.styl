@@ -26,7 +26,6 @@
 
 
 .service-list
-    padding marginLarge 0
     background #ffffff
 
     &-title
@@ -62,7 +61,6 @@
 
 
 .blog-feed
-    padding marginMedium 0
     background darkGrey
 
     &-title
@@ -91,7 +89,6 @@
 
         img
             max-width 320px
-            margin marginSmall 0
 
         &:nth-child(odd)
             background ampPinkBlog
@@ -101,10 +98,10 @@
         width 100%
         height 100%
         z-index 99
+        top 0
         
 
 .social-feed
-    padding marginLarge 0
     background #ffffff
 
     &-title
@@ -117,6 +114,10 @@
             max-width 30px
             margin-right 1.5em
             flex-grow 1
+
+        // Reset link arrow margin
+        img.social-arrow
+            margin-right 0 !important
 
         h3
             display inline-flex
@@ -140,6 +141,7 @@
     &-instagram-post
         width 203px
         height 203px
+        background lightGrey
         
         img 
             width 100%
@@ -149,11 +151,8 @@
         display flex
         align-items center
         justify-content space-between
-
-    &-twitter-title
-        width calc(50% - 25px)
         
-    &-twitter, &-cta
+    &-twitter, &-twitter-title, &-cta
         width calc(50% - 25px)
 
     &-twitter-wrapper
@@ -167,6 +166,32 @@
         background lightGrey
         width 100%
         height calc(50% - 10px)
+        display flex
+        flex-direction column
+        justify-content center
+        box-sizing border-box
+        padding 0 6em
+        position relative
+
+        a {
+            position absolute 
+            width 100%
+            height 100%
+            top 0
+            left 0
+        }
+
+        p
+            font-size 1.8rem
+            line-height 3rem
+            margin-top 1.5rem
+            overflow hidden
+            text-overflow ellipsis
+            display -webkit-box
+            -webkit-box-orient vertical
+            -webkit-line-clamp 2
+            line-height: 3rem
+            max-height: 6rem
 
     &-cta
         background linear-gradient(to top right, ampBlue, ampPink)
@@ -201,5 +226,74 @@
             font-family montserratRegular
             font-size 1.8rem
             line-height 1.8
+
+
+/* Index media queries */
+@media screen and (max-width: breakpoint1400)
+
+    .social-feed
+
+        &-instagram-post
+            width 175px
+            height 175px
+
+        &-twitter-post
+            padding 0 4em
+
+        &-twitter, &-twitter-title, &-cta
+            width calc(50% - 10px)
+
+
+@media screen and (max-width: breakpoint1200)
+
+    /* Header Margin */
+    .latest-work
+        padding-top 8em
+
+        &-header
+            top -8em
+    
+    .service-list
+
+        &-title
+
+            p
+                font-size 3.6rem
+                margin-left 0
+
+                :last-child
+                    color #C2C2C2
+
+        &-container
+            padding 0
+
+    .blog-feed
+
+        img
+            max-width 90%
+
+    .social-feed
+
+        &-instagram-post
+            width 143px
+            height 143px
+
+        &-twitter-post
+            padding 0 3em
+
+            h3
+                font-size 1.7rem
+            
+
+@media screen and (max-width: breakpoint600)
+
+    /* Header Margin */
+    .latest-work
+        padding-top 6em
+
+        &-header
+            top -6em
+
+
 
         

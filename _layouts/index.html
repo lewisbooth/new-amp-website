@@ -48,7 +48,7 @@
         </div>
     </section>
 
-    <section class="service-list">
+    <section class="service-list pl">
         <div class="container">
             <div class="service-list-title">
                 <p>
@@ -57,7 +57,7 @@
                     <span>Our services are tailored to cater for each individual project.</span>
                 </p>
             </div>
-            <div class="line-break"></div>
+            <div class="line-break mm"></div>
             <div class="service-list-container">
                 <div class="service-list-category">
                     <li>
@@ -141,7 +141,7 @@
         </div>
     </section>
 
-    <section class="blog-feed">
+    <section class="blog-feed pm">
         <div class="container">
             <div class="blog-feed-title">
                 <h2>Latest Work</h2>
@@ -156,7 +156,7 @@
                 {% for post in site.categories.blog limit:3 %}
                 <div class="blog-feed-post">
                     <a class="blog-feed-post-wrapper" href="{{ post.url }}"></a>
-                    <img src="/assets/img/blog/{{ post.img }}" alt="{{ post.title }}">
+                    <img class="ms" src="/assets/img/blog/{{ post.img }}" alt="{{ post.title }}">
                     <a class="blog-tag">{{ post.tag }}</a>
                 </div>
                 {% endfor %}
@@ -164,7 +164,7 @@
         </div>
     </section>
 
-    <section class="social-feed">
+    <section class="social-feed pl">
         <div class="container">
             <div class="social-feed-instagram">
                 <div class="social-feed-title">
@@ -181,9 +181,12 @@
                     </div>
                 </div>
                 <div id="instafeed" class="social-feed-instagram-wrapper">
+                    <div class="social-feed-instagram-post"></div>
+                    <div class="social-feed-instagram-post"></div>
+                    <div class="social-feed-instagram-post"></div>
                 </div>
             </div>
-            <div class="line-break"></div>
+            <div class="line-break mm"></div>
             <div class="social-feed-twitter-title">
                 <div class="social-feed-title">
                     <img src="/assets/img/twitter.svg">
@@ -194,7 +197,7 @@
                         <a class="text-link">
                             <span>More Tweets</span>
                             <span>
-                                <img src="assets/img/arrow-pink.svg">
+                                <img class="social-arrow" src="assets/img/arrow-pink.svg">
                             </span>
                         </a>
                     </div>
@@ -202,9 +205,7 @@
             </div>
             <div class="social-feed-other">
                 <div class="social-feed-twitter">
-                    <div class="social-feed-twitter-wrapper">
-                        <div class="social-feed-twitter-post"></div>
-                        <div class="social-feed-twitter-post"></div>
+                    <div id="twitter-feed" class="social-feed-twitter-wrapper">
                     </div>
                 </div>
                 <div class="social-feed-cta">
@@ -213,7 +214,7 @@
                         <a class="button-2" href="/contact/">
                             <span>Start a Project</span>
                             <span>
-                                <img src="assets/img/arrow-white.svg">
+                                <img class="social-arrow" src="assets/img/arrow-white.svg">
                             </span>
                         </a>
                         <div class="social-feed-cta-details">

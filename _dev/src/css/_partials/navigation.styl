@@ -17,10 +17,9 @@ nav
 
         &-list
             display inline-flex
+
             li
-                margin-right 45px
-            :last-child
-                margin-right 0
+                margin-left 45px
         
         &-animation
             transform translateY(-50%)
@@ -33,10 +32,9 @@ nav
 
         &-contact
             display inline-flex
+
             li
-                margin-right 45px
-            :last-child
-                margin-right 0
+                margin-left 45px
 
     .main-nav
         width 100%
@@ -56,9 +54,180 @@ nav
             justify-content space-between
             align-items center
 
+        &-col
+            display flex
+
         &-list
             display inline-flex
+            
             li
-                margin-right 50px
-            :last-child
-                margin-right 0
+                margin-left 50px
+                display block
+
+    .faded
+        color #929292
+
+    li.end
+        margin-left 0 !important
+
+.mobile-menu
+    display none
+
+
+/* Navigation media queries */
+@media screen and (max-width: breakpoint1200)
+
+    nav
+
+        .sticky-nav
+
+            &-logo
+                width 60px
+
+            &-list
+
+                li
+                    margin-left 30px
+
+            &-contact
+
+                li
+                    margin-left 30px
+
+        .main-nav
+
+            &-list
+
+                li
+                    margin-left 30px
+
+
+@media screen and (max-width: breakpoint960)
+
+    nav
+
+        .main-nav
+            margin-top 0
+
+        .sticky-nav
+            position relative
+
+            .container
+                justify-content flex-end
+            
+            &-logo, &-list
+                display none
+
+
+@media screen and (max-width: 800px)
+
+    nav
+
+        .main-nav
+            
+            .container
+                height 80px
+
+            &-logo
+                max-width 80px
+
+
+@media screen and (max-width: breakpoint600)
+
+    nav
+
+        .sticky-nav
+
+            .container
+                height 40px
+
+        .main-nav
+            position relative
+            
+            .container
+                height 60px
+                padding-right 0
+
+            &-list
+                width 100%
+                position absolute
+                right 0
+                bottom 0
+                transform translateY(100%)
+                background darkGrey
+                justify-content center
+                opacity 0
+                transition all .3s ease-out
+                z-index -1
+
+                &.active
+                    opacity 1
+                    z-index 99
+
+                li
+                    margin-left 0
+                    border-bottom 1px solid rgb(45, 45, 45)
+                
+                a   
+                    color #ffffff
+                    display block
+                    padding 2rem
+
+            &-col
+                flex-direction column
+                width 50%
+                border-left 1px solid rgb(45, 45, 45)
+
+                :last-child
+                    border-bottom none
+
+    
+    /* Mobile button */
+
+    .mobile-menu
+        height 60px
+        width 60px
+        display flex
+        align-items center
+        justify-content center
+        cursor pointer
+        transition all .3s ease-out
+
+        &-button
+            position relative
+            display block
+            width 18px
+            height 3px
+            background darkGrey
+            transition all .3s ease-out
+
+            &:before, &:after
+                position absolute
+                content ''
+                width 100%
+                background darkGrey
+                transition all .3s ease-out
+
+            &:before
+                top -6px
+                height 3px
+
+            &:after
+                top 6px
+                height 3px
+
+    .mobile-menu.active
+        border-radius 100%
+        background darkGrey
+        transform scale(0.7)
+
+
+
+@media screen and (max-width: breakpoint350)
+
+    nav
+
+        .sticky-nav
+
+            .container
+                justify-content center
