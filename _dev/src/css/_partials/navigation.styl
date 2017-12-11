@@ -159,14 +159,22 @@ nav
                 opacity 0
                 transition all .3s ease-out
                 z-index -1
+                overflow hidden
 
                 &.active
                     opacity 1
                     z-index 99
 
+                &.active li
+                    opacity 1
+                    transform translateX(0)
+
                 li
                     margin-left 0
                     border-bottom 1px solid rgb(45, 45, 45)
+                    opacity 0
+                    transition all .3s ease-out
+                    transform translateX(50%)
                 
                 a   
                     color #ffffff
@@ -216,18 +224,32 @@ nav
                 top 6px
                 height 3px
 
+            .active:before, .active:after
+                background #ffffff
+
     .mobile-menu.active
-        border-radius 100%
         background darkGrey
-        transform scale(0.7)
+        transform scale(0.6)
+
+        .mobile-menu-button
+
+            &:before
+                transform translateY(200%) rotate(45deg)
+                background #ffffff
+
+            &:after
+                transform translateY(-200%) rotate(-45deg)
+                background #ffffff
 
 
 
-@media screen and (max-width: breakpoint350)
+@media screen and (max-width: breakpoint375)
 
     nav
 
         .sticky-nav
 
-            .container
-                justify-content center
+            &-contact
+
+                li
+                    margin-left 20px

@@ -9,6 +9,7 @@
         top -13em
         transform translateY(-100%)
         z-index 99
+        padding-right 20px
 
     &-title
         display flex
@@ -251,7 +252,7 @@
         padding-top 8em
 
         &-header
-            top -8em
+            top -9em
     
     .service-list
 
@@ -283,17 +284,73 @@
 
             h3
                 font-size 1.7rem
+
+
+@media screen and (max-width: breakpoint960)
+
+    .service-list
+
+        &-title
+
+            p
+                font-size 3rem
+                margin-left 0
+                color #9E9E9E
+
+                :last-child
+                    color #9E9E9E
+
+        &-container
+            justify-content flex-start
+
+            .button-3
+                margin-top 4rem
+
+        &-category
+            display none
             
 
 @media screen and (max-width: breakpoint600)
 
     /* Header Margin */
     .latest-work
+        background-color #ffffff
+        position relative
+        z-index 1
+
+        &-header
+            position relative
+            transform none
+            top 0
+            padding-bottom 8em
+
+        h1, .sub-header
+            color darkGrey
+
+        .button-2
+            color darkGrey
+            border 3px solid darkGrey
+
+    .latest-work
+
+        &-container
+            flex-direction column
+            
+        &-post
+            width 100%
+
+        &-post:first-child
+            margin-bottom 20px
+
+
+@media screen and (max-width: breakpoint375)
+
+    /* Header Margin */
+    .latest-work
         padding-top 6em
 
         &-header
-            top -6em
-
+            padding-bottom 6em
 
 
         

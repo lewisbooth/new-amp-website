@@ -5,6 +5,7 @@ window.addEventListener(
       docHeight = document.documentElement.offsetHeight;
     var headerFade = document.querySelectorAll(".header-fade");
 
+    // Darken header on scroll
     if (window.innerWidth > 960) {
       window.addEventListener(
         "scroll",
@@ -21,6 +22,19 @@ window.addEventListener(
         false
       );
     }
+
+    // Scroll button animation
+    var scrollButton = document.querySelector(".scroll-down-button");
+    var scrollButtonContainer = scrollButton.getBoundingClientRect();
+    var scrollButtonPos = scrollButtonContainer.top - window.innerHeight / 3;
+
+    window.addEventListener("scroll", function() {
+      if (window.scrollY > scrollButtonPos) {
+        scrollButton.classList.add("active");
+      } else {
+        scrollButton.classList.remove("active");
+      }
+    });
   },
   false
 );

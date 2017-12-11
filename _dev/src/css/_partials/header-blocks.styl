@@ -10,7 +10,7 @@
     position relative
     z-index -99
     overflow hidden
-    background darkGrey
+    background #000000
 
     #header-image
         position absolute
@@ -19,22 +19,6 @@
         min-width 100%
         min-height 700px
         max-height 1000px
-
-
-@media screen and (max-width: breakpoint1200)
-    /* Header 1 */
-    .header-1
-        height calc(100vh - 8em)
-        margin-top -165px
-        min-height 400px
-        max-height 800px
-
-        #header-image
-            position absolute
-            height calc(100vh - 8em)
-            min-height 400px
-            max-height 800px
-
 
 /* scroll down button */
 .scroll-down-button
@@ -48,6 +32,74 @@
     height 50px
     background-color ampPink
     border-radius 50%
+    transition all .3s ease-out
+
     img
         width 12px
         transform rotate(90deg)
+        transition all .3s ease-out
+
+.scroll-down-button.active
+    opacity 0
+    transform translateY(-50%)
+    transition-delay .1s
+
+    img
+        opacity 0
+        transform translateY(-200%) rotate(90deg)
+
+
+@media screen and (max-width: breakpoint1200)
+    /* Header 1 */
+    .header-1
+        height calc(100vh - 8em)
+        margin-top -165px
+        min-height 520px
+        max-height 800px
+
+        #header-image
+            top 0
+            height calc(100vh - 8em)
+            min-height 520px
+            max-height 800px
+
+
+@media screen and (max-width: 800px)
+    /* Header 1 */
+    .header-1
+        margin-top -130px
+
+
+@media screen and (max-width: breakpoint600)
+    /* Header 1 */
+    .header-1
+        margin-top 0
+        top 0
+        height 280px
+        min-height auto
+        max-height auto
+
+        #header-image
+            top 0
+            height 280px
+            min-height auto
+            max-height auto
+
+    /* scroll down button */
+    .scroll-down-button
+        top -17.5px
+        left calc(50% - 17.5px)
+        width 35px
+        height 35px
+
+        img
+            width 10px
+
+
+@media screen and (max-width: breakpoint375)
+    /* Header 1 */
+    .header-1
+        height 250px
+
+        #header-image
+            height 250px
