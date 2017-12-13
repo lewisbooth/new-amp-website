@@ -140,8 +140,7 @@
         width 100%
 
     &-instagram-post
-        width 203px
-        height 203px
+        width 215px
         background lightGrey
         
         img 
@@ -235,8 +234,7 @@
     .social-feed
 
         &-instagram-post
-            width 175px
-            height 175px
+            width 185px
 
         &-twitter-post
             padding 0 4em
@@ -276,8 +274,7 @@
     .social-feed
 
         &-instagram-post
-            width 143px
-            height 143px
+            width 145px
 
         &-twitter-post
             padding 0 3em
@@ -308,6 +305,56 @@
 
         &-category
             display none
+
+    .social-feed
+
+        &-instagram-post
+            width calc((100vw - 80px) / 6)
+            height calc((100vw - 80px) / 6)
+
+
+@media screen and (max-width: breakpoint800)
+
+    .blog-feed
+
+        &-container
+            flex-direction column
+            align-items flex-start
+
+        &-post
+            width 100%
+            padding 0 2em 2em
+            box-sizing border-box
+
+            img
+                max-width 320px
+            
+        &-post:nth-child(-n+2)
+            margin-bottom 20px
+
+    .social-feed
+        padding-bottom 20px
+
+        &-other
+            flex-direction column
+
+        &-twitter, &-twitter-title, &-cta
+            width 100%
+
+        &-twitter-wrapper, &-cta
+            height auto
+
+        &-twitter-post
+            height auto
+            padding 4em 20px
+            margin-bottom 20px
+
+            h3
+                line-height 1.6
+
+        &-cta
+            box-sizing border-box
+            padding 6em 20px
             
 
 @media screen and (max-width: breakpoint600)
@@ -317,6 +364,9 @@
         background-color #ffffff
         position relative
         z-index 1
+
+        &-title
+            margin-bottom 20px
 
         &-header
             position relative
@@ -331,8 +381,6 @@
             color darkGrey
             border 3px solid darkGrey
 
-    .latest-work
-
         &-container
             flex-direction column
             
@@ -341,6 +389,54 @@
 
         &-post:first-child
             margin-bottom 20px
+
+    .blog-feed
+        padding-bottom 20px
+
+        &-title
+            margin-bottom 20px
+
+            h2
+                margin-bottom 0
+
+    .social-feed
+
+        .line-break
+            display none
+
+        &-title
+            margin-bottom 20px
+
+        &-instagram
+            margin-bottom 6em
+
+        &-instagram-wrapper
+            flex-wrap wrap
+
+        &-instagram-post
+            width calc((100% / 3) - 3px)
+            margin-right 3px
+
+        &-instagram-post:nth-child(-n+3)
+            margin-bottom 3px
+
+
+// Just for twitter post line width and cta in social feed
+.show-450
+    display none
+
+@media screen and (max-width: 450px)
+
+    .show-450
+        display block
+
+    .social-feed
+
+        &-cta
+
+            h2
+                font-size 3rem
+                text-align center
 
 
 @media screen and (max-width: breakpoint375)
@@ -351,6 +447,14 @@
 
         &-header
             padding-bottom 6em
+
+    .social-feed
+
+        &-title
+
+            img
+                max-width 20px
+                margin-right 0.8em
 
 
         

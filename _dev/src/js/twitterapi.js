@@ -41,7 +41,7 @@ function postFormat(data) {
 
   return `<div class="social-feed-twitter-post">
             <a href="${permalink}" target="_blank"></a>
-            <h3>@AMPstudioUK ${retweet} ${retweetUser}• ${date}</h3>
+            <h3>@AMPstudioUK ${retweet}&nbsp;<br class="show-450">${retweetUser}• ${date}</h3>
             <p>${post}</p>
           </div>`;
 }
