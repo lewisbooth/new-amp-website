@@ -2,23 +2,21 @@
 
 /* Header 1 */
 .header-1
-    width 100%
-    min-height 700px
-    max-height 1000px
-    height calc(100vh - 13em)
-    margin-top -165px
     position relative
-    z-index -99
-    overflow hidden
+    width 100%
+    height calc(100vh - 13em - 165px)
+    min-height 500px
+    max-height 800px
     background darkGrey
+    z-index -99
 
-    #header-image
-        position absolute
-        top 50px
-        height calc(100vh - 13em)
-        min-width 100%
-        min-height 700px
-        max-height 1000px
+#header-image
+    position fixed
+    top 0
+    height calc(100vh - 13em)
+    min-width 100%
+    min-height 665px
+    z-index -99
 
 /* scroll down button */
 .scroll-down-button
@@ -53,36 +51,33 @@
 
     /* Header 1 */
     .header-1
-        height calc(100vh - 8em)
-        min-height 520px
-        max-height 800px
+        max-height 600px
 
         #header-image
-            height calc(100vh - 8em)
-            min-height 520px
-            max-height 800px
+            max-height 765px
 
 
-@media screen and (breakpoint800)
+@media screen and (max-width: breakpoint800)
 
     /* Header 1 */
     .header-1
-        margin-top -130px
+        max-height 400px
+
+        #header-image
+            max-height 565px
 
 
 @media screen and (max-width: breakpoint600)
 
     /* Header 1 */
     .header-1
-        margin-top 0
-        top 0
-        height 280px
+        height 300px
         min-height auto
         max-height auto
 
         #header-image
-            top 0
-            height 280px
+            position relative
+            height 300px
             min-height auto
             max-height auto
 

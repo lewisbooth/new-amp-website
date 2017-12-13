@@ -25,10 +25,10 @@
         left -3px
         content ''
         border-radius 2em
-        transition all .3s ease-in-out
         background linear-gradient(to right, ampBlue, ampPink)
-        z-index -1 
-        filter blur(0)
+        transition all .2s linear
+        opacity 1
+        z-index -1
 
     span
         img
@@ -41,6 +41,8 @@
     span
         img
             transform translateX(5px)
+
+    
 
 
 // Footer variation of button with fancy gradient border
@@ -71,12 +73,6 @@
             margin-left 10px
             transition all .2s linear
 
-.button-2:hover
-
-    span
-        img
-            transform translateX(5px)
-
 // Dark button
 .button-3
     display none 
@@ -97,12 +93,6 @@
             margin-left 10px
             transition all .2s linear
 
-.button-3:hover
-
-    span
-        img
-            transform translateX(5px)
-
 
 .text-link
     font-family 'Montserrat SemiBold', Helvetica, Tahoma, sans-serif
@@ -119,6 +109,7 @@
         img
             width 12px
             margin-left 10px
+            transition all .2s linear
 
 .blog-tag
     font-family 'Montserrat SemiBold', Helvetica, Tahoma, sans-serif
@@ -129,3 +120,12 @@
     background rgba(255, 255, 255, 0.2)
     cursor pointer
     padding 1em 2em
+
+
+@media screen and (min-width: breakpoint1200)
+
+    .button-2:hover, .button-2:hover, .text-link:hover
+
+        span
+            img
+                transform translateX(5px)

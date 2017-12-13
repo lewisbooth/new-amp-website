@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% include head.html %}
+
+<body>
+    {% include navigation.html %}
+
+    <section class="work-gallery pl">
+        <div class="container">
+            <div class="grid">
+                <div class="grid-item">...</div>
+                <div class="grid-item grid-item--width2">...</div>
+                <div class="grid-item">...</div>
+                ...
+            </div>
+        </div>
+        <div class="container">
+            <div class="latest-work-container">
+                {% for post in site.categories.portfolio limit:6 %}
+                <div class="latest-work-post">
+                    <a class="latest-work-post-wrapper-top" href="{{ post.url }}"></a>
+                    <div class="latest-work-post-hover hide-1200">
+                        <div class="latest-work-post-hover-title">
+                            <h2>{{ post.title }}</h2>
+                            <p class="main-nav-link">{{ post.tag }}</p>
+                        </div>
+                        <div class="latest-work-post-arrow">
+                            <span>
+                                <img src="/assets/img/arrow-right.svg">
+                            </span>
+                        </div>
+                        <a class="latest-work-post-wrapper-bottom"></a>
+                    </div>
+                    <img src="/assets/img/portfolio/{{ post.img }}" alt="{{ post.title }}">
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    {% include footer.html %}
+
+    <script async src="/assets/js/navigation-min.js"></script>
+    <script async src="/assets/js/isotope-min.js"></script>
+
+</body>
+
+</html>

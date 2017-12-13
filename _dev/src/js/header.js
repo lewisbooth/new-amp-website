@@ -1,17 +1,26 @@
-var headerImage = document.getElementById("header-image"),
-  docHeight = document.documentElement.offsetHeight;
 var headerFade = document.querySelectorAll(".header-fade");
 
 // Darken header on scroll
-if (window.innerWidth > 960) {
+if (window.innerWidth > 600) {
   window.addEventListener(
     "scroll",
     function() {
-      var fix = window.pageYOffset + 50;
-      var fixValue = fix + "px";
-      var fade = window.pageYOffset / window.innerHeight * 1.5;
-      headerImage.style.top = fixValue;
+      var fade = window.pageYOffset / window.innerHeight * 1.8;
       for (var i = 0; i < headerFade.length; i++) {
+        headerFade[i].style.opacity = 1 - fade;
+      }
+    },
+    false
+  );
+} else {
+  window.addEventListener(
+    "scroll",
+    function() {
+      var fade = window.pageYOffset / window.innerHeight * 2.5;
+      for (var i = 0; i < headerFade.length; i++) {
+        if (headerFade[i].classList.contains("page-header")) {
+          return;
+        }
         headerFade[i].style.opacity = 1 - fade;
       }
     },
