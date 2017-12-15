@@ -1817,15 +1817,46 @@
     );
   });
 
-var elem = document.querySelector(".grid");
-var iso = new Isotope(elem, {
-  // options
-  itemSelector: ".grid-item",
-  layoutMode: "fitRows"
+// external js: isotope.pkgd.js
+
+// init Isotope
+var iso = new Isotope(".grid", {
+  itemSelector: ".element-item",
+  masonry: {
+    gutter: 20
+  }
 });
 
-// element argument can be a selector string
-//   for an individual element
-var iso = new Isotope(".grid", {
-  // options
+// filter functions
+var filterFns = {};
+
+// bind filter button click
+var filtersElem = document.querySelector(".work-gallery-filter-group");
+filtersElem.addEventListener("click", function(event) {
+  // only work with buttons
+  if (!matchesSelector(event.target, "button")) {
+    return;
+  }
+  var filterValue = event.target.getAttribute("data-filter");
+  // use matching filter function
+  filterValue = filterFns[filterValue] || filterValue;
+  iso.arrange({ filter: filterValue });
 });
+
+// change is-checked class on buttons
+var buttonGroups = document.querySelectorAll(".work-gallery-filter-group");
+for (var i = 0, len = buttonGroups.length; i < len; i++) {
+  var buttonGroup = buttonGroups[i];
+  radioButtonGroup(buttonGroup);
+}
+
+function radioButtonGroup(buttonGroup) {
+  buttonGroup.addEventListener("click", function(event) {
+    // only work with buttons
+    if (!matchesSelector(event.target, "button")) {
+      return;
+    }
+    buttonGroup.querySelector(".is-checked").classList.remove("is-checked");
+    event.target.classList.add("is-checked");
+  });
+}

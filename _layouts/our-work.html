@@ -6,23 +6,22 @@
     {% include navigation.html %}
 
     <section class="work-gallery pl">
-        <div class="container">
-            <div class="grid">
-                <div class="grid-item">...</div>
-                <div class="grid-item grid-item--width2">...</div>
-                <div class="grid-item">...</div>
-                ...
-            </div>
+        <div class="container work-gallery-filter-group">
+            <button class="filter-nav is-checked" data-filter="*">Show All</button>
+            <button class="filter-nav" data-filter=".image-production">Image Production</button>
+            <button class="filter-nav" data-filter=".web-design">Web Design</button>
+            <button class="filter-nav" data-filter=".graphic-design">Graphic Design</button>
+            <button class="filter-nav" data-filter=".marketing">Marketing</button>
         </div>
         <div class="container">
-            <div class="latest-work-container">
-                {% for post in site.categories.portfolio limit:6 %}
-                <div class="latest-work-post">
+            <div class="latest-work-container grid">
+                {% for post in site.categories.portfolio limit:10 %}
+                <div class="latest-work-post element-item {{ post.tags }}">
                     <a class="latest-work-post-wrapper-top" href="{{ post.url }}"></a>
                     <div class="latest-work-post-hover hide-1200">
                         <div class="latest-work-post-hover-title">
                             <h2>{{ post.title }}</h2>
-                            <p class="main-nav-link">{{ post.tag }}</p>
+                            <p class="main-nav-link">{{ post.subtitle }}</p>
                         </div>
                         <div class="latest-work-post-arrow">
                             <span>

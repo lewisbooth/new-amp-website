@@ -135,6 +135,9 @@ nav
 
 @media screen and (max-width: breakpoint600)
 
+    body, html
+        overflow-x hidden
+
     nav
 
         .sticky-nav
@@ -165,11 +168,12 @@ nav
                 opacity 0
                 transition all .3s ease-out
                 z-index -1
-                overflow hidden
+                visibility hidden
 
                 &.active
                     opacity 1
                     z-index 99
+                    visibility visible
 
                 &.active li
                     opacity 1

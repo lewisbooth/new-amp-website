@@ -1,0 +1,48 @@
+.service-header
+    background darkGrey
+    text-align center
+    display flex
+    align-content center
+
+    h1, .sub-header
+        text-align center
+        animation fadeIn 1.2s ease-out forwards
+        opacity 0
+
+    h1
+        max-width 800px
+
+        a 
+            color ampPink
+            position relative
+            
+        a:after
+            position absolute
+            content ''
+            height 2px
+            background ampPink
+            bottom -0.5rem
+            opacity 0
+            left 0
+            right 0
+            transition all .2s ease-out
+
+
+// Hover effects
+@media screen and (min-width: breakpoint1200)
+    
+    .service-header h1
+        visibility hidden
+
+        & > *
+            visibility visible
+
+        & > *
+            transition opacity 200ms linear 100ms
+
+        &:hover > span
+            opacity 0.4
+
+        a:hover:after
+            bottom 0
+            opacity 1

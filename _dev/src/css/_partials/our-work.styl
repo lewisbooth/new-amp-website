@@ -1,0 +1,92 @@
+.work-gallery
+    position relative
+    z-index 1
+
+    &-filter-group
+        display flex
+        justify-content center
+        margin-bottom 5em
+
+        button
+            margin 0 25px
+            background transparent
+            border 0
+            cursor pointer 
+
+            &:active
+                color ampPink
+
+        button.is-checked
+                color ampPink
+
+// Hover effects
+@media screen and (min-width: breakpoint1200)
+    
+    .work-gallery
+
+        &-filter-group
+            visibility hidden
+
+            & > *
+                visibility visible
+
+            & > *
+                transition opacity 200ms linear 100ms, transform 250ms ease-in-out 100ms
+
+            &:hover > *
+                opacity 0.4
+                transform scale(0.95)
+
+            & > *:hover
+                opacity: 1
+                transform scale(1)
+                transition-delay 0ms, 0ms
+
+
+@media screen and (max-width: breakpoint960)
+
+    .work-gallery
+
+        &-filter-group
+
+            button
+                margin 0
+                margin-right 15px
+
+
+@media screen and (max-width: breakpoint800)
+
+    .work-gallery
+
+        &-filter-group
+            margin-bottom 3em
+            flex-wrap wrap
+            justify-content flex-start
+            align-items stretch
+
+            button
+                padding 1em
+                margin 2.5px
+                border 1px solid rgba(0,0,0,0.1)
+                font-size 1.6rem
+                flex-grow 1
+                text-align center
+                transition all .2s ease-in
+
+                &:active
+                    color darkGrey
+
+            button.is-checked
+                    color #ffffff
+                    background ampPink
+
+
+@media screen and (max-width: breakpoint600)
+
+    .work-gallery
+
+        &-filter-group
+                margin-bottom 6em
+
+        .latest-work-post
+            margin 0 0 20px !important
