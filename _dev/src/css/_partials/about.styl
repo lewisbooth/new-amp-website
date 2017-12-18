@@ -1,0 +1,120 @@
+.about-header-overlay
+    position absolute
+    width 100%
+    height 100%
+    top 0
+    left 0
+    background darkGrey
+    z-index -1
+    opacity 0.8
+
+.about-intro
+    position relative
+    background #ffffff
+
+    &-text
+        text-align center
+
+        h2
+            font-size 3.6rem
+            margin-bottom 1.5rem
+
+        p
+            max-width 650px
+            margin 2em auto 0
+            padding 0 20px
+
+.our-values
+    background darkGrey
+
+    p
+        margin-bottom 0 !important
+
+    h2, p, li, li:first-child
+        color #ffffff !important 
+
+    li:first-child
+        font-family montserratRegular !important
+        
+    .about-image-1
+            background-image url('/assets/img/about-values-image.jpg')
+
+.team
+    background #ffffff
+
+    &-title
+        text-align center
+        margin-bottom 3em
+
+    &-wrapper
+        display flex
+        align-items center
+        justify-content space-between
+
+    &-member
+        width calc((100% - 40px) / 3)
+        text-align center
+        border 1px solid lineGrey
+
+    &-member-text
+        padding 4em 0
+
+        h3
+            font-family IBMPlexSerifSemiBold
+            font-size 2.2rem
+
+        h4
+            color ampPink
+            text-align center
+            margin-top 1rem
+
+
+@media screen and (max-width: breakpoint960)
+
+    .team
+
+        &-wrapper
+            flex-direction column
+
+        &-member
+            width 100%
+            max-width 440px
+            text-align center
+            border 1px solid lineGrey
+            margin-bottom 20px
+
+            &:last-child
+                margin-bottom 0
+
+
+@media screen and (max-width: breakpoint800)
+
+    .team
+        &-member-text
+            padding 3em 0
+
+            h4
+                margin-top 0.5rem
+
+
+@media screen and (max-width: breakpoint600)
+
+    .about-intro
+
+        &-text
+
+            h2
+                font-size 3.4rem
+
+            p
+                margin 1.5em auto 0
+
+
+@media screen and (max-width: breakpoint375)
+
+    .about-intro
+
+        &-text
+
+            h2
+                font-size 3rem

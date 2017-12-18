@@ -1,6 +1,10 @@
+body
+    background darkGrey
+
 .work-gallery
     position relative
     z-index 1
+    background #ffffff
 
     &-filter-group
         display flex
@@ -8,10 +12,13 @@
         margin-bottom 5em
 
         button
-            margin 0 25px
+            margin-right 25px
             background transparent
             border 0
             cursor pointer 
+
+            &:last-child
+                margin-right 0
 
             &:active
                 color ampPink

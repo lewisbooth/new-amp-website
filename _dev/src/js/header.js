@@ -1,3 +1,21 @@
+// Fix IE jumpy fixed backgorund
+
+if (
+  navigator.userAgent.match(/Trident\/7\./) ||
+  navigator.userAgent.match(/Edge\/\d./)
+) {
+  var body = document.querySelector("body");
+  body.addEventListener("mousewheel", function(event) {
+    // remove default behavior
+    event.preventDefault();
+
+    //scroll without smoothing
+    var wheelDelta = event.wheelDelta;
+    var currentScrollPosition = window.pageYOffset;
+    window.scrollTo(0, currentScrollPosition - wheelDelta);
+  });
+}
+
 var headerFade = document.querySelectorAll(".header-fade");
 
 // Darken header on scroll
@@ -34,7 +52,7 @@ var scrollButtonContainer = scrollButton.getBoundingClientRect();
 var scrollButtonPos = scrollButtonContainer.top - window.innerHeight / 3;
 
 window.addEventListener("scroll", function() {
-  if (window.scrollY > scrollButtonPos) {
+  if (window.pageYOffset > scrollButtonPos) {
     scrollButton.classList.add("active");
   } else {
     scrollButton.classList.remove("active");

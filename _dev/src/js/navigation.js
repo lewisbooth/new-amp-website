@@ -1,14 +1,28 @@
 // nav appear when scrolled
 var navItems = document.querySelectorAll(".sticky-nav-animation");
+var animating = false;
+
 if (window.innerWidth > 960) {
   window.addEventListener("scroll", function() {
-    if (window.pageYOffset > window.innerHeight) {
+    if (window.pageYOffset > window.innerHeight / 2 && !animating) {
       for (var i = 0; i < navItems.length; i++) {
         navItems[i].classList.add("active");
+        animating = true;
+        navItems[i].addEventListener("transitionend", () => {
+          setTimeout(function() {
+            animating = false;
+          }, 300);
+        });
       }
-    } else {
+    } else if (!animating) {
       for (var i = 0; i < navItems.length; i++) {
         navItems[i].classList.remove("active");
+        animating = true;
+        navItems[i].addEventListener("transitionend", () => {
+          setTimeout(function() {
+            animating = false;
+          }, 300);
+        });
       }
     }
   });

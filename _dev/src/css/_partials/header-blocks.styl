@@ -9,6 +9,13 @@
     max-height 800px
     background darkGrey
     z-index -99
+    display flex
+    align-items center
+    justify-content center
+    text-align center
+
+    h1
+        text-align center
 
 #header-image
     position fixed
@@ -16,6 +23,7 @@
     height calc(100vh - 13em)
     min-width 100%
     min-height 665px
+    max-height 965px
     z-index -99
 
 /* scroll down button */
@@ -80,6 +88,13 @@
             height 300px
             min-height auto
             max-height auto
+
+        &-title
+            position absolute
+            top 50%
+            left 50%
+            transform translate(-50%, -50%)
+            width 100%
 
     /* scroll down button */
     .scroll-down-button

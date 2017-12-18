@@ -326,9 +326,8 @@
 
         & > *
             visibility visible
-
-        & > *
-            transition opacity 200ms linear 100ms, transform 250ms ease-in-out 100ms
+            transition all .2s ease-in-out
+            will-change transform
 
         &:hover > *
             opacity 0.4
@@ -337,7 +336,6 @@
         & > *:hover
             opacity: 1
             transform scale(1)
-            transition-delay 0ms, 0ms
 
 
 /* Index media queries */
