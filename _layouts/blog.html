@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% include head.html %}
+
+<body>
+    {% include navigation.html %}
+
+    <section class="header-2 pl">
+        <div class="container">
+            <span class="sub-header">Our Blog</span>
+            <h1>Design news &amp; learning.</h1>
+        </div>
+    </section>
+
+    <section class="blog pl">
+        <div class="container">
+            <div class="blog-filter">
+                <button class="button">Show All</button>
+                <button class="button">Tutorials</button>
+                <button class="button">News</button>
+                <button class="button">Web Design</button>
+                <button class="button">CGI</button>
+                <button class="button">AMP News</button>
+            </div>
+            <div class="blog-post-wrapper">
+                {% for post in site.categories.blog limit:4 %}
+                <div class="blog-post">
+                    <div class="blog-post-image">
+                        <a class="blog-post-image-wrapper" href="{{ post.url }}"></a>
+                        <img src="/assets/img/blog/{{ post.img }}" alt="{{ post.title }}">
+                        <a class="blog-tag">{{ post.tag }}</a>
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="blog-post-content-background"></div>
+                        <h4>Posted {{ post.date | date_to_string }} in
+                            <span>{{ post.tag }}</span>
+                        </h4>
+                        <h2>{{ post.title }}</h2>
+                        <p>{{ post.content }}</p>
+                        <a class="button-1" href="{{ post.url }}">
+                            <span>Learn More</span>
+                            <span>
+                                <img src="/assets/img/arrow-right.svg">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    {% include footer.html %}
+
+    <script async src="/assets/js/navigation-min.js"></script>
+    <script async src="/assets/js/isotope-blog-min.js"></script>
+
+</body>
+
+</html>

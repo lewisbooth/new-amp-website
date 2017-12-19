@@ -2296,7 +2296,7 @@
     );
   });
 
-// external js: isotope.pkgd.js
+// Blog page filter
 
 // init Isotope
 var grid = document.querySelector(".grid");
@@ -2312,13 +2312,11 @@ imagesLoaded(grid, function() {
   });
 });
 
-// Default filter
-
 // filter functions
 var filterFns = {};
 
 // bind filter button click
-var filtersElem = document.querySelector(".work-gallery-filter-group");
+var filtersElem = document.querySelector(".blog-filter");
 filtersElem.addEventListener("click", function(event) {
   // only work with buttons
   if (!matchesSelector(event.target, "button")) {
@@ -2330,8 +2328,8 @@ filtersElem.addEventListener("click", function(event) {
   iso.arrange({ filter: filterValue });
 });
 
-// change is-checked class on buttons
-var buttonGroups = document.querySelectorAll(".work-gallery-filter-group");
+// change active class on buttons
+var buttonGroups = document.querySelectorAll(".blog-filter");
 for (var i = 0, len = buttonGroups.length; i < len; i++) {
   var buttonGroup = buttonGroups[i];
   radioButtonGroup(buttonGroup);
@@ -2343,7 +2341,7 @@ function radioButtonGroup(buttonGroup) {
     if (!matchesSelector(event.target, "button")) {
       return;
     }
-    buttonGroup.querySelector(".is-checked").classList.remove("is-checked");
-    event.target.classList.add("is-checked");
+    buttonGroup.querySelector(".active").classList.remove("active");
+    event.target.classList.add("active");
   });
 }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% include head.html %}
+
+<body>
+    {% include navigation.html %}
+
+    <section class="header-2 pl">
+        <div class="container">
+            <span class="sub-header">Contact Us</span>
+            <h1>Let's work together.</h1>
+        </div>
+    </section>
+
+    <section class="our-services contact-details">
+        <div class="service">
+            <div class="service-text-wrapper">
+                <div class="service-text-bg"></div>
+                <div class="service-text">
+                    <h3>Contact Details</h3>
+                    <p>enquiries@amp.studio
+                        <br>01782 853973</p>
+                    <div class="footer-info-navigation-social">
+                        <a href="{{ site.instagram_username }}" target="_blank">
+                            <img src="/assets/img/instagram-grey.svg">
+                        </a>
+                        <a href="{{ site.twitter_username }}" target="_blank">
+                            <img src="/assets/img/twitter-grey.svg">
+                        </a>
+                        <a href="{{ site.facebook_username }}" target="_blank">
+                            <img src="/assets/img/facebook-grey.svg">
+                        </a>
+                        <a href="{{ site.linkedin_username }}" target="_blank">
+                            <img src="/assets/img/linkedin-grey.svg">
+                        </a>
+                    </div>
+                    <div class="line-break"></div>
+                    <h3>Location</h3>
+                    <p>Burlsem Enterprise Centre
+                        <br> Moorland Road
+                        <br> Stoke-on-Trent
+                        <br> ST6 1JQ</p>
+                    <a href="https://www.google.co.uk/maps/place/Amp+Studio/@53.0468065,-2.190758,17z/data=!4m5!3m4!1s0x487a4292a7a55555:0xdf20cb42b369661f!8m2!3d53.0464732!4d-2.1905241"
+                        target="_blank" class="text-link">
+                        <span>Get Directions</span>
+                        <span>
+                            <img src="/assets/img/arrow-pink.svg">
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div id="gmap" class="service-image"></div>
+        </div>
+    </section>
+
+    <section class="contact-cta">
+        <div class="container">
+            <h2 class="title">Opening Times</h2>
+            <div class="contact-cta-wrapper">
+                <div class="contact-cta-block time-block">
+                    <div class="contact-cta-block-times">
+                        <h3>Monday to Friday</h3>
+                        <p class="show-1200">Open from 9am – 5pm</p>
+                        <h3>Saturday and Sunday</h3>
+                        <p class="show-1200">Closed (unless we’re really busy)</p>
+                    </div>
+                    <div class="contact-cta-block-times">
+                        <p class="hide-1200">Open from 9am – 5pm</p>
+                        <p class="hide-1200">Closed (unless we’re really busy)</p>
+                    </div>
+                </div>
+                <div class="contact-cta-block">
+                    <h2>If you’re only available on the weekend,
+                        <span>call us on 07851 276715</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include footer.html %}
+
+    <script async src="/assets/js/navigation-min.js"></script>
+    <script async src="/assets/js/map-min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmGJfvFp7Xkqyxm-B11ScVxkgAendHzbw&callback=initMap"></script>
+
+</body>
+
+</html>

@@ -16,6 +16,7 @@ footer
     padding 8em 0
     margin 0 auto
     max-width calc((100% / 12) * 8)
+    -webkit-font-smoothing antialiased
 
     &-cta
         display flex
@@ -40,7 +41,6 @@ footer
     &-navigation-social
         display flex
         align-items flex-end
-        visibility hidden
 
         img
             max-width 25px
@@ -51,23 +51,6 @@ footer
             
         :last-child
             padding-right 0
-
-        & > *
-            visibility visible
-
-        & > *
-            transition opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms
-
-        &:hover > *
-            opacity 0.4
-            transform scale(0.9)
-
-        & > *:hover
-            opacity: 1
-            transform scale(1)
-            transition-delay 0ms, 0ms
-
-
 
 .footer-break
     width 100%
@@ -101,6 +84,29 @@ footer
         span
             margin 0 1rem
             color greyMedium
+
+
+@media screen and (min-width: breakpoint1200)
+
+    .footer-info
+
+        &-navigation-social
+            visibility hidden
+
+            & > *
+                visibility visible
+
+            & > *
+                transition opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms
+
+            &:hover > *
+                opacity 0.4
+                transform scale(0.9)
+
+            & > *:hover
+                opacity: 1
+                transform scale(1)
+                transition-delay 0ms, 0ms
 
 
 @media screen and (max-width: breakpoint1200)
@@ -158,3 +164,4 @@ footer
             p
                 width 100%
                 margin-bottom 0.5em
+                margin-right 0

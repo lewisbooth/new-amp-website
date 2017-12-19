@@ -35,7 +35,7 @@ breakpoint375 = 375px
 
 
 /* Show and hide */
-.show-960, .show-800, .show-600, .show-375
+.show-1200, .show-960, .show-800, .show-600, .show-375
     display none
 
 
@@ -63,6 +63,9 @@ breakpoint375 = 375px
 
     .hide-1200
         display none
+
+    .show-1200
+        display block
 
     html, body
         font-size 9px
@@ -147,8 +150,5 @@ breakpoint375 = 375px
 
 @media screen and (max-width: breakpoint375)
 
-    .show-600
+    .show-600, .again-375, .show-375
         display block !important
-    
-    .hide-600
-        display none !important

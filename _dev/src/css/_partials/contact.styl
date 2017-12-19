@@ -1,0 +1,140 @@
+.contact-details
+
+    .service-text
+
+        .line-break
+            margin 5em 0
+
+.contact-cta
+    background #ffffff
+    padding 8em 0 12em
+
+    .title
+        margin-bottom 3rem
+
+    &-wrapper
+        display flex
+        align-items center
+        justify-content space-between
+
+    &-block
+        display flex
+        align-items baseline
+        justify-content flex-start
+        width calc((100% - 50px) / 2)
+
+        h2
+            font-size 3.6rem
+            color greyMedium
+            -webkit-font-smoothing antialiased 
+
+            span
+                color ampPink
+
+    .time-block
+        background lightGrey
+        padding 3em 4em
+        box-sizing border-box
+
+
+    &-block-times
+
+        &:first-child
+            margin-right 4em
+
+        h3, p
+            margin 0
+            line-height 1.7
+
+
+@media screen and (max-width: breakpoint1400)
+
+    .contact-cta
+
+        &-block
+            
+            h2
+                font-size 3rem
+
+            h3, p
+                font-size 1.6rem
+
+
+@media screen and (max-width: breakpoint1200)
+
+    .contact-cta
+
+        &-block
+            display flex
+            align-items center
+            justify-content center
+            width calc((100% - 50px) / 2)
+
+            h2
+                font-size 2.6rem
+
+        &-block-times
+
+            &:first-child
+                margin-right 0
+
+            p:first-of-type
+                margin-bottom 20px
+
+
+@media screen and (max-width: breakpoint960)
+
+    .contact-cta
+        padding 6em 0 8em
+
+        &-block
+            width calc((100% - 30px) / 2)
+
+
+@media screen and (max-width: 700px)
+
+    .contact-cta
+        padding 6em 0
+
+        .title
+            max-width 500px
+            margin 0 auto 20px
+
+        &-wrapper
+            flex-direction column
+            align-items center
+
+        &-block
+            width 100%
+            max-width 500px
+
+            h2
+                margin-top 6rem
+
+
+@media screen and (max-width: breakpoint600)
+
+    .contact-details
+
+        .service-text
+
+            .line-break
+                margin 4.5em 0 4em
+
+        .service-text-wrapper
+            padding 6em 0
+
+
+@media screen and (max-width: 450px)
+
+    .contact-cta
+        padding 4em 0
+
+        .title, .time-block
+            text-align center
+
+        &-block
+
+            h2
+                margin-top 4rem
+                max-width 250px
