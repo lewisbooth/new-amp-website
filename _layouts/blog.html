@@ -28,12 +28,13 @@
                     <div class="blog-post-image">
                         <a class="blog-post-image-wrapper" href="{{ post.url }}"></a>
                         <img src="/assets/img/blog/{{ post.img }}" alt="{{ post.title }}">
-                        <a class="blog-tag">{{ post.tag }}</a>
+                        <a class="blog-tag format-tag">{{ post.tag | replace: "-", " " }}</a>
                     </div>
                     <div class="blog-post-content">
                         <div class="blog-post-content-background"></div>
                         <h4>Posted {{ post.date | date_to_string }} in
-                            <span>{{ post.tag }}</span>
+                            <span>{{ post.tag | replace: "-", " " }}
+                            </span>
                         </h4>
                         <h2>{{ post.title }}</h2>
                         <p>{{ post.content }}</p>

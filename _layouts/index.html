@@ -180,7 +180,7 @@
                 <div class="blog-feed-post">
                     <a class="blog-feed-post-wrapper" href="{{ post.url }}"></a>
                     <img class="ms" src="/assets/img/blog/{{ post.img }}" alt="{{ post.title }}">
-                    <a class="blog-tag">{{ post.tag }}</a>
+                    <a class="blog-tag format-tag">{{ post.tag | replace: "-", " " }}</a>
                 </div>
                 {% endfor %}
             </div>
@@ -253,7 +253,7 @@
     <script async src="/assets/js/navigation-min.js"></script>
     <script async src="/assets/js/instafeed-min.js"></script>
     <script async src="/assets/js/twitterapi-min.js"></script>
-    <script async src="/assets/js/header-min.js"></script> {% include format-tags.html %}
+    <script async src="/assets/js/header-min.js"></script>
 
 </body>
 
