@@ -15,16 +15,16 @@
     <section class="blog pl">
         <div class="container">
             <div class="blog-filter">
-                <button class="button">Show All</button>
-                <button class="button">Tutorials</button>
-                <button class="button">News</button>
-                <button class="button">Web Design</button>
-                <button class="button">CGI</button>
-                <button class="button">AMP News</button>
+                <a href="/blog/" {% if page.url=='/blog/' %} class="active" {% endif %}>All Posts</a>
+                <a href="/blog/tutorials/" {% if page.url=='/blog/tutorials' %} class="active" {% endif %}>Tutorials</a>
+                <a href="/blog/design-news/" {% if page.url=='/blog/design-news/' %} class="active" {% endif %}>News</a>
+                <a href="/blog/web-design/" {% if page.url=='/blog/web-design/' %} class="active" {% endif %}>Web Design</a>
+                <a href="/blog/cgi/" {% if page.url=='/blog/cgi/' %} class="active" {% endif %}>CGI</a>
+                <a href="/blog/amp-news/" {% if page.url=='/blog/amp-news/' %} class="active" {% endif %}>AMP News</a>
             </div>
             <div class="blog-post-wrapper">
                 {% for post in site.categories.blog limit:4 %}
-                <div class="blog-post">
+                <div class="blog-post {{ post.tag }}">
                     <div class="blog-post-image">
                         <a class="blog-post-image-wrapper" href="{{ post.url }}"></a>
                         <img src="/assets/img/blog/{{ post.img }}" alt="{{ post.title }}">
@@ -53,7 +53,6 @@
     {% include footer.html %}
 
     <script async src="/assets/js/navigation-min.js"></script>
-    <script async src="/assets/js/isotope-blog-min.js"></script>
 
 </body>
 

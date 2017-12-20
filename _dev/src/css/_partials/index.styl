@@ -3,6 +3,7 @@
     background-color #ffffff
     position relative
     z-index 1
+    animation fadeIn 1.2s ease-out
 
     &-header
         position absolute
@@ -11,8 +12,11 @@
         z-index 99
         padding-right 20px
 
-        h1
-            text-shadow 0 0 10px title-shadow
+        h1, .sub-header
+            text-shadow 0 0 15px title-shadow
+
+        .sub-header, .button-2 span
+            font-family montserratMedium
 
     &-title
         display flex
@@ -31,6 +35,8 @@
         position relative
         flex-basis 1
         margin 10px 0
+        animation fadeIn 1.2s ease-in-out forwards
+        opacity 0
 
         &-wrapper-top
                 position absolute
@@ -94,6 +100,7 @@
         align-items baseline
         justify-content space-between
         -webkit-font-smoothing antialiased
+        -moz-osx-font-smoothing grayscale
 
         h2
             color #ffffff
@@ -225,6 +232,7 @@
         align-items center
         justify-content center
         -webkit-font-smoothing antialiased
+        -moz-osx-font-smoothing grayscale
 
     &-cta-wrapper
         display flex
@@ -264,6 +272,7 @@
             h2, p
                 color #ffffff
                 -webkit-font-smoothing antialiased
+                -moz-osx-font-smoothing grayscale
             
             p
                 margin-top 5px
@@ -277,10 +286,12 @@
 
                     .latest-work-post-hover-title
                         animation slideIn25 .3s ease-out
+                        display block
                         opacity 1
 
                     span
                         animation slideIn100 .3s ease-out
+                        display flex
                         opacity 1
 
 
@@ -346,6 +357,20 @@
 /* Index media queries */
 @media screen and (max-width: breakpoint1400)
 
+    .service-list
+
+        &-title
+
+            p
+                font-size 3.2rem
+                margin-left 0
+
+                :last-child
+                    color #C2C2C2
+
+        &-container
+            padding 0
+
     .social-feed
 
         &-instagram-post
@@ -366,20 +391,6 @@
 
         &-header
             top -9em
-    
-    .service-list
-
-        &-title
-
-            p
-                font-size 3.6rem
-                margin-left 0
-
-                :last-child
-                    color #C2C2C2
-
-        &-container
-            padding 0
 
     .blog-feed
 
@@ -406,7 +417,6 @@
 
             p
                 font-size 3rem
-                margin-left 0
                 color greyMedium
 
                 :last-child
@@ -489,11 +499,9 @@
             top 0
             padding-bottom 8em
 
-            h1
+            h1, .sub-header
                 text-shadow none
-
-        h1, .sub-header
-            color darkGrey
+                color darkGrey
 
         .button-2
             color darkGrey

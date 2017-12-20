@@ -5,7 +5,11 @@
 <body>
     {% include navigation.html %}
     <section class="header-1">
-        <div id="header-image" class="index-bg header-fade"></div>
+        <div id="header-image" class="index-header header-fade">
+            <video autoplay loop>
+                <source src="/assets/img/videos/loop-animation.mp4" type="video/mp4">
+            </video>
+        </div>
     </section>
 
     <section class="latest-work">
@@ -246,10 +250,10 @@
 
     {% include footer.html %}
 
+    <script async src="/assets/js/navigation-min.js"></script>
     <script async src="/assets/js/instafeed-min.js"></script>
     <script async src="/assets/js/twitterapi-min.js"></script>
-    <script async src="/assets/js/navigation-min.js"></script>
-    <script async src="/assets/js/header-min.js"></script>
+    <script async src="/assets/js/header-min.js"></script> {% include format-tags.html %}
 
 </body>
 

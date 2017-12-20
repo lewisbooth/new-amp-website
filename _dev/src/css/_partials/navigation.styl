@@ -19,7 +19,10 @@ nav
             display inline-flex
 
             li
-                margin-left 45px
+                padding-left 45px
+
+                &:first-child
+                    padding-left 0
         
         &-animation
             transform translateY(-50%)
@@ -75,6 +78,30 @@ nav
     display none
 
 
+// Hover effects
+@media screen and (min-width: breakpoint1200)
+
+    nav
+
+        .sticky-nav
+        
+            &-list
+                visibility hidden
+
+                & > *
+                    visibility visible
+                    transition all .2s ease-in-out
+                    will-change transform
+
+                &:hover > *
+                    opacity 0.4
+                    transform scale(0.95)
+
+                & > *:hover
+                    opacity: 1
+                    transform scale(1)
+
+
 /* Navigation media queries */
 @media screen and (max-width: breakpoint1200)
 
@@ -89,6 +116,7 @@ nav
 
                 li
                     margin-left 30px
+                    padding-left 0
 
             &-contact
 
