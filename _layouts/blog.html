@@ -7,8 +7,8 @@
 
     <section class="header-2 pl">
         <div class="container">
-            <span class="sub-header">Our Blog</span>
-            <h1>Design news &amp; learning.</h1>
+            <span class="sub-header">The AMP Blog</span>
+            <h1>{{ page.header }}</h1>
         </div>
     </section>
 
@@ -16,25 +16,25 @@
         <div class="container">
             <div class="blog-filter">
                 <a href="/blog/" {% if page.url=='/blog/' %} class="active" {% endif %}>All Posts</a>
-                <a href="/blog/tutorials/" {% if page.url=='/blog/tutorials' %} class="active" {% endif %}>Tutorials</a>
+                <a href="/blog/tutorials/" {% if page.url=='/blog/tutorials/' %} class="active" {% endif %}>Tutorials</a>
                 <a href="/blog/design-news/" {% if page.url=='/blog/design-news/' %} class="active" {% endif %}>News</a>
                 <a href="/blog/web-design/" {% if page.url=='/blog/web-design/' %} class="active" {% endif %}>Web Design</a>
                 <a href="/blog/cgi/" {% if page.url=='/blog/cgi/' %} class="active" {% endif %}>CGI</a>
                 <a href="/blog/amp-news/" {% if page.url=='/blog/amp-news/' %} class="active" {% endif %}>AMP News</a>
             </div>
             <div class="blog-post-wrapper">
-                {% for post in site.categories.blog limit:4 %}
+                {% for post in site.categories.blog %}{% if post.url contains page.url %}
                 <div class="blog-post {{ post.tag }}">
                     <div class="blog-post-image">
                         <a class="blog-post-image-wrapper" href="{{ post.url }}"></a>
                         <img src="/assets/img/blog/{{ post.img }}" alt="{{ post.title }}">
-                        <a class="blog-tag format-tag">{{ post.tag | replace: "-", " " }}</a>
+                        <a class="blog-tag format-tag">{{ post.categories[1] | replace: "-", " " }}</a>
                     </div>
                     <div class="blog-post-content">
                         <div class="blog-post-content-background"></div>
                         <h4>Posted {{ post.date | date_to_string }} in
-                            <span>{{ post.tag | replace: "-", " " }}
-                            </span>
+                            <a href="/blog/{{ post.categories[1] }}/">{{ post.categories[1] | replace: "-", " " }}
+                            </a>
                         </h4>
                         <h2>{{ post.title }}</h2>
                         <p>{{ post.content }}</p>
@@ -46,7 +46,7 @@
                         </a>
                     </div>
                 </div>
-                {% endfor %}
+                {% endif %}{% endfor %}
             </div>
         </div>
     </section>

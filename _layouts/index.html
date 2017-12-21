@@ -180,7 +180,7 @@
                 <div class="blog-feed-post">
                     <a class="blog-feed-post-wrapper" href="{{ post.url }}"></a>
                     <img class="ms" src="/assets/img/blog/{{ post.img }}" alt="{{ post.title }}">
-                    <a class="blog-tag format-tag">{{ post.tag | replace: "-", " " }}</a>
+                    <a class="blog-tag format-tag">{{ post.categories[1] | replace: "-", " " }}</a>
                 </div>
                 {% endfor %}
             </div>
