@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% include head.html %}
+
+<body>
+    {% include navigation.html %}
+
+    <section class="header-2 post-header">
+        <div class="container">
+            <div class="post-header-content pl">
+                <span class="sub-header">{{ page.date | date_to_string }}</span>
+                <h1>{{ page.title }}</h1>
+            </div>
+            <div class="post-header-author">
+                <img src="/assets/img/{{ page.author[1].img }}" alt="test">
+                <p>Posted by {{page.author[0].name }}
+                    <br>
+                    <a href="/blog/{{ page.categories[1] }}/">in {{ page.categories[1] | replace: "-", " " }}</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="post-content pm">
+        <div class="container">
+            {{ page.content }}
+        </div>
+    </section>
+
+    {% include footer.html %}
+
+    <script async src="/assets/js/navigation-min.js"></script>
+
+</body>
+
+</html>

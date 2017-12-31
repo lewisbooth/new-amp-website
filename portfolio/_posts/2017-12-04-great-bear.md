@@ -1,5 +1,5 @@
 ---
-title: Great Bear Tattoo
+header: Great Bear Tattoo
 subtitle: Photography & Marketing
 # Viable tags: image-production, web-design, graphic-design, marketing
 tag: marketing

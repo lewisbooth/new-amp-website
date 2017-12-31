@@ -41,6 +41,13 @@ defaults:
       type: "posts"
     values:
       permalink: /:categories/:year/:title/
+      layout: "blog-post"
+  -
+    scope:
+      path: "portfolio"
+      type: "posts"
+    values:
+      layout: "portfolio-post"
 
 
 # Exclude from processing.

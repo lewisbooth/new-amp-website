@@ -1,5 +1,5 @@
 ---
-title: Wedgewood Gas
+header: Wedgewood Gas
 subtitle: Website Design & Marketing
 # Viable tags: image-production, web-design, graphic-design, marketing
 tag: web-design

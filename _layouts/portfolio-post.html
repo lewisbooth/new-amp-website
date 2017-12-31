@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% include head.html %}
+
+<body>
+    {% include navigation.html %}
+
+    <section class="header-2 pl">
+        <div class="container">
+            <span class="sub-header">{{ page.date | date_to_string }}</span>
+            <h1>{{ page.title }}</h1>
+        </div>
+    </section>
+
+    {% include footer.html %}
+
+    <script async src="/assets/js/navigation-min.js"></script>
+
+</body>
+
+</html>

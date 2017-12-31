@@ -1,0 +1,78 @@
+.post-header
+    background ampPinkBlog
+
+    .container
+        display flex
+        flex-direction column
+        align-items center
+
+    &-author
+        display inline-flex
+        align-items center
+        margin-bottom 3em
+        animation fadeInUp 1.2s ease-out
+
+        img
+            width 60px
+            height 60px
+            border-radius 100%
+            margin-right 20px
+
+        p
+            color #ffffff
+            font-family montserratRegular
+            font-size 1.5rem
+            line-height 1.5
+            text-align left
+            -webkit-font-smoothing auto
+	        -moz-osx-font-smoothing auto
+
+        a
+            color #ffffff
+            font-family montserratSemiBold
+
+.post-content
+    background #ffffff
+
+    .container
+        max-width 680px
+
+    li
+        color greyMedium
+        font-family IBMPlexSerifRegular
+        font-size 1.8rem 
+        line-height 1.7
+        text-align left
+        -webkit-font-smoothing antialiased
+        -moz-osx-font-smoothing grayscale
+        margin-top 3rem
+        padding-left 1.5em
+        text-indent -1.5em
+
+        &::before
+            content "•"
+            color ampPink
+            margin-right 1em
+
+    li:nth-child(n+2)
+        margin-top 1rem
+
+    h2:nth-child(n+2)
+        margin-top 5rem
+
+    p:nth-child(n+2)
+        margin-top 3rem
+
+    p:first-child:first-letter
+        float left
+        margin-right 1.5rem
+        font-size 5.6rem
+        line-height 1
+        color ampPink
+
+    p a
+        color ampPink
+        font-family IBMPlexSerifSemiBold
+
+    img
+        margin-top 5rem
