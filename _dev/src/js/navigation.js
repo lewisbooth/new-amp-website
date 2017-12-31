@@ -13,7 +13,6 @@ if (window.innerWidth > 960 && !animating) {
           navItems[0].addEventListener("transitionend", function() {
             setTimeout(() => {
               animating = false;
-              console.log("ended!");
             }, 300);
             animating = true;
           });

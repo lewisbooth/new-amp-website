@@ -1,5 +1,5 @@
 ---
-title: 'Build Faster Websites with Pagespeed Insights.'
+title: 'Build faster websites with Pagespeed Insights.'
 date: 2017-12-03 15:54:35 +0000
 img: pagespeed-insights.svg
 ---

@@ -52,7 +52,7 @@
         align-items flex-start
         justify-content center
         flex-grow 1
-        padding-left 6em
+        padding 0 6em
 
         h4
             font-family montserratRegular
@@ -88,3 +88,74 @@
         height 100%
         background lightGrey
         z-index -1
+
+
+@media screen and (max-width: breakpoint1200)
+
+    .blog
+
+        &-post
+            min-height 350px
+        
+        &-filter
+            align-items stretch
+            flex-wrap wrap
+
+            a
+                margin 5px
+                flex-grow 1
+                text-align center
+                padding 1em 2em
+
+                &:last-child
+                    margin 5px
+
+        &-post-image
+            padding 20px 4em
+
+
+@media screen and (max-width: breakpoint800)
+
+    .blog
+        
+        &-filter
+            margin-bottom 3em
+
+        &-post
+            flex-direction column
+
+        &-post-image
+            padding 0 20px 20px
+
+            img
+                margin 6em 0
+
+        &-post-content
+            padding 6em 20px
+            align-items center
+            text-align center
+
+            h2
+                font-size 2.4rem
+
+
+@media screen and (max-width: breakpoint600)
+
+    .blog
+        
+        &-filter
+            margin-bottom 6em
+
+        &-post-image
+
+            img
+                max-width 280px
+
+
+@media screen and (max-width: 400px)
+
+    .blog
+
+        &-post-content
+            align-items flex-start
+            text-align left
