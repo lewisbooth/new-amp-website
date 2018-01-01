@@ -25,3 +25,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent interdum mauri
   efficitur, dui est sollicitudin augue, vitae mattis ante diam ac elit.
 * Nunc porta urna sed tincidunt iaculis. Phasellus bibendum velit ac
   nulla finibus, vitae ultricies ipsum ornare. Aliquam erat volutpat.
+
+{:.quote-block}
+[“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent interdum mauris dolor, eu ultricies neque ornare at.”](#){:.quote}{:target="blank"}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent interdum mauris dolor, eu ultricies neque ornare at. Fusce maximus nec lorem vitae tincidunt. Vivamus placerat finibus tortor at volutpat. Aliquam elit dui, mollis ac tortor ut, commodo finibus nulla.
