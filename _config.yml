@@ -29,6 +29,7 @@ linkedin_username: https://www.linkedin.com/company/18133628/
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 theme: minima
 plugins:
   - jekyll-feed

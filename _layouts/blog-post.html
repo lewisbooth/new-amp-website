@@ -9,7 +9,7 @@
         <div class="container">
             <div class="post-header-content pl">
                 <span class="sub-header">{{ page.date | date_to_string }}</span>
-                <h1>{{ page.title }}</h1>
+                <h1>{{ page.header }}</h1>
             </div>
             <div class="post-header-author">
                 <img src="/assets/img/{{ page.author[1].img }}" alt="test">
@@ -27,7 +27,35 @@
         </div>
     </section>
 
-    {% include footer.html %}
+    <section class="post-footer pm">
+        <div class="container">
+            <div class="post-footer-author">
+                <img src="/assets/img/{{ page.author[1].img }}" alt="test">
+                <p>Posted by {{page.author[0].name }}
+                    <br>
+                    <a href="/blog/{{ page.categories[1] }}/">in {{ page.categories[1] | replace: "-", " " }}</a>
+                </p>
+            </div>
+            <div class="vertical-break"></div>
+            <div class="post-footer-share">
+                <p>Share This Article:</p>
+                <div class="footer-info-navigation-social">
+                    <a href="https://twitter.com/intent/tweet?url=https://amp.studio{{ page.url }}&text={{ page.title }}&via=AMPstudioUK&" target="_blank">
+                        <img src="/assets/img/twitter-grey.svg">
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://amp.studio{{ page.url }}" target="_blank">
+                        <img src="/assets/img/facebook-grey.svg">
+                    </a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://amp.studio{{ page.url }}&title={{ page.title }}&summary=&source=https%3A//www.linkedin.com/company/18133628/"
+                        target="_blank">
+                        <img src="/assets/img/linkedin-grey.svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include blog-post-feed.html %} {% include footer.html %}
 
     <script async src="/assets/js/navigation-min.js"></script>
     <script async src="/assets/js/blog-min.js"></script>

@@ -1,0 +1,309 @@
+.service-page-content
+    background #ffffff
+    
+    p
+        max-width 680px
+        margin 0 auto
+
+.service-page-services
+    background #ffffff
+    position relative
+    z-index 1
+
+    &-service
+        display flex
+        align-items center
+        margin-top 10em
+
+        &:first-child
+            margin-top 0
+
+    &-service:nth-child(even)
+
+        .service-page-services-service-text
+            order 1
+
+    &-service-text
+        display inline-flex
+        flex-direction column
+        align-items flex-start
+        justify-content center
+        padding 0 8em
+        box-sizing border-box
+        width 50%
+
+        h2
+            font-size 2.8rem
+
+        p
+            margin 1em 0 1.8em
+
+        .button-1
+            background #ffffff
+            background-clip padding-box
+
+    &-service-image
+        width 50%
+
+.stack
+    background #ffffff
+    padding-bottom 0
+
+    h2
+        margin-bottom 3rem
+
+    &-list
+        display flex
+        flex-wrap wrap
+        justify-content space-between
+
+    &-list-image
+        display inline-block
+        width calc((100% - 100px) / 6)
+        margin 10px 0
+
+.promises
+    background #ffffff
+
+    h2
+        margin-bottom 3rem
+
+    &-container
+        display flex
+        align-items center
+        justify-content space-between
+
+    &-block
+        width calc((100% - 40px) / 3)
+        display flex
+        flex-direction column
+        justify-content center
+        align-items center
+        background darkGrey
+
+        h2, p
+            color #ffffff
+            margin 0
+
+        h2
+            font-size 2.8rem
+            -webkit-font-smoothing antialiased
+            -moz-osx-font-smoothing grayscale
+            margin 2rem 0 1rem !important
+
+        img
+            width 50px
+            height 50px
+
+.service-cta
+    background #ffffff
+
+    .container
+        display flex
+        flex-direction column
+        align-items center
+        text-align center
+        position relative
+        z-index 1
+
+        .button-1
+            background #ffffff
+            background-clip padding-box
+            margin 3rem 0 4rem
+
+        h3 
+            line-height 1.5
+
+        p
+            font-family montserratRegular
+            font-size 1.8rem
+            line-height 1.8
+
+.other-services
+    background #ffffff
+    padding-top 0
+
+    .container
+        max-width 680px
+
+    h2
+        font-size 2.2rem !important
+
+    &-title
+        display flex
+        align-items baseline
+        justify-content space-between
+        margin-bottom 3rem
+
+    &-container
+        display flex
+        justify-content space-between
+
+    &-service
+        width calc((100% - 20px) / 2)
+        position relative
+        overflow hidden
+
+        h2
+            color #ffffff
+            -webkit-font-smoothing antialiased
+            -moz-osx-font-smoothing grayscale
+
+        .latest-work-post-hover-title
+            margin-right 2rem
+
+
+@media screen and (max-width: breakpoint1400)
+
+    .service-page-services
+
+        &-service-text
+            padding 0 4em
+
+
+@media screen and (max-width: breakpoint1200)
+
+    .stack
+
+        &-list-image
+            width calc((100% - 50px) / 6)
+            margin 5px 0
+
+    .promises
+
+        &-block
+
+            h2
+                font-size 2.4rem
+
+    .other-services
+
+        &-service
+            display flex
+            flex-direction column
+
+            h2
+                color darkGrey
+
+            .latest-work-post-hover
+                order 2
+                display flex
+                align-items center
+                justify-content center
+                margin-top 20px
+
+
+@media screen and (max-width: breakpoint960)
+
+    .service-page-services
+
+        &-service
+            flex-direction column
+            margin-top 6rem
+
+            &:first-child
+                margin-top 0
+
+            &-text
+                order 2
+                margin-top 5rem
+                width 100%
+                max-width 680px
+                padding 0
+
+            &-image
+                order 1
+                width 100%
+                max-width 680px
+
+        &-service:nth-child(even)
+
+            .service-page-services-service-text
+                order 2
+
+    .stack
+
+        .container
+            max-width 680px
+
+        h2
+            margin-bottom 15px
+
+        &-list
+            justify-content center
+
+        &-list-image
+            width calc((100% - 30px) / 4)
+            margin 3px
+
+    .promises
+
+        h2
+            margin 0 auto 20px
+            max-width 680px
+
+        &-container
+            flex-direction column
+
+        &-block
+            width 100%
+            max-width 680px
+            margin-bottom 20px
+
+            &:last-child
+                margin-bottom 0
+
+
+@media screen and (max-width: breakpoint600)
+
+    .stack
+
+        h2
+            margin-bottom 18px
+
+        &-list
+            justify-content center
+
+        &-list-image
+            width calc((100% - 20px) / 3)
+            margin 2px
+
+    .other-services
+
+        .container
+            max-width 310px
+
+        &-container
+            flex-direction column
+            align-items  center
+
+        &-service
+            width 100%
+            max-width 310px
+
+            .latest-work-post-hover
+                margin 20px 0 30px
+
+            &:last-child
+
+                .latest-work-post-hover
+                    margin-bottom 0
+
+
+@media screen and (max-width: 400px)
+
+    .service-page-services
+
+        &-service-text
+
+            h2
+                font-size 2.2rem !important
+
+    .promises
+
+        &-block
+            
+            img
+                width 35px
+                height 35px
+

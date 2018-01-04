@@ -1,0 +1,327 @@
+.portfolio-description
+    background #ffffff
+    position relative
+    z-index 1
+
+    .container
+        display flex
+        align-items center
+        justify-content center
+
+    &-text
+
+        p
+            margin-top 1em
+            max-width 680px
+
+    &-services
+        margin-left 12rem
+
+        p
+            margin 1.2em 0 2em
+
+        .button-1
+            background #ffffff
+            background-clip padding-box
+
+    &-stats-wrapper
+        width 50%
+        display flex
+        align-items center
+        justify-content flex-end
+
+    &-stats
+        display flex
+
+        p:nth-child(n+2)
+            margin-left 6rem
+
+        p span
+            font-family montserratSemiBold
+            font-size 2rem
+            color ampPink
+
+    &-image
+        width 50%
+        display flex
+        justify-content flex-end
+
+        img
+            max-width 560px
+            height auto
+            align-self center
+
+.portfolio-images
+    display flex
+    background #ffffff
+
+    .container.iframe
+        position relative
+        width calc(100% - 40px)
+        padding-top 788px
+
+    &-column
+        display flex
+        width 50%
+        flex-direction column
+        background #ececec
+        align-items center
+        justify-content center
+
+    &-row
+        display flex
+        width 100%
+        background #ececec
+
+    video, img.standard
+        position absolute
+        top 0
+        transform translateX(-50%)
+        left 50%
+        min-width 1250px
+        min-height 100%
+        width 100%
+        height auto
+        background-color #09607D
+
+    iframe
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 100%
+
+
+    &-image
+        position relative
+        overflow hidden
+        width 100%
+        height 700px
+
+    &-image-lg
+        width 50%
+
+.last
+    padding-top 0
+
+.video-button
+    position absolute
+    width 45px
+    height 45px
+    bottom 20px
+    right 20px
+    cursor pointer
+    display block
+    visibility hidden
+    -webkit-touch-callout none
+    -webkit-user-select none
+    -khtml-user-select none
+    -moz-user-select none
+    -ms-user-select none
+    user-select none
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0)
+
+.off
+    display none
+
+.post-portfolio-feed 
+    
+    .latest-work-post-hover-title h2 
+        color #ffffff !important
+        line-height 1.5 !important
+
+
+/* iPad Pro */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5)
+
+    .video-button
+        visibility visible
+
+
+
+@media screen and (max-width: breakpoint1400)
+
+    .portfolio-description
+
+        &-stats-wrapper
+            flex-direction column
+            align-items center
+
+        &-stats
+            flex-direction column
+            align-items flex-start
+
+            p:nth-child(n+2)
+                margin 20px 0 0
+
+    .portfolio-images
+
+        .container.iframe
+            padding-top 675px
+
+
+@media screen and (max-width: breakpoint1200)
+
+    .portfolio-description
+
+        &-text
+            
+            p
+                max-width 480px
+
+        &-stats-wrapper
+            align-items flex-end
+
+    .portfolio-images
+
+        video, img.standard
+            position absolute
+            top 0
+            transform translateX(-50%)
+            left 50%
+            min-width 625px
+            min-height 100%
+            width 100%
+            height auto
+
+        &-image
+            position relative
+            overflow hidden
+            width 100%
+            height 350px
+
+    .video-button
+        visibility visible
+
+    section.post-portfolio-feed
+
+        img
+            max-width 100%
+
+    .portfolio-images
+
+        .container.iframe
+            padding-top 540px
+
+
+@media screen and (max-width: breakpoint960)
+
+    .portfolio-description
+        display flex
+        align-items center
+
+        .container
+            flex-direction column
+
+        &-text
+
+            p
+                max-width 680px
+
+        &-services
+            width 100%
+            margin-top 3em
+            margin-left 0
+            display flex
+            align-items center
+
+            &-text
+                margin-right 6em
+
+            p
+                margin 0.5em 0 0
+
+        &-stats-wrapper
+            width 100%
+            align-items flex-start
+            margin-top 4rem
+
+        &-stats
+            flex-direction row
+
+            p:nth-child(n+2)
+                margin 0 0 0 6rem
+
+    .portfolio-images
+
+        .container.iframe
+            padding-top 52vw
+
+
+@media screen and (max-width: breakpoint800)
+
+    .portfolio-images
+        flex-direction column
+
+        &-column
+            width 100%
+
+        &-row
+            flex-direction column
+
+        video, img.standard
+            width auto
+            min-height 448px
+            max-width 800px
+
+        &-image
+            position relative
+            overflow hidden
+            width 100%
+            height 448px
+
+        &-image-lg
+            width 100%
+
+@media screen and (max-width: breakpoint600)
+
+    .portfolio-description
+
+        &-services
+            flex-direction column
+            align-items flex-start
+
+            &-text
+                margin-right 0
+
+            p
+                margin 0.5em 0 1.5em
+
+        &-stats
+
+            p:nth-child(n+2)
+                margin 0 0 0 4rem
+
+    .portfolio-images
+
+        video, img.standard
+            width auto
+            min-height 350px
+            max-width 625px
+
+        &-image
+            height 350px
+
+        &-image-lg
+            width 100%
+
+    .portfolio-images
+
+        .container.iframe
+            padding-top 49vw
+
+
+@media screen and (max-width: 450px)
+
+    .portfolio-description
+
+        &-stats
+            flex-wrap wrap
+            align-items flex-start
+            
+            p, p:nth-child(n+2)
+                margin 0 4rem 0 0
+
+                &:last-child
+                    margin-top 2rem
+

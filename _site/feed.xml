@@ -1,19 +1,374 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-01-01T23:48:36+00:00</updated><id>/</id><title type="html">AMP Studio</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Building Responsive Emails with MJML</title><link href="/blog/tutorials/2017/responsive-emails-mjml/" rel="alternate" type="text/html" title="Building Responsive Emails with MJML" /><published>2017-12-05T15:54:35+00:00</published><updated>2017-12-05T15:54:35+00:00</updated><id>/blog/tutorials/2017/responsive-emails-mjml</id><content type="html" xml:base="/blog/tutorials/2017/responsive-emails-mjml/">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent interdum mauris dolor, eu ultricies neque ornare at. Fusce maximus nec lorem vitae tincidunt. Vivamus placerat finibus tortor at volutpat. Aliquam elit dui, mollis ac tortor ut, commodo finibus nulla.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-01-04T18:24:35+00:00</updated><id>/</id><title type="html">AMP Studio</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Building Responsive Emails with MJML</title><link href="/blog/tutorials/2018/responsive-emails-mjml/" rel="alternate" type="text/html" title="Building Responsive Emails with MJML" /><published>2018-01-04T09:00:00+00:00</published><updated>2018-01-04T09:00:00+00:00</updated><id>/blog/tutorials/2018/responsive-emails-mjml</id><content type="html" xml:base="/blog/tutorials/2018/responsive-emails-mjml/">{:.first}
+If any of you, like myself, have designed and developed bespoke responsive emails on a regular basis you’ll understand the difficulties in trying to get an engaging, aesthetically pleasing responsive email to render correctly in every major email client, including those pesky legacy email clients – yes we’re all looking at you Outlook, you pile of 💩 .
 
-Proin sagittis pulvinar viverra. In [condimentum](/blog/tutorials/), nibh vitae gravida efficitur, dui est sollicitudin augue, vitae mattis ante diam ac elit. Nunc porta urna sed tincidunt iaculis. Phasellus bibendum velit ac nulla finibus, vitae ultricies ipsum ornare. Aliquam erat volutpat.
+![Introducing MJML](/assets/img/blog/blog-test-image.jpg &quot;Introducing MJML&quot;)
 
-![Image alt text](/assets/img/blog/blog-test-image.jpg &quot;Image title&quot;)
+Anyway, those days are (sort of) over thanks to [MJML](https://mjml.io/){:target=&quot;blank&quot;}. Like [Foundation for Emails](https://foundation.zurb.com/emails.html){:target=&quot;blank&quot;} by Foundation, MJML is an email templating language framework that aims to simplify the way you code responsive emails, so you can focus on producing great emails without worrying as much about email client compatibility. Personally, I prefer to use MJML over Foundation for Emails because of its simplicity.
 
-## Why MJML?
+## What Exactly is MJML?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent interdum mauris dolor, eu ultricies neque ornare at. Fusce maximus nec lorem vitae tincidunt. Vivamus placerat finibus tortor at volutpat. Aliquam elit dui, mollis ac tortor ut, commodo finibus nulla.
+It’s a framework that transpiles its own simple, semantic language into production-ready HTML emails. MJML is built in [React](https://reactjs.org/){:target=&quot;blank&quot;}, and like React, utilises reusable components, which makes developing responsive email templates a breeze.
 
-* Proin sagittis pulvinar viverra. In condimentum, nibh vitae gravida
-  efficitur, dui est sollicitudin augue, vitae mattis ante diam ac elit.
-* Nunc porta urna sed tincidunt iaculis. Phasellus bibendum velit ac
-  nulla finibus, vitae ultricies ipsum ornare. Aliquam erat volutpat.
+Here’s an example of a simple MJML column component containing some text:
 
-{:.quote-block}
-[“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent interdum mauris dolor, eu ultricies neque ornare at.”](#){:.quote}{:target=&quot;blank&quot;}
+{:.mjml}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent interdum mauris dolor, eu ultricies neque ornare at. Fusce maximus nec lorem vitae tincidunt. Vivamus placerat finibus tortor at volutpat. Aliquam elit dui, mollis ac tortor ut, commodo finibus nulla.</content><author><name>[{&quot;name&quot;=&gt;&quot;Dan Mountford&quot;}, {&quot;img&quot;=&gt;&quot;dan-thumb.jpg&quot;}]</name></author><summary type="html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent interdum mauris dolor, eu ultricies neque ornare at. Fusce maximus nec lorem vitae tincidunt. Vivamus placerat finibus tortor at volutpat. Aliquam elit dui, mollis ac tortor ut, commodo finibus nulla.</summary></entry><entry><title type="html">Msd Vehicles</title><link href="/portfolio/2017/msd-vehicles/" rel="alternate" type="text/html" title="Msd Vehicles" /><published>2017-12-05T00:00:00+00:00</published><updated>2017-12-05T00:00:00+00:00</updated><id>/portfolio/2017/msd-vehicles</id><content type="html" xml:base="/portfolio/2017/msd-vehicles/">MSD Test</content><author><name></name></author><category term="web-design" /><summary type="html">MSD Test</summary></entry><entry><title type="html">IBM’s New Typeface – IBM Plex</title><link href="/blog/design-news/2017/ibm-plex/" rel="alternate" type="text/html" title="IBM’s New Typeface – IBM Plex" /><published>2017-12-04T15:54:35+00:00</published><updated>2017-12-04T15:54:35+00:00</updated><id>/blog/design-news/2017/ibm-plex</id><content type="html" xml:base="/blog/design-news/2017/ibm-plex/">IBM Plex lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id erat erat. Donec at molestie nulla, vitae placerat nibh. Mauris quis massa venenatis, convallis erat in, sodales eros. Nam rutrum ante odio, et varius mauris.</content><author><name>[{&quot;name&quot;=&gt;&quot;Lewis Booth&quot;}, {&quot;img&quot;=&gt;&quot;lewis-thumb.jpg&quot;}]</name></author><summary type="html">IBM Plex lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id erat erat. Donec at molestie nulla, vitae placerat nibh. Mauris quis massa venenatis, convallis erat in, sodales eros. Nam rutrum ante odio, et varius mauris.</summary></entry><entry><title type="html">Great Bear</title><link href="/portfolio/2017/great-bear/" rel="alternate" type="text/html" title="Great Bear" /><published>2017-12-04T00:00:00+00:00</published><updated>2017-12-04T00:00:00+00:00</updated><id>/portfolio/2017/great-bear</id><content type="html" xml:base="/portfolio/2017/great-bear/">Great Bear Test</content><author><name></name></author><category term="marketing" /><summary type="html">Great Bear Test</summary></entry><entry><title type="html">Build Faster Websites with Pagespeed Insights</title><link href="/blog/tutorials/2017/pagespeed-insights/" rel="alternate" type="text/html" title="Build Faster Websites with Pagespeed Insights" /><published>2017-12-03T15:54:35+00:00</published><updated>2017-12-03T15:54:35+00:00</updated><id>/blog/tutorials/2017/pagespeed-insights</id><content type="html" xml:base="/blog/tutorials/2017/pagespeed-insights/">PageSpeed Insights lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id erat erat. Donec at molestie nulla, vitae placerat nibh. Mauris quis massa venenatis, convallis erat in, sodales eros. Nam rutrum ante odio, et varius mauris.</content><author><name>[{&quot;name&quot;=&gt;&quot;Lewis Booth&quot;}, {&quot;img&quot;=&gt;&quot;lewis-thumb.jpg&quot;}]</name></author><summary type="html">PageSpeed Insights lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id erat erat. Donec at molestie nulla, vitae placerat nibh. Mauris quis massa venenatis, convallis erat in, sodales eros. Nam rutrum ante odio, et varius mauris.</summary></entry><entry><title type="html">Häagen Dazs</title><link href="/portfolio/2017/h%C3%A4agen-dazs/" rel="alternate" type="text/html" title="Häagen Dazs" /><published>2017-12-03T00:00:00+00:00</published><updated>2017-12-03T00:00:00+00:00</updated><id>/portfolio/2017/h%C3%A4agen-dazs</id><content type="html" xml:base="/portfolio/2017/h%C3%A4agen-dazs/">Häagen Dazs Test</content><author><name></name></author><category term="image-production" /><summary type="html">Häagen Dazs Test</summary></entry><entry><title type="html">Adidas</title><link href="/portfolio/2017/adidas/" rel="alternate" type="text/html" title="Adidas" /><published>2017-12-02T00:00:00+00:00</published><updated>2017-12-02T00:00:00+00:00</updated><id>/portfolio/2017/adidas</id><content type="html" xml:base="/portfolio/2017/adidas/">Adidas Test</content><author><name></name></author><category term="image-production" /><summary type="html">Adidas Test</summary></entry><entry><title type="html">Wedgewood Gas</title><link href="/portfolio/2017/wedgewood-gas/" rel="alternate" type="text/html" title="Wedgewood Gas" /><published>2017-12-01T00:00:00+00:00</published><updated>2017-12-01T00:00:00+00:00</updated><id>/portfolio/2017/wedgewood-gas</id><content type="html" xml:base="/portfolio/2017/wedgewood-gas/">Wedgewood Test</content><author><name></name></author><category term="web-design" /><summary type="html">Wedgewood Test</summary></entry><entry><title type="html">Aldi</title><link href="/portfolio/2017/aldi/" rel="alternate" type="text/html" title="Aldi" /><published>2017-11-30T00:00:00+00:00</published><updated>2017-11-30T00:00:00+00:00</updated><id>/portfolio/2017/aldi</id><content type="html" xml:base="/portfolio/2017/aldi/">Adidas Test</content><author><name></name></author><category term="image-production" /><summary type="html">Adidas Test</summary></entry></feed>
+```html
+&lt;mj-column&gt;
+	&lt;mj-text font-size=&quot;20px&quot; color=&quot;#F45E43&quot; font-family=&quot;helvetica&quot; align=&quot;center&quot;&gt;Hello World&lt;/mj-text&gt;
+&lt;/mj-column&gt;
+```
+
+And here's how it looks in HTML, once transpiled:
+
+```html
+&lt;!doctype html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xmlns:v=&quot;urn:schemas-microsoft-com:vml&quot; xmlns:o=&quot;urn:schemas-microsoft-com:office:office&quot;&gt;
+&lt;head&gt;
+  &lt;title&gt;&lt;/title&gt;
+  &lt;!--[if !mso]&gt;&lt;!-- --&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+  &lt;!--&lt;![endif]--&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+  #outlook a { padding: 0; }
+  .ReadMsgBody { width: 100%; }
+  .ExternalClass { width: 100%; }
+  .ExternalClass * { line-height:100%; }
+  body { margin: 0; padding: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+  table, td { border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+  img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; }
+  p { display: block; margin: 13px 0; }
+&lt;/style&gt;
+&lt;!--[if !mso]&gt;&lt;!--&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+  @media only screen and (max-width:480px) {
+    @-ms-viewport { width:320px; }
+    @viewport { width:320px; }
+  }
+&lt;/style&gt;
+&lt;!--&lt;![endif]--&gt;
+&lt;!--[if mso]&gt;
+&lt;xml&gt;
+  &lt;o:OfficeDocumentSettings&gt;
+    &lt;o:AllowPNG/&gt;
+    &lt;o:PixelsPerInch&gt;96&lt;/o:PixelsPerInch&gt;
+  &lt;/o:OfficeDocumentSettings&gt;
+&lt;/xml&gt;
+&lt;![endif]--&gt;
+&lt;!--[if lte mso 11]&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+  .outlook-group-fix {
+    width:100% !important;
+  }
+&lt;/style&gt;
+&lt;![endif]--&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+  @media only screen and (min-width:480px) {
+    .mj-column-per-100 { width:100%!important; }
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;div style=&quot;margin:0px auto;&quot; data-class=&quot;&quot;&gt;&lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; style=&quot;font-size:0px;width:100%;&quot; align=&quot;center&quot; border=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;text-align:center;vertical-align:top;direction:ltr;font-size:0px;padding:20px 0px 0px 0px;&quot;&gt;&lt;!--[if mso | IE]&gt;
+      &lt;table role=&quot;presentation&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;vertical-align:top;width:NaNpx;&quot;&gt;
+      &lt;![endif]--&gt;&lt;div class=&quot;mj-column-per-100 outlook-group-fix&quot; style=&quot;vertical-align:top;display:inline-block;direction:ltr;font-size:13px;text-align:left;width:100%;&quot;&gt;&lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot; border=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;word-wrap:break-word;font-size:0px;padding:10px 25px;&quot; align=&quot;center&quot;&gt;&lt;div style=&quot;cursor:auto;color:#F45E43;font-family:helvetica;font-size:20px;line-height:22px;text-align:center;&quot;&gt;Hello World&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;!--[if mso | IE]&gt;
+      &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      &lt;![endif]--&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+```
+
+As you can see, MJML syntax is simple to read, which makes it easy to learn, and it does all the hard compatibility development work for you.
+
+MJML syntax is saved in a .mjml file, which you can transpile into HTML using MJML’s [online editor](https://mjml.io/try-it-live/){:target=&quot;blank&quot;} or by running it locally. Although it takes a few minutes to set up, I’d recommend running MJML locally because you can then use your own code editor and enhance your workflow with task runners such as [Gulp](https://gulpjs.com/){:target=&quot;blank&quot;}.
+
+## 1. Getting Started with MJML
+
+I’ll guide you through the process of creating a basic responsive email in MJML locally, which involves using using [Node JS](https://nodejs.org/en/){:target=&quot;blank&quot;}, [npm](https://www.npmjs.com/get-npm){:target=&quot;blank&quot;} and your terminal. Don’t worry if you haven’t used Node JS, npm or your terminal before, I’ll guide you through this process. I’m using the Mac installation, but if you’re on Windows, feel free to get in touch with me on [Twitter](https://twitter.com/Dan_Mountford?lang=en){:target=&quot;blank&quot;} if you need some help installing Node JS, npm or MJML on Windows.
+
+## 2. About Node JS and NPM
+
+As you may know, Node JS is the revolutionary JavaScript runtime environment, built with Google’s [V8 engine](https://developers.google.com/v8/){:target=&quot;blank&quot;}, that allows JavaScript to be run server-side. This means you can use Node JS to run JavaScript to carry out server-side and even local tasks to improve our development workflow. Npm, or the Node Package Manager, is used to install and manage Node JS programs, code and code dependencies such as and Gulp Babel.
+
+If you already have Node and npm installed, hooray! Move to the next step. If you’re not sure, open your terminal and type node -v, then hit enter. If you get a version like “v8.1.3” returned, then you have Node installed. Do the same to check if you have npm installed – type npm -v into your terminal, then hit enter. If you get a version back then you also have npm installed. If you don’t have Node and npm installed, listen up.
+
+### 2.1 Installing Node JS and npm
+
+Installing Node JS and npm takes minutes, go to the Node JS download page [here](https://nodejs.org/en/download/current/){:target=&quot;blank&quot;} and click macOS Installer to download. Open up the downloaded package and follow the instructions. Once finished, you should now have Node JS and npm installed – easy!
+
+## 3. Installing and Setting up MJML
+
+Now you’ve got Node JS and npm installed, you’re going to use them to install the MJML framework. First, you need a folder to install and setup our MJML development environment in. Create a new folder on your Desktop and call it `mjml-email`. Once your `mjml-email` folder is on your Desktop, you need to find it in your terminal so you can install MJML inside.
+
+To do this open up your terminal, type the following and hit enter, like so:
+
+```terminal
+$ cd Desktop/mjml-email
+```
+
+Now your terminal directory should look something like this:
+
+```terminal
+Defaults-MacBook-Pro:mjml-email Dan$
+```
+
+Keep your terminal open. If you close it, make sure you’re inside your MJML folder when you reopen it before installing MJML. Now you ready to install MJML, type the following into your terminal and hit enter:
+
+```terminal
+$ npm install mjml
+```
+
+Once you’ve done that, npm will start installing some files – wait until this has finished, it shouldn’t take more than a 30 seconds. If you open up your mjml-email folder, you’ll notice that a folder called node_modules has been installed. This is the modules folder for MJML that npm has kindly installed for you. Once you’ve installed MJML, you want to initiate npm. Type the following and press enter:
+
+```terminal
+$ npm init
+```
+
+npm will now create a package.json file inside your mjml-email folder – this tells node what packages are used within this folder. Because the nodule_modules folder is fairly large, it’s not usually good practice to copy it to other place like a server or Github repo. Instead, you can place your package.json file on your server or in your repo and then run “npm install” from your terminal, which will tell npm to read your package.json file and install the correct node_modules folder.
+
+## 4. Building an Email in MJML
+
+Now we have our development environment, lets create an email using MJML. First, you need to create an MJML file to create our email in. For this tutorial I’m going call the file `example.mjml`. You can simple type `touch example.mjml` (if you closed your terminal, you will need to cd back into your mjml-email folder) in your terminal or open up your code editor and create a new file called `example.mjml` and save it in your mjml-email folder.
+
+Once you have your example.mjml file, open it up in your code editor. For this tutorial, I’m going to use [this cool template](https://mjml.io/try-it-live/templates/real-estate){:target=&quot;blank&quot;} created by [Sven Haustein](http://svenhaustein.de/){:target=&quot;blank&quot;}. Copy the code below and paste it into your email.mjml file:
+
+{:.mjml}
+
+```html
+&lt;mjml&gt;
+  &lt;mj-head&gt;
+    &lt;mj-title&gt;Say hello to RealEstate&lt;/mj-title&gt;
+    &lt;mj-font name=&quot;Alice&quot; href=&quot;https://fonts.googleapis.com/css?family=Alice&quot; /&gt;
+    &lt;mj-font name=&quot;Roboto&quot; href=&quot;https://fonts.googleapis.com/css?family=Roboto:400,700&quot; /&gt;
+    &lt;mj-attributes&gt;
+      &lt;mj-all font-family=&quot;Roboto, Helvetica, Arial, sans-serif&quot; padding=&quot;0&quot; /&gt;
+      &lt;mj-text font-weight=&quot;400&quot; font-size=&quot;14&quot; color=&quot;#000000&quot; line-height=&quot;21px&quot; /&gt;
+    &lt;/mj-attributes&gt;
+  &lt;/mj-head&gt;
+
+  &lt;mj-body&gt;
+    &lt;mj-container background-color=&quot;#EAE8E5&quot;&gt;
+
+      &lt;mj-section padding=&quot;20px 0 0 0&quot;&gt;
+        &lt;mj-column&gt;
+          &lt;mj-image src=&quot;http://nimus.de/share/tpl-realestate/box-head.png&quot; alt=&quot;&quot; align=&quot;center&quot; border=&quot;none&quot; padding=&quot;0&quot;&gt;&lt;/mj-image&gt;
+        &lt;/mj-column&gt;
+      &lt;/mj-section&gt;
+
+      &lt;mj-section padding-top=&quot;40px&quot; background-color=&quot;#FFFFFF&quot;&gt;
+        &lt;mj-column width=&quot;570px&quot;&gt;
+          &lt;mj-text align=&quot;left&quot; padding=&quot;0 20px&quot; color=&quot;#1D83A8&quot; font-size=&quot;36&quot; line-height=&quot;40px&quot; font-family=&quot;Alice, Helvetica, Arial, sans-serif&quot;&gt;
+            Real Estate
+          &lt;/mj-text&gt;
+          &lt;mj-text align=&quot;left&quot; padding=&quot;0 20px&quot;&gt;
+            &lt;strong&gt;&lt;span style=&quot;font-size: 40px;&quot;&gt;⚊&lt;/span&gt;&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;&lt;/mj-text&gt;
+        &lt;/mj-column&gt;
+      &lt;/mj-section&gt;
+
+      &lt;mj-section background-color=&quot;#FFFFFF&quot;&gt;
+        &lt;mj-column width=&quot;300px&quot;&gt;
+          &lt;mj-text align=&quot;left&quot; padding=&quot;0 20px 30px 20px&quot;&gt;
+            &lt;strong&gt;Aliquam lorem ante, dapibus in hasellus viverra nulla&lt;/strong&gt; ut metus varius laoreet. Quisque rutrum lorem dellorus. Aenean imperdiet.
+          &lt;/mj-text&gt;
+        &lt;/mj-column&gt;
+        &lt;mj-column width=&quot;260px&quot;&gt;
+          &lt;mj-image src=&quot;http://nimus.de/share/tpl-realestate/icon-1.png&quot; alt=&quot;&quot; padding-bottom=&quot;30px&quot; width=&quot;260&quot; align=&quot;center&quot; border=&quot;none&quot;&gt;&lt;/mj-image&gt;
+        &lt;/mj-column&gt;
+      &lt;/mj-section&gt;
+
+      &lt;mj-section background-url=&quot;http://nimus.de/share/tpl-realestate/img-1.png&quot; vertical-align=&quot;middle&quot; background-size=&quot;cover&quot; padding=&quot;30px&quot; background-repeat=&quot;no-repeat&quot;&gt;
+        &lt;mj-column vertical-align=&quot;middle&quot; width=&quot;60%&quot;&gt;
+          &lt;mj-text align=&quot;center&quot; padding=&quot;40px 30px&quot; color=&quot;#FFFFFF&quot; font-size=&quot;42px&quot; line-height=&quot;48px&quot; font-family=&quot;Alice, Helvetica, Arial, sans-serif&quot;&gt;
+            Villa Semperin
+          &lt;/mj-text&gt;
+        &lt;/mj-column&gt;
+        &lt;mj-column vertical-align=&quot;middle&quot; width=&quot;40%&quot; background-color=&quot;#FFFFFF&quot;&gt;
+          &lt;mj-image src=&quot;http://nimus.de/share/tpl-realestate/box-top.png&quot; width=&quot;220px&quot; alt=&quot;&quot; align=&quot;center&quot; border=&quot;none&quot;&gt;&lt;/mj-image&gt;
+          &lt;mj-text align=&quot;center&quot; padding=&quot;20px 20px 0 20px&quot; color=&quot;#1D83A8&quot; font-size=&quot;26&quot; line-height=&quot;30px&quot; font-family=&quot;Alice, Helvetica, Arial, sans-serif&quot;&gt;
+            – first offer –
+          &lt;/mj-text&gt;
+          &lt;mj-text align=&quot;center&quot; padding=&quot;10px 20px&quot; font-size=&quot;22&quot; line-height=&quot;30px&quot;&gt;340,000 $&lt;/mj-text&gt;
+          &lt;mj-text align=&quot;center&quot; padding=&quot;0 20px&quot;&gt;Nascetur ridiculus mus. Donec quam felis, ultricies nec&lt;/mj-text&gt;
+          &lt;mj-button background-color=&quot;#F44E3C&quot; color=&quot;white&quot; padding=&quot;20px 20px 30px 20px&quot; border-radius=&quot;20px&quot;&gt;
+            view details
+          &lt;/mj-button&gt;
+        &lt;/mj-column&gt;
+      &lt;/mj-section&gt;
+
+
+      &lt;mj-section padding=&quot;30px&quot; background-color=&quot;#FFFFFF&quot;&gt;
+        &lt;mj-column width=&quot;60%&quot;&gt;
+          &lt;mj-text align=&quot;center&quot; padding-bottom=&quot;20px&quot; font-size=&quot;26&quot; line-height=&quot;30px&quot; font-family=&quot;Alice, Helvetica, Arial, sans-serif&quot;&gt;
+            Lorem Ipsum
+          &lt;/mj-text&gt;
+          &lt;mj-text align=&quot;center&quot; padding=&quot;0 40px&quot;&gt;
+            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Lorem Ipsum
+          &lt;/mj-text&gt;
+          &lt;mj-image src=&quot;http://nimus.de/share/tpl-realestate/icon-2.png&quot; alt=&quot;&quot; padding=&quot;30px 0 10px 0&quot; width=&quot;50&quot; align=&quot;center&quot; border=&quot;none&quot;&gt;&lt;/mj-image&gt;
+        &lt;/mj-column&gt;
+        &lt;mj-column width=&quot;40%&quot; background-color=&quot;#FFFFFF&quot;&gt;
+          &lt;mj-image src=&quot;http://nimus.de/share/tpl-realestate/img-2.png&quot; width=&quot;216px&quot; alt=&quot;&quot; align=&quot;center&quot; border=&quot;none&quot;&gt;&lt;/mj-image&gt;
+        &lt;/mj-column&gt;
+      &lt;/mj-section&gt;
+
+      &lt;mj-section padding=&quot;20px&quot; background-color=&quot;#FFFFFF&quot;&gt;
+        &lt;mj-column width=&quot;100%&quot;&gt;
+          &lt;mj-image src=&quot;http://nimus.de/share/tpl-realestate/symbol-1.png&quot; alt=&quot;&quot; width=&quot;292px&quot; align=&quot;left&quot; border=&quot;none&quot;&gt;&lt;/mj-image&gt;
+        &lt;/mj-column&gt;
+      &lt;/mj-section&gt;
+
+      &lt;mj-section padding=&quot;0 20px&quot; background-color=&quot;#FFFFFF&quot;&gt;
+        &lt;mj-column&gt;
+          &lt;mj-text align=&quot;center&quot; font-size=&quot;26&quot; line-height=&quot;30px&quot; font-family=&quot;Alice, Helvetica, Arial, sans-serif&quot;&gt;
+            Lorem Ipsum
+          &lt;/mj-text&gt;
+          &lt;mj-divider width=&quot;20px&quot; padding=&quot;20px 0&quot; border-width=&quot;2px&quot; border-color=&quot;#000000&quot; /&gt;
+          &lt;mj-text align=&quot;center&quot; padding=&quot;0 40px&quot;&gt;
+            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Lorem Ipsum
+          &lt;/mj-text&gt;
+          &lt;mj-button background-color=&quot;#F44E3C&quot; color=&quot;white&quot; padding=&quot;20px 20px 10px 20px&quot; border-radius=&quot;20px&quot;&gt;
+            Call to action
+          &lt;/mj-button&gt;
+        &lt;/mj-column&gt;
+      &lt;/mj-section&gt;
+
+      &lt;mj-section padding=&quot;20px&quot; background-color=&quot;#FFFFFF&quot;&gt;
+        &lt;mj-column width=&quot;100%&quot;&gt;
+          &lt;mj-image src=&quot;http://nimus.de/share/tpl-realestate/symbol-2.png&quot; alt=&quot;&quot; width=&quot;213px&quot; align=&quot;right&quot; border=&quot;none&quot;&gt;&lt;/mj-image&gt;
+        &lt;/mj-column&gt;
+      &lt;/mj-section&gt;
+
+
+      &lt;mj-section padding=&quot;0 30px 30px&quot; background-color=&quot;#FFFFFF&quot;&gt;
+        &lt;mj-column width=&quot;55%&quot;&gt;
+          &lt;mj-image src=&quot;http://nimus.de/share/tpl-realestate/img-3.png&quot; width=&quot;280px&quot; padding-bottom=&quot;20px&quot; alt=&quot;&quot; align=&quot;center&quot; border=&quot;none&quot;&gt;&lt;/mj-image&gt;
+        &lt;/mj-column&gt;
+        &lt;mj-column width=&quot;45%&quot; background-color=&quot;#FFFFFF&quot;&gt;
+          &lt;mj-text align=&quot;center&quot; padding-bottom=&quot;20px&quot; font-size=&quot;26&quot; line-height=&quot;30px&quot; font-family=&quot;Alice, Helvetica, Arial, sans-serif&quot;&gt;
+            Lorem Ipsum
+          &lt;/mj-text&gt;
+          &lt;mj-text align=&quot;center&quot; padding=&quot;0 40px&quot;&gt;
+            Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
+          &lt;/mj-text&gt;
+          &lt;mj-image src=&quot;http://nimus.de/share/tpl-realestate/icon-3.png&quot; alt=&quot;&quot; padding=&quot;30px 0 10px 0&quot; width=&quot;50&quot; align=&quot;center&quot; border=&quot;none&quot;&gt;&lt;/mj-image&gt;
+        &lt;/mj-column&gt;
+      &lt;/mj-section&gt;
+
+      &lt;mj-section padding=&quot;0 20px&quot; background-color=&quot;#FFFFFF&quot;&gt;
+        &lt;mj-column&gt;
+          &lt;mj-text align=&quot;center&quot; font-size=&quot;26&quot; line-height=&quot;30px&quot; font-family=&quot;Alice, Helvetica, Arial, sans-serif&quot;&gt;
+            Nullam dictum felis eu pede
+          &lt;/mj-text&gt;
+          &lt;mj-divider width=&quot;20px&quot; padding=&quot;20px 0&quot; border-width=&quot;2px&quot; border-color=&quot;#000000&quot; /&gt;
+        &lt;/mj-column&gt;
+      &lt;/mj-section&gt;
+
+      &lt;mj-section padding=&quot;0 20px 30px&quot; background-color=&quot;#FFFFFF&quot;&gt;
+        &lt;mj-column width=&quot;33%&quot;&gt;
+          &lt;mj-text align=&quot;left&quot; padding=&quot;0 15px 15px&quot;&gt;
+            &lt;strong&gt;Aliquam lorem ante,&lt;/strong&gt; dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Lorem Ipsum
+          &lt;/mj-text&gt;
+        &lt;/mj-column&gt;
+        &lt;mj-column width=&quot;34%&quot;&gt;
+          &lt;mj-text align=&quot;left&quot; padding=&quot;0 15px 15px&quot;&gt;
+            &lt;strong&gt;Phasellus viverra null aliquam lorem ante&lt;/strong&gt;, dapibus in, viverra quis, feugiat a, tellus ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Lorem Ipsum
+          &lt;/mj-text&gt;
+        &lt;/mj-column&gt;
+        &lt;mj-column width=&quot;33%&quot;&gt;
+          &lt;mj-text align=&quot;left&quot; padding=&quot;0 15px 15px&quot;&gt;
+            &lt;strong&gt;Quisque rutrum.&lt;/strong&gt; Aenean imperdiet viverra nulla ut metus varius laoreet. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Lorem Ipsum
+          &lt;/mj-text&gt;
+        &lt;/mj-column&gt;
+      &lt;/mj-section&gt;
+
+      &lt;mj-section background-url=&quot;http://nimus.de/share/tpl-realestate/img-4.png&quot; vertical-align=&quot;middle&quot; background-size=&quot;cover&quot; padding=&quot;30px&quot; background-repeat=&quot;no-repeat&quot;&gt;
+        &lt;mj-column vertical-align=&quot;middle&quot; width=&quot;40%&quot; background-color=&quot;#FFFFFF&quot;&gt;
+          &lt;mj-image src=&quot;http://nimus.de/share/tpl-realestate/box-top.png&quot; width=&quot;220px&quot; alt=&quot;&quot; align=&quot;center&quot; border=&quot;none&quot;&gt;&lt;/mj-image&gt;
+          &lt;mj-text align=&quot;center&quot; padding=&quot;20px 20px 0 20px&quot; color=&quot;#1D83A8&quot; font-size=&quot;26&quot; line-height=&quot;30px&quot; font-family=&quot;Alice, Helvetica, Arial, sans-serif&quot;&gt;
+            – 2. offer –
+          &lt;/mj-text&gt;
+          &lt;mj-text align=&quot;center&quot; padding=&quot;10px 20px&quot; font-size=&quot;22&quot; line-height=&quot;30px&quot;&gt;198,700 $&lt;/mj-text&gt;
+          &lt;mj-text align=&quot;center&quot; padding=&quot;0 20px&quot;&gt;Donec quam felis, ultricies Nascetur ridiculus mus.&lt;/mj-text&gt;
+          &lt;mj-button background-color=&quot;#F44E3C&quot; color=&quot;white&quot; padding=&quot;20px 20px 30px 20px&quot; border-radius=&quot;20px&quot;&gt;
+            view details
+          &lt;/mj-button&gt;
+        &lt;/mj-column&gt;
+        &lt;mj-column vertical-align=&quot;middle&quot; width=&quot;60%&quot;&gt;
+          &lt;mj-text align=&quot;center&quot; padding=&quot;40px 30px&quot; color=&quot;#FFFFFF&quot; font-size=&quot;42px&quot; line-height=&quot;48px&quot; font-family=&quot;Alice, Helvetica, Arial, sans-serif&quot;&gt;
+            Window House 23
+          &lt;/mj-text&gt;
+        &lt;/mj-column&gt;
+      &lt;/mj-section&gt;
+
+      &lt;mj-section padding=&quot;40px 20px&quot; background-color=&quot;#FFFFFF&quot;&gt;
+        &lt;mj-column width=&quot;100%&quot;&gt;
+          &lt;mj-image src=&quot;http://nimus.de/share/tpl-realestate/icon-1.png&quot; alt=&quot;&quot; width=&quot;130px&quot; align=&quot;center&quot; border=&quot;none&quot;&gt;&lt;/mj-image&gt;
+        &lt;/mj-column&gt;
+      &lt;/mj-section&gt;
+
+      &lt;mj-section padding=&quot;10px 0 20px 0&quot;&gt;
+        &lt;mj-column&gt;
+          &lt;mj-text align=&quot;center&quot; color=&quot;#9B9B9B&quot; font-size=&quot;11px&quot;&gt;&lt;a href=&quot;#&quot; style=&quot;color: #9B9B9B;&quot;&gt;Unsubscribe&lt;/a&gt; from this newsletter&lt;br&gt;Icon made by Freepik from &lt;a href=&quot;http://www.flaticon.com&quot; target=&quot;_blank&quot; style=&quot;color: #9B9B9B; text-decoration: none;&quot;&gt;www.flaticon.com&lt;/a&gt;&lt;br&gt;
+            &lt;a href=&quot;http://svenhaustein.de&quot; style=&quot;color: #9B9B9B; text-decoration:none;&quot;&gt;Made by svenhaustein.de&lt;/a&gt;
+          &lt;/mj-text&gt;
+        &lt;/mj-column&gt;
+      &lt;/mj-section&gt;
+
+    &lt;/mj-container&gt;
+  &lt;/mj-body&gt;
+&lt;/mjml&gt;
+```
+
+As you can see, the MJML syntax is fairly semantic and easy to read, in comparison to a typical responsive email in html. I’m not going to go through the different MJML components in this tutorial, but do take a look at them [here](https://mjml.io/components){:target=&quot;blank&quot;} to see the awesome customisation MJML offers out of the box (mobile menus and carousels! 😍 😍 ).
+
+Save your example.mjml file and go back to your terminal. Now you can convert this MJML syntax into HTML.
+
+![We 😍 mjml](/assets/img/blog/blog-test-image.jpg &quot;less &lt;!--[if gte mso 9]&gt;s more &lt;mjml-carousel&gt;s&quot;)
+
+## 5. Transpiling our Email into HTML
+
+If you’ve closed your terminal, you will need to cd into your miml-email file again (step 3). Once your’e inside your miml-email file, you will need to type the following and press enter:
+
+```terminal
+export PATH=&quot;$PATH:./node_modules/.bin&quot;
+```
+
+This basically tells your terminal where to look for the MJML command files. If you ever close your terminal, you will have to retype this again before using and MJML commands or your terminal won’t be able to find the files required. To avoid this issue, you can add “export PATH=&quot;$PATH:./node_modules/.bin” to your .bashrc file. This method is discussed [here](https://unix.stackexchange.com/questions/260941/add-path-to-bashrc){:target=&quot;blank&quot;}. To find your .bashrc file, go to your Desktop, hold shift + cmd and press “H” – this will open your user root folder. Then hold shift + cmd and press “.” – this will show all your hidden files and your .bashrc should be one of them. If you still can’t find it, you can definitely find it [here](http://www.letmegooglethat.com/?q=how+to+find+bashrc+file){:target=&quot;blank&quot;}. If you modify your .bashrc file, you need to log out and in again or type `source ~/.bashrc` into your terminal to make it effective.
+
+Now try typing `mjml -V` into your terminal and hit. You should get a version returned like so:
+
+```terminal
+$ mjml -V
+3.3.5
+```
+
+If you get `-bash: mjml: command not found` returned, try reinstalling MJML: Delete your node_modules folder and type `npm install mjml` into your terminal. Once you’ve done this, try repeating the previous steps.
+
+Now you can use miml commands, you will transpile our mjml file into HTML. Open your termina, type the following and hit enter:
+
+```terminal
+$ mjml example.mjml
+```
+
+Now open up your miml-email folder and you’ll notice there’s a file called `example.html` in there. Open this file up in your browser and you’ll see that MJML has converted your example.mjml file into a responsive email. Even better, open up the example.html file in your code editor and you’ll notice that all those pesky inline styles, conditional comments and nested tables have been generated by MJML. All hail MJML,The Saviour! Now try this: Type the following into your terminal and hit enter:
+
+```terminal
+$ mjml -m example.mjml
+```
+
+This will now tell MJML to transpile a minified HTML email, ready for testing. There’s multiple commands to help you with your email development workflow built in with MJML, take a look [here](https://mjml.io/documentation/#mjml-guides){:target=&quot;blank&quot;}. Another cool command is -w:
+
+```terminal
+$ mjml -w example.mjml
+```
+
+This tells MJML to watch your example.mjml file for changes, so when you save your file, it automatically generates your HTML. This is nice because you can work on your email in your code editor, save, and refresh your HTML file in your browser to see any changes. MJML also works really well with Gulp, which you can use to enhance your workflow further with automatic browser refreshing etc.
+
+## Final Words
+
+I hope this tutorial has helped you to see the good side of responsive email development. As always, I’d highly recommend testing all your emails before sending either with [Litmus](https://litmus.com/){:target=&quot;blank&quot;} or Litmus’s free email sending tool [PutsMail](https://putsmail.com/){:target=&quot;blank&quot;}. Enjoy your email development adventure and please share this article!</content><author><name>[{&quot;name&quot;=&gt;&quot;Dan Mountford&quot;}, {&quot;img&quot;=&gt;&quot;dan-thumb.jpg&quot;}]</name></author><summary type="html">If any of you, like myself, have designed and developed bespoke responsive emails on a regular basis you’ll understand the difficulties in trying to get an engaging, aesthetically pleasing responsive email to render correctly in every major email client, including those pesky legacy email clients – yes we’re all looking at you Outlook, you pile of 💩 .</summary></entry><entry><title type="html">Msd Vehicles</title><link href="/portfolio/2017/msd-vehicles/" rel="alternate" type="text/html" title="Msd Vehicles" /><published>2017-12-05T00:00:00+00:00</published><updated>2017-12-05T00:00:00+00:00</updated><id>/portfolio/2017/msd-vehicles</id><content type="html" xml:base="/portfolio/2017/msd-vehicles/">MSD Test</content><author><name></name></author><category term="web-design" /><summary type="html">MSD Test</summary></entry><entry><title type="html">IBM’s New Typeface – IBM Plex</title><link href="/blog/design-news/2017/ibm-plex/" rel="alternate" type="text/html" title="IBM’s New Typeface – IBM Plex" /><published>2017-12-04T15:54:35+00:00</published><updated>2017-12-04T15:54:35+00:00</updated><id>/blog/design-news/2017/ibm-plex</id><content type="html" xml:base="/blog/design-news/2017/ibm-plex/">IBM Plex lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id erat erat. Donec at molestie nulla, vitae placerat nibh. Mauris quis massa venenatis, convallis erat in, sodales eros. Nam rutrum ante odio, et varius mauris.</content><author><name>[{&quot;name&quot;=&gt;&quot;Lewis Booth&quot;}, {&quot;img&quot;=&gt;&quot;lewis-thumb.jpg&quot;}]</name></author><summary type="html">IBM Plex lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id erat erat. Donec at molestie nulla, vitae placerat nibh. Mauris quis massa venenatis, convallis erat in, sodales eros. Nam rutrum ante odio, et varius mauris.</summary></entry><entry><title type="html">Great Bear Tattoo – Image Production</title><link href="/portfolio/2017/great-bear/" rel="alternate" type="text/html" title="Great Bear Tattoo – Image Production" /><published>2017-12-04T00:00:00+00:00</published><updated>2017-12-04T00:00:00+00:00</updated><id>/portfolio/2017/great-bear</id><content type="html" xml:base="/portfolio/2017/great-bear/"></content><author><name></name></author><category term="image-production" /><category term="marketing" /><summary type="html"></summary></entry><entry><title type="html">Build Faster Websites with Pagespeed Insights</title><link href="/blog/tutorials/2017/pagespeed-insights/" rel="alternate" type="text/html" title="Build Faster Websites with Pagespeed Insights" /><published>2017-12-03T15:54:35+00:00</published><updated>2017-12-03T15:54:35+00:00</updated><id>/blog/tutorials/2017/pagespeed-insights</id><content type="html" xml:base="/blog/tutorials/2017/pagespeed-insights/">PageSpeed Insights lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id erat erat. Donec at molestie nulla, vitae placerat nibh. Mauris quis massa venenatis, convallis erat in, sodales eros. Nam rutrum ante odio, et varius mauris.</content><author><name>[{&quot;name&quot;=&gt;&quot;Lewis Booth&quot;}, {&quot;img&quot;=&gt;&quot;lewis-thumb.jpg&quot;}]</name></author><summary type="html">PageSpeed Insights lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id erat erat. Donec at molestie nulla, vitae placerat nibh. Mauris quis massa venenatis, convallis erat in, sodales eros. Nam rutrum ante odio, et varius mauris.</summary></entry><entry><title type="html">Häagen Dazs</title><link href="/portfolio/2017/h%C3%A4agen-dazs/" rel="alternate" type="text/html" title="Häagen Dazs" /><published>2017-12-03T00:00:00+00:00</published><updated>2017-12-03T00:00:00+00:00</updated><id>/portfolio/2017/h%C3%A4agen-dazs</id><content type="html" xml:base="/portfolio/2017/h%C3%A4agen-dazs/">Häagen Dazs Test</content><author><name></name></author><category term="image-production" /><summary type="html">Häagen Dazs Test</summary></entry><entry><title type="html">Adidas</title><link href="/portfolio/2017/adidas/" rel="alternate" type="text/html" title="Adidas" /><published>2017-12-02T00:00:00+00:00</published><updated>2017-12-02T00:00:00+00:00</updated><id>/portfolio/2017/adidas</id><content type="html" xml:base="/portfolio/2017/adidas/">Adidas Test</content><author><name></name></author><category term="image-production" /><summary type="html">Adidas Test</summary></entry><entry><title type="html">Wedgewood Plumbing and Heating – Web Design</title><link href="/portfolio/2017/wedgewood-gas/" rel="alternate" type="text/html" title="Wedgewood Plumbing and Heating – Web Design" /><published>2017-12-01T00:00:00+00:00</published><updated>2017-12-01T00:00:00+00:00</updated><id>/portfolio/2017/wedgewood-gas</id><content type="html" xml:base="/portfolio/2017/wedgewood-gas/"></content><author><name></name></author><category term="web-design" /><category term="marketing" /><summary type="html"></summary></entry><entry><title type="html">Aldi</title><link href="/portfolio/2017/aldi/" rel="alternate" type="text/html" title="Aldi" /><published>2017-11-30T00:00:00+00:00</published><updated>2017-11-30T00:00:00+00:00</updated><id>/portfolio/2017/aldi</id><content type="html" xml:base="/portfolio/2017/aldi/">Adidas Test</content><author><name></name></author><category term="image-production" /><summary type="html">Adidas Test</summary></entry></feed>

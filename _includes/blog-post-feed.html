@@ -1,0 +1,25 @@
+<section class="blog-feed post-blog-feed pl">
+    <div class="container">
+        <div class="line-break"></div>
+        <div class="blog-feed-title">
+            <h2>More Posts&nbsp;
+                <br class="show-600">in {{ page.categories[1] | replace: "-", " " | capitalize }}</h2>
+            <a href="/blog/" class="text-link">
+                <span>All Posts</span>
+                <span>
+                    <img src="/assets/img/arrow-pink.svg">
+                </span>
+            </a>
+        </div>
+        <div class="blog-feed-container">
+            {% for post in site.categories.blog limit:3 %}{% if post.url != page.url %}{% if post.categories contains page.categories[1]
+            %}
+            <div class="blog-feed-post">
+                <a class="blog-feed-post-wrapper" href="{{ post.url }}"></a>
+                <img class="ms" src="/assets/img/blog/{{ post.img }}" alt="{{ post.header }}">
+                <a class="blog-tag format-tag">{{ post.categories[1] | replace: "-", " " }}</a>
+            </div>
+            {% endif %}{% endif %}{% endfor %}
+        </div>
+    </div>
+</section>

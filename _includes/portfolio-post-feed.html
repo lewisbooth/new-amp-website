@@ -1,0 +1,55 @@
+<section class="service-cta">
+    <div class="container">
+        <h2>Ready to work with us?</h2>
+        <a class="button-1" href="/contact/">
+            <span>Start a Project</span>
+            <span>
+                <img class="social-arrow" src="/assets/img/arrow-right.svg">
+            </span>
+        </a>
+        <div class="service-cta-details">
+            <h3>Feel free to contact us:</h3>
+            <p>enquiries@amp.studio</p>
+            <p>01782 853973</p>
+        </div>
+        <div class="line-break mm"></div>
+    </div>
+</section>
+
+<section class="post-blog-feed post-portfolio-feed pl">
+    <div class="container">
+        <div class="blog-feed-title">
+            <h2>More Posts&nbsp;
+                <br class="show-600">in
+                <span>{{ page.tags[0] | replace: "-", " " }}</span>
+            </h2>
+            <a href="/our-work/" class="text-link">
+                <span>All Projects</span>
+                <span>
+                    <img src="/assets/img/arrow-pink.svg">
+                </span>
+            </a>
+        </div>
+        <div class="latest-work-container">
+            {% for post in site.categories.portfolio limit:2 %}{% if post.url != page.url %}{% if post.tags[0] contains page.tags[0]
+            %}
+            <div class="latest-work-post">
+                <a class="latest-work-post-wrapper-top" href="{{ post.url }}"></a>
+                <div class="latest-work-post-hover hide-1200">
+                    <div class="latest-work-post-hover-title">
+                        <h2>{{ post.header }}</h2>
+                        <p class="main-nav-link">{{ post.subtitle }}</p>
+                    </div>
+                    <div class="latest-work-post-arrow">
+                        <span>
+                            <img src="/assets/img/arrow-right.svg">
+                        </span>
+                    </div>
+                    <a class="latest-work-post-wrapper-bottom"></a>
+                </div>
+                <img src="/assets/img/portfolio/{{ post.img }}" alt="{{ post.title }}">
+            </div>
+            {% endif %}{% endif %}{% endfor %}
+        </div>
+    </div>
+</section>
