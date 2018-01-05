@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% include head.html %}
+
+<body>
+    {% include navigation.html %}
+
+    <section class="header-3 bg render-bg header-fade">
+    </section>
+
+    <section class="portfolio-description pl">
+        <span class="scroll-down-button">
+            <img src="/assets/img/arrow-white.svg">
+        </span>
+        <div class="container">
+            <div class="portfolio-description-text">
+                <h2>Architectural Renders</h2>
+                <p>We love CGI imagery and animation at AMP, and architectural visualisation is some of our favourite work with
+                    over 25 years’ experience in the field. Here’s a collection of our best imagery for various clients and
+                    use cases. Check out our Image Production page for a deeper dive into how we create CGI imagery and how
+                    we can help your business.</p>
+            </div>
+            <div class="portfolio-description-services">
+                <div class="portfolio-description-services-text">
+                    <h3>Services Provided</h3>
+                    <p>Image Production • Animation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="render-videos pl last">
+        <div class="video-container video-controls">
+            <video loop>
+                <source src="/assets/img/videos/render-office.mp4" type="video/mp4">
+            </video>
+            <button title="Toggle Play"></button>
+        </div>
+        <div class="video-container video-controls">
+            <video loop>
+                <source src="/assets/img/videos/render-lounge.mp4" type="video/mp4">
+            </video>
+            <button title="Toggle Play"></button>
+        </div>
+        <div class="video-container video-controls">
+            <video loop>
+                <source src="/assets/img/videos/render-bathroom.mp4" type="video/mp4">
+            </video>
+            <button title="Toggle Play"></button>
+        </div>
+        <div class="video-container video-controls">
+            <video loop>
+                <source src="/assets/img/videos/render-aldi.mp4" type="video/mp4">
+            </video>
+            <button title="Toggle Play"></button>
+        </div>
+        <div class="video-container">
+            <img src="/assets/img/portfolio/renders/render-image.jpg">
+        </div>
+        <div class="video-container video-controls">
+            <video loop>
+                <source src="/assets/img/videos/render-adidas.mp4" type="video/mp4">
+            </video>
+            <button title="Toggle Play"></button>
+        </div>
+    </section>
+
+    <section>
+        <div class="container"></div>
+    </section>
+
+    {% include portfolio-post-feed.html %} {% include footer.html %}
+
+    <script async src="/assets/js/navigation-min.js"></script>
+    <script async src="/assets/js/header-min.js"></script>
+    <script async src="/assets/js/video-play-min.js"></script>
+
+</body>
+
+</html>

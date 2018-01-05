@@ -111,7 +111,7 @@ I’ll guide you through the process of creating a basic responsive email in MJM
 
 As you may know, Node JS is the revolutionary JavaScript runtime environment, built with Google’s [V8 engine](https://developers.google.com/v8/){:target="blank"}, that allows JavaScript to be run server-side. This means you can use Node JS to run JavaScript to carry out server-side and even local tasks to improve our development workflow. Npm, or the Node Package Manager, is used to install and manage Node JS programs, code and code dependencies such as and Gulp Babel.
 
-If you already have Node and npm installed, hooray! Move to the next step. If you’re not sure, open your terminal and type node -v, then hit enter. If you get a version like “v8.1.3” returned, then you have Node installed. Do the same to check if you have npm installed – type npm -v into your terminal, then hit enter. If you get a version back then you also have npm installed. If you don’t have Node and npm installed, listen up.
+If you already have Node and npm installed, hooray! Move to the next step. If you’re not sure, open your terminal and type node -v, then hit enter. If you get a version like `v8.1.3` returned, then you have Node installed. Do the same to check if you have npm installed – type npm -v into your terminal, then hit enter. If you get a version back then you also have npm installed. If you don’t have Node and npm installed, listen up.
 
 ### 2.1 Installing Node JS and npm
 
@@ -145,13 +145,13 @@ Once you’ve done that, npm will start installing some files – wait until thi
 $ npm init
 ```
 
-npm will now create a package.json file inside your mjml-email folder – this tells node what packages are used within this folder. Because the nodule_modules folder is fairly large, it’s not usually good practice to copy it to other place like a server or Github repo. Instead, you can place your package.json file on your server or in your repo and then run “npm install” from your terminal, which will tell npm to read your package.json file and install the correct node_modules folder.
+npm will now create a package.json file inside your mjml-email folder – this tells node what packages are used within this folder. Because the nodule_modules folder is fairly large, it’s not usually good practice to copy it to other place like a server or Github repo. Instead, you can place your package.json file on your server or in your repo and then run `npm install` from your terminal, which will tell npm to read your package.json file and install the correct node_modules folder.
 
 ## 4. Building an Email in MJML
 
 Now we have our development environment, lets create an email using MJML. First, you need to create an MJML file to create our email in. For this tutorial I’m going call the file `example.mjml`. You can simple type `touch example.mjml` (if you closed your terminal, you will need to cd back into your mjml-email folder) in your terminal or open up your code editor and create a new file called `example.mjml` and save it in your mjml-email folder.
 
-Once you have your example.mjml file, open it up in your code editor. For this tutorial, I’m going to use [this cool template](https://mjml.io/try-it-live/templates/real-estate){:target="blank"} created by [Sven Haustein](http://svenhaustein.de/){:target="blank"}. Copy the code below and paste it into your email.mjml file:
+Once you have your example.mjml file, open it up in your code editor. For this tutorial, I’m going to use [this cool template](https://mjml.io/try-it-live/templates/real-estate/){:target="blank"} created by [Sven Haustein](http://svenhaustein.de/){:target="blank"}. Copy the code below and paste it into your email.mjml file:
 
 {:.mjml}
 
@@ -356,7 +356,7 @@ export PATH="$PATH:./node_modules/.bin"
 
 This basically tells your terminal where to look for the MJML command files. If you ever close your terminal, you will have to retype this again before using and MJML commands or your terminal won’t be able to find the files required. To avoid this issue, you can add “export PATH="$PATH:./node_modules/.bin” to your .bashrc file. This method is discussed [here](https://unix.stackexchange.com/questions/260941/add-path-to-bashrc){:target="blank"}. To find your .bashrc file, go to your Desktop, hold shift + cmd and press “H” – this will open your user root folder. Then hold shift + cmd and press “.” – this will show all your hidden files and your .bashrc should be one of them. If you still can’t find it, you can definitely find it [here](http://www.letmegooglethat.com/?q=how+to+find+bashrc+file){:target="blank"}. If you modify your .bashrc file, you need to log out and in again or type `source ~/.bashrc` into your terminal to make it effective.
 
-Now try typing `mjml -V` into your terminal and hit. You should get a version returned like so:
+Now try typing `mjml -V` into your terminal and hit enter. You should get a version returned like so:
 
 ```terminal
 $ mjml -V

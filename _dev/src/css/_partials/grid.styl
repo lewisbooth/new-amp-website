@@ -45,6 +45,13 @@ breakpoint375 = 375px
     padding gutter
     margin 0 auto
 
+.video-container
+    position relative
+    box-sizing border-box
+    max-width breakpoint1400
+    width calc(100% - 40px)
+    margin 0 auto
+
 .line-break
     border-bottom 1px solid lineGrey
     width 100%
@@ -55,7 +62,7 @@ breakpoint375 = 375px
 
 @media screen and (max-width: breakpoint1400)
 
-    .container
+    .container, .video-container
         max-width breakpoint1200
 
 
@@ -70,7 +77,7 @@ breakpoint375 = 375px
     html, body
         font-size 9px
 
-    .container
+    .container, .video-container
         max-width breakpoint960
 
     /* Vertical margin and padding */
@@ -104,7 +111,7 @@ breakpoint375 = 375px
     .hide-960
         display none !important
 
-    .container
+    .container, .video-container
         max-width 100%
 
 

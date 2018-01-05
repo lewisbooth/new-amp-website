@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% include head.html %}
+
+<body>
+    {% include navigation.html %}
+
+    <section class="header-3 bg mb-living-bg header-fade">
+    </section>
+
+    <section class="portfolio-description pl">
+        <span class="scroll-down-button">
+            <img src="/assets/img/arrow-white.svg">
+        </span>
+        <div class="container">
+            <div class="portfolio-description-text">
+                <h2>MB Living</h2>
+                <p>An independent property development company in Staffordshire, MB Living needed a simple two-page website
+                    to display a gallery of their work and a list of current builds. The website was designed to offer clear
+                    information and large imagery to showcase their high quality developments.</p>
+            </div>
+            <div class="portfolio-description-services">
+                <div class="portfolio-description-services-text">
+                    <h3>Services Provided</h3>
+                    <p>Web Design</p>
+                </div>
+                <a class="button-1" href="https://mbliving.co.uk/" target="_blank">
+                    <span>Visit Site</span>
+                    <span>
+                        <img src="/assets/img/arrow-right.svg">
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-images">
+        <div class="portfolio-images-row">
+            <div class="portfolio-images-image">
+                <img class="standard" src="/assets/img/portfolio/mb-living/mb-living-image-1.jpg" alt="MB Living website">
+            </div>
+            <div class="portfolio-images-image">
+                <img class="standard" src="/assets/img/portfolio/mb-living/mb-living-image-2.jpg" alt="MB Living website">
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-description pl">
+        <div class="container">
+            <div class="portfolio-description-text">
+                <h2>Speed &amp; Optimisation</h2>
+                <p>Even on small projects, we don’t cut corners – the MB Living website is tested for readability and usability
+                    on a wide range of devices and achieves a rare perfect 100 score on Google PageSpeed due to our modern
+                    tooling and focus on fast loading times, placing it in the top 0.5% of websites for optimisation. The
+                    site loads as quickly as possible when out and about on construction sites, and Google search rankings
+                    are improved due to a lower bounce rate.</p>
+            </div>
+            <div class="portfolio-description-stats-wrapper">
+                <div class="portfolio-description-stats">
+                    <p>
+                        <span>100 / 100</span>
+                        <br>PageSpeed Insights</p>
+                    <p>
+                        <span>
+                            &#60; 300ms</span>
+                        <br>Load Time</p>
+                    <p>
+                        <span>1 Week</span>
+                        <br>Turnaround</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include portfolio-post-feed.html %} {% include footer.html %}
+
+    <script async src="/assets/js/navigation-min.js"></script>
+    <script async src="/assets/js/header-min.js"></script>
+    <script async src="/assets/js/portfolio-min.js"></script>
+
+</body>
+
+</html>

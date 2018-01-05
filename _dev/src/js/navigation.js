@@ -22,7 +22,7 @@ if (window.innerWidth > 960 && !animating) {
           navItems[i].classList.remove("active");
         }
       }
-    }, 50)
+    }, 20)
   );
 }
 

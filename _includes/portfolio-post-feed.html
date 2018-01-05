@@ -31,8 +31,7 @@
             </a>
         </div>
         <div class="latest-work-container">
-            {% for post in site.categories.portfolio limit:2 %}{% if post.url != page.url %}{% if post.tags[0] contains page.tags[0]
-            %}
+            {% for post in site.categories.portfolio %}{% if post.url != page.url %}{% if post.tags[0] contains page.tags[0] %}
             <div class="latest-work-post">
                 <a class="latest-work-post-wrapper-top" href="{{ post.url }}"></a>
                 <div class="latest-work-post-hover hide-1200">
