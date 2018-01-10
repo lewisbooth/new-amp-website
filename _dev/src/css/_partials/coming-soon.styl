@@ -1,0 +1,135 @@
+.project-stats
+    background #ffffff
+
+    .container
+        display flex
+
+    img
+        max-width 670px
+
+    &-bars
+        display flex
+        justify-content center
+        align-items center
+        width 100%
+
+    &-bars-wrapper
+        width calc(100% - 20em)
+        display flex
+        flex-direction column
+
+    &-bar
+        position relative
+        width 100%
+        margin-top 4em
+
+        .bar
+            width 100%
+            overflow hidden
+            margin-top 1em
+            display flex
+            align-items center
+
+            &-progress
+                background lightGrey
+                height 10px
+                margin-right 2em
+                flex-basis 80%
+
+                span
+                    display block
+                    width 100%
+                    transform translateX(-100%)
+                    transition all 1s ease-in
+                    height 10px
+                    background ampPink
+
+        h3
+            font-family IBMPlexSerifSemiBold
+            line-height 1
+
+.project-info
+    background lightGrey
+    position relative
+    z-index 1
+
+    .container
+        display flex
+        justify-content space-around
+
+    &-block
+        display flex
+        flex-direction column
+        align-items center
+        text-align center
+
+        h2
+            margin-bottom 1em
+
+        .time
+            display inline-block
+            background ampPink
+            color #ffffff
+            padding 1em
+            margin-right 1em
+
+.coming-soon-feed
+    background #ffffff
+
+    h2
+        color darkGrey
+        line-height 1.2
+
+.meeting-25, .design-25, .sign-25
+
+    span.active
+        transform translateX(-75%)
+
+.meeting-50, .design-50, .sign-50
+
+    span.active
+        transform translateX(-50%)
+
+.meeting-75, .design-75, .sign-75
+
+    span.active
+        transform translateX(-25%)
+
+.meeting-100, .design-100, .sign-100
+
+    span.active
+        transform translateX(0)
+
+
+@media screen and (max-width: breakpoint1400)
+
+    .project-stats
+
+        &-bars-wrapper
+            width 100%
+            margin-left 6em
+
+
+@media screen and (max-width: breakpoint1200)
+
+    .project-stats
+
+        .container
+            flex-direction column
+            align-items center
+
+        &-bars
+            max-width 670px
+            margin-top 6em
+
+        &-bars-wrapper
+            margin-left 0
+
+
+@media screen and (max-width: breakpoint600)
+
+    .project-stats
+        padding-top 20px
+
+        &-bars
+            margin-top 4.5em

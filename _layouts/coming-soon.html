@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% include head.html %}
+
+<body>
+    {% include navigation.html %}
+
+    <section class="header-2 pl">
+        <div class="container">
+            <span class="sub-header">{{ page.header }}</span>
+            <h1>Project in progress.</h1>
+        </div>
+    </section>
+
+    <section class="project-stats pl">
+        <div class="container">
+            <img src="/assets/img/portfolio/{{ page.img }}" alt="{{ page.header }}">
+            <div class="project-stats-bars">
+                <div class="project-stats-bars-wrapper">
+                    <div class="project-stats-bars-text">
+                        <h2>The Stats</h2>
+                        <p>Here's our progress with this project:</p>
+                    </div>
+                    <div class="project-stats-bar meeting-{{ page.meeting }}">
+                        <h4>Initial Meeting</h4>
+                        <div class="bar">
+                            <div class="bar-progress">
+                                <span></span>
+                            </div>
+                            <h3 data-range="{{ page.meeting }}">0%</h3>
+                        </div>
+                    </div>
+                    <div class="project-stats-bar design-{{ page.production }}">
+                        <h4>Production</h4>
+                        <div class="bar">
+                            <div class="bar-progress">
+                                <span></span>
+                            </div>
+                            <h3 data-range="{{ page.production }}">0%</h3>
+                        </div>
+                    </div>
+                    <div class="project-stats-bar sign-{{ page.sign }}">
+                        <h4>Sign Off</h4>
+                        <div class="bar">
+                            <div class="bar-progress">
+                                <span></span>
+                            </div>
+                            <h3 data-range="{{ page.sign }}">0%</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-info pm">
+        <div class="container">
+            <div class="project-info-block">
+                <h2>Want to know more
+                    <br class="show-600">&nbsp;about this project?</h2>
+                <a class="button-1" href="/services/brand/">
+                    <span>Contact Us</span>
+                    <span>
+                        <img src="/assets/img/arrow-right.svg">
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    {% include coming-soon-post-feed.html %} {% include footer.html %}
+
+    <script async src=" /assets/js/navigation-min.js "></script>
+    <script async src="/assets/js/video-play-min.js "></script>
+
+    <script async>
+
+        var statsContainer = document.querySelector(".project-stats-bars").getBoundingClientRect();
+        var statsContainerPosition = statsContainer.top - (window.innerHeight / 2);
+        var progressBars = document.querySelectorAll(".project-stats-bar");
+        var triggered = false
+
+        console.log(statsContainerPosition)
+
+        window.addEventListener("scroll", (e) => {
+            if (triggered || progressBars.length === 0) return;
+            if (window.pageYOffset >= statsContainerPosition) {
+                triggerBars()
+            }
+        });
+
+        function triggerBars() {
+            triggered = true;
+            for (var i = 0; i < progressBars.length; i++) {
+                var bar = progressBars[i].querySelector("span");
+                var label = progressBars[i].querySelector("h3");
+
+                // Trigger progress bar
+                bar.classList.add("active");
+
+                countUp(label, 1000)
+            }
+        }
+
+        function countUp(e, duration) {
+            var framerate = 1000 / 60
+            var range = e.dataset.range;
+            var frames = duration / framerate
+            var step = range / frames
+            var count = 0
+            if (range === NaN) {
+                console.log("Invalid input for count sequence")
+                return
+            }
+            var counter = setInterval(function () {
+                if (count >= range) {
+                    clearInterval(counter)
+                    return;
+                }
+                count += step
+                e.innerHTML = Math.floor(count) + "%"
+            }, framerate)
+        }
+
+    </script>
+
+</body>
+
+</html>

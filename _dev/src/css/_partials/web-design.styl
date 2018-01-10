@@ -5,6 +5,9 @@
         max-width 680px
         margin 0 auto
 
+        &:nth-child(n+2)
+            margin-top 1.5em
+
 .service-page-services
     background #ffffff
     position relative
@@ -47,7 +50,6 @@
 
 .stack
     background #ffffff
-    padding-bottom 0
 
     h2
         margin-bottom 3rem
@@ -62,8 +64,12 @@
         width calc((100% - 100px) / 6)
         margin 10px 0
 
+.pb-none
+    padding-bottom 0
+    
 .promises
     background #ffffff
+
 
     h2
         margin-bottom 3rem
@@ -151,6 +157,10 @@
 
         .latest-work-post-hover-title
             margin-right 2rem
+
+// For brand page
+.pt0
+    padding-top 0
 
 
 @media screen and (max-width: breakpoint1400)

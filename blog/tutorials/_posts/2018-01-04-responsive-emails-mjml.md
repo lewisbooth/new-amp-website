@@ -351,7 +351,7 @@ Save your example.mjml file and go back to your terminal. Now you can convert th
 If you’ve closed your terminal, you will need to cd into your miml-email file again (step 3). Once your’e inside your miml-email file, you will need to type the following and press enter:
 
 ```terminal
-export PATH="$PATH:./node_modules/.bin"
+$ export PATH="$PATH:./node_modules/.bin"
 ```
 
 This basically tells your terminal where to look for the MJML command files. If you ever close your terminal, you will have to retype this again before using and MJML commands or your terminal won’t be able to find the files required. To avoid this issue, you can add “export PATH="$PATH:./node_modules/.bin” to your .bashrc file. This method is discussed [here](https://unix.stackexchange.com/questions/260941/add-path-to-bashrc){:target="blank"}. To find your .bashrc file, go to your Desktop, hold shift + cmd and press “H” – this will open your user root folder. Then hold shift + cmd and press “.” – this will show all your hidden files and your .bashrc should be one of them. If you still can’t find it, you can definitely find it [here](http://www.letmegooglethat.com/?q=how+to+find+bashrc+file){:target="blank"}. If you modify your .bashrc file, you need to log out and in again or type `source ~/.bashrc` into your terminal to make it effective.

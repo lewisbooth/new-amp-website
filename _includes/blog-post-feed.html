@@ -12,7 +12,7 @@
             </a>
         </div>
         <div class="blog-feed-container">
-            {% for post in site.categories.blog limit:3 %}{% if post.url != page.url %}{% if post.categories contains page.categories[1]
+            {% for post in site.categories.blog %}{% if post.url != page.url %}{% if post.categories contains page.categories[1] limit:3
             %}
             <div class="blog-feed-post">
                 <a class="blog-feed-post-wrapper" href="{{ post.url }}"></a>

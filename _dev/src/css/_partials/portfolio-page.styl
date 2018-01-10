@@ -145,6 +145,13 @@
             border-bottom 10px solid transparent
             border-left 16px solid #ffffff
 
+.gallery-images
+    background #ffffff
+
+    &-row
+        display flex
+        justify-content center
+
 
 @media screen and (min-width: breakpoint1200)
 
@@ -258,6 +265,11 @@
 
             img
                 max-width 680px
+
+    .gallery-images
+
+        &-row
+            flex-direction column
 
 
 @media screen and (max-width: breakpoint800)

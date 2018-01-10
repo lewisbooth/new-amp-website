@@ -14,7 +14,6 @@
         left 0
         background darkGrey
         z-index -1
-        opacity 0.8
 
 
 .about-bg
@@ -22,6 +21,21 @@
 
 .web-design-bg
     background-image url('/assets/img/web-design-bg.jpg')
+
+    .bg-overlay
+        opacity 0.8
+
+.image-production-bg
+    background-image url('/assets/img/image-production-bg.jpg')
+
+    .bg-overlay
+        opacity 0.5
+
+.brand-bg
+    background-image url('/assets/img/brand-bg.jpg')
+
+    .bg-overlay
+        opacity 0.7
 
 /* Portfolio page backgrounds */
 .wedgewood-bg
@@ -54,6 +68,15 @@
         
 
 @media screen and (max-width: breakpoint600)
+
+    .web-design-bg
+        background-image url('/assets/img/web-design-bg-600.jpg')
+
+    .image-production-bg
+        background-image url('/assets/img/image-production-bg-600.jpg')
+
+    .brand-bg
+        background-image url('/assets/img/brand-bg-600.jpg')
 
     /* Portfolio page backgrounds */
     .wedgewood-bg

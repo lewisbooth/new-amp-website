@@ -19,8 +19,8 @@
 <section class="post-blog-feed post-portfolio-feed pl">
     <div class="container">
         <div class="blog-feed-title">
-            <h2>More Posts&nbsp;
-                <br class="show-600">in
+            <h2>More in&nbsp;
+                <br class="show-600">
                 <span>{{ page.tags[0] | replace: "-", " " }}</span>
             </h2>
             <a href="/our-work/" class="text-link">
@@ -31,7 +31,8 @@
             </a>
         </div>
         <div class="latest-work-container">
-            {% for post in site.categories.portfolio %}{% if post.url != page.url %}{% if post.tags[0] contains page.tags[0] %}
+            {% for post in site.categories.portfolio %}{% if post.url != page.url %}{% if post.tags[0] contains page.tags[0] limit:2
+            %}
             <div class="latest-work-post">
                 <a class="latest-work-post-wrapper-top" href="{{ post.url }}"></a>
                 <div class="latest-work-post-hover hide-1200">
