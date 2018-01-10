@@ -17,7 +17,7 @@ description: Learn how to build pixel-perfect responsive emails with MJML.
 {:.first}
 If any of you, like myself, have designed and developed bespoke responsive emails on a regular basis you’ll understand the difficulties in trying to get an engaging, aesthetically pleasing responsive email to render correctly in every major email client, including those pesky legacy email clients – yes we’re all looking at you Outlook, you pile of 💩 .
 
-![Introducing MJML](/assets/img/blog/blog-test-image.jpg "Introducing MJML")
+![Introducing MJML](/assets/img/blog/responsive-emails-mjml-image-1.svg "Introducing MJML")
 
 Anyway, those days are (sort of) over thanks to [MJML](https://mjml.io/){:target="blank"}. Like [Foundation for Emails](https://foundation.zurb.com/emails.html){:target="blank"} by Foundation, MJML is an email templating language framework that aims to simplify the way you code responsive emails, so you can focus on producing great emails without worrying as much about email client compatibility. Personally, I prefer to use MJML over Foundation for Emails because of its simplicity.
 
@@ -343,8 +343,6 @@ Once you have your example.mjml file, open it up in your code editor. For this t
 As you can see, the MJML syntax is fairly semantic and easy to read, in comparison to a typical responsive email in html. I’m not going to go through the different MJML components in this tutorial, but do take a look at them [here](https://mjml.io/components){:target="blank"} to see the awesome customisation MJML offers out of the box (mobile menus and carousels! 😍 😍 ).
 
 Save your example.mjml file and go back to your terminal. Now you can convert this MJML syntax into HTML.
-
-![We 😍 mjml](/assets/img/blog/blog-test-image.jpg "less <!--[if gte mso 9]>s more <mjml-carousel>s")
 
 ## 5. Transpiling our Email into HTML
 
