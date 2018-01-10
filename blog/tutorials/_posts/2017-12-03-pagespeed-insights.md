@@ -7,11 +7,11 @@ author:
 img: pagespeed-insights.svg
 
 # First paragraph for post description
-context: PageSpeed Insights lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id erat erat. Donec at molestie nulla, vitae placerat nibh. Mauris quis massa venenatis, convallis erat in, sodales eros. Nam rutrum ante odio, et varius mauris.
+context: Post in progress, coming very soon!
 
 # Meta Information
 title: Build Faster Websites with Pagespeed Insights
 description:
 ---
 
-PageSpeed Insights lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id erat erat. Donec at molestie nulla, vitae placerat nibh. Mauris quis massa venenatis, convallis erat in, sodales eros. Nam rutrum ante odio, et varius mauris.
+## Post in progress, coming very soon!

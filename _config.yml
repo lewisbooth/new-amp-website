@@ -73,3 +73,8 @@ exclude: ["_dev",
 assets:
    sources:
      -_assets/fonts
+
+# Sitemap Generator
+url: "https://amp.studio" # the base hostname & protocol for your site
+plugins:
+  - jekyll-sitemap
