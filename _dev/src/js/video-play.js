@@ -4,6 +4,10 @@ for (var i = 0; i < videoControls.length; i++) {
   const video = videoControls[i].querySelector("video");
   const button = videoControls[i].querySelector("button");
 
+  if (window.innerWidth < 600) {
+    video.pause();
+  }
+
   function togglePlay() {
     if (video.paused) {
       video.play();
