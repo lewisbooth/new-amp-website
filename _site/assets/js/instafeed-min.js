@@ -1,4 +1,14 @@
 "use strict";
+function instagramResize() {
+  function t() {
+    for (var t = 0; t < e.length; t++) {
+      var o = e[0].offsetWidth;
+      e[t].style.height = o + "px";
+    }
+  }
+  var e = document.querySelectorAll(".social-feed-instagram-post");
+  t();
+}
 (function() {
   var t;
   (t = (function() {
@@ -78,10 +88,10 @@
           w,
           b,
           k,
+          v,
           _,
           I,
           E,
-          v,
           x,
           N,
           B,
@@ -157,8 +167,8 @@
         ) {
           if (
             ((u = t.data),
-            (v = parseInt(this.options.limit, 10)),
-            null != this.options.limit && u.length > v && (u = u.slice(0, v)),
+            (E = parseInt(this.options.limit, 10)),
+            null != this.options.limit && u.length > E && (u = u.slice(0, E)),
             (s = document.createDocumentFragment()),
             null != this.options.filter &&
               "function" == typeof this.options.filter &&
@@ -168,7 +178,7 @@
           ) {
             for (
               a = "", T = document.createElement("div"), c = 0, k = u.length;
-              c < k;
+              k > c;
               c++
             ) {
               if (
@@ -182,7 +192,7 @@
                 new Error(r));
               (m = "square"),
                 (g = p.width) > (f = p.height) && (m = "landscape"),
-                g < f && (m = "portrait"),
+                f > g && (m = "portrait"),
                 (h = p.url),
                 window.location.protocol.indexOf("http") >= 0 &&
                   !this.options.useHttp &&
@@ -204,13 +214,13 @@
             }
             for (
               T.innerHTML = a, n = [], i = 0, o = T.childNodes.length;
-              i < o;
+              o > i;
 
             )
               n.push(T.childNodes[i]), (i += 1);
-            for (w = 0, _ = n.length; w < _; w++) (E = n[w]), s.appendChild(E);
+            for (w = 0, v = n.length; v > w; w++) (I = n[w]), s.appendChild(I);
           } else
-            for (b = 0, I = u.length; b < I; b++) {
+            for (b = 0, _ = u.length; _ > b; b++) {
               if (
                 ((l = u[b]),
                 (d = document.createElement("img")),
@@ -290,9 +300,10 @@
         }
         return (
           (o = t + "/" + e),
-          null != this.options.accessToken
-            ? (o += "?access_token=" + this.options.accessToken)
-            : (o += "?client_id=" + this.options.clientId),
+          (o +=
+            null != this.options.accessToken
+              ? "?access_token=" + this.options.accessToken
+              : "?client_id=" + this.options.clientId),
           null != this.options.limit && (o += "&count=" + this.options.limit),
           (o += "&callback=instafeedCache" + this.unique + ".parse")
         );
@@ -337,7 +348,7 @@
             return (
               (n = this._getObjectProperty(t, e)),
               (r = this._getObjectProperty(i, e)),
-              o ? (n > r ? 1 : -1) : n < r ? 1 : -1
+              o ? (n > r ? 1 : -1) : r > n ? 1 : -1
             );
           }),
           t.sort(i.bind(this)),
@@ -349,11 +360,11 @@
         for (
           o = [],
             i = function(t) {
-              if (e(t)) return o.push(t);
+              return e(t) ? o.push(t) : void 0;
             },
             n = 0,
             s = t.length;
-          n < s;
+          s > n;
           n++
         )
           (r = t[n]), i(r);
@@ -378,7 +389,7 @@ var loadInsta = document
   .getBoundingClientRect();
 var triggered = false;
 
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll", function() {
   if (triggered) {
     return;
   }
@@ -398,19 +409,6 @@ window.addEventListener("scroll", () => {
       template:
         "<a class='social-feed-instagram-post' href={{link}} target=_blank style=\"background-image: url({{image}}); background-size: cover; background-position: center;\"/>"
     });
-    feed.run();
-
-    function instagramResize() {
-      var instaPosts = document.querySelectorAll(".social-feed-instagram-post");
-      function makeSquare() {
-        for (var i = 0; i < instaPosts.length; i++) {
-          var width = instaPosts[0].offsetWidth;
-          instaPosts[i].style.height = width + "px";
-        }
-      }
-      makeSquare();
-    }
-
-    window.addEventListener("resize", instagramResize);
+    feed.run(), window.addEventListener("resize", instagramResize);
   }
 });

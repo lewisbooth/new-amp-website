@@ -59,6 +59,11 @@ gulp.task("compile-scripts", () => {
     .pipe(gulp.dest("./"));
 });
 
+// Distribute JS to includes
+gulp.task("distjs", () => {
+  return gulp.src(dist + "/js/*").pipe(gulp.dest("_includes/"));
+});
+
 // CSS Task
 gulp.task("compile-stylus", () => {
   var plugins = [
@@ -72,6 +77,11 @@ gulp.task("compile-stylus", () => {
     .pipe(postcss(plugins))
     .pipe(rename({ dirname: dist + "/css" }))
     .pipe(gulp.dest("./"));
+});
+
+// Distribute CSS to includes
+gulp.task("distcss", () => {
+  return gulp.src(dist + "/css/*").pipe(gulp.dest("_includes/"));
 });
 
 // Build Jekyll
@@ -99,8 +109,8 @@ gulp.task("server", () => {
 // Watch files
 gulp.task("watch", () => {
   gulp.watch(paths.html, ["compile-html"]);
-  gulp.watch(paths.js, ["compile-scripts"]);
-  gulp.watch("./_dev/src/css/**/*.styl", ["compile-stylus"]);
+  gulp.watch(paths.js, ["compile-scripts", "distjs"]);
+  gulp.watch("./_dev/src/css/**/*.styl", ["compile-stylus", "distcss"]);
   gulp.watch(paths.jekyll, ["build-jekyll"]);
   gulp.watch(["./_site/assets/*"]).on("change", browserSync.reload);
 });

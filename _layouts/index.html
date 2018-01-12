@@ -251,11 +251,11 @@
 
     {% include footer.html %}
 
-    <script async src="/assets/js/navigation-min.js"></script>
-    <script async src="/assets/js/header-min.js"></script>
-    <script async src="/assets/js/instafeed-min.js"></script>
-    <script async src="/assets/js/twitterapi-min.js"></script>
-    <script async src="/assets/js/video-play-min.js"></script>
+    <script>{% include navigation-min.js %}</script>
+    <script>{% include header-min.js %}</script>
+    <script>{% include video-play-min.js %}</script>
+    {% include instafeed.html %}
+    {% include twitter-api.html %}
 
 </body>
 

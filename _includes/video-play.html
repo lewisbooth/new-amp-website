@@ -1,0 +1,3 @@
+<script>
+    "use strict";for(var videoControls=document.querySelectorAll(".video-controls"),_loop=function(){function e(){t.paused?t.play():t.pause()}function o(){var e=this.paused?"visible":"hidden";n.style.visibility=e}var t=videoControls[i].querySelector("video"),n=videoControls[i].querySelector("button");t.addEventListener("click",e),t.addEventListener("play",o),t.addEventListener("pause",o),n.addEventListener("click",e)},i=0;i<videoControls.length;i++)_loop();
+</script>
