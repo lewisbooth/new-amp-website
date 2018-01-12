@@ -12,4 +12,5 @@ img: adidas.jpg
 # Meta Information
 title: Architectural Renders – Image Production
 description: Architectural Renders for various global brands, by AMP Studio.
+og-image: renders.jpg
 ---

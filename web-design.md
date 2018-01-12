@@ -6,4 +6,5 @@ permalink: /blog/web-design/
 # Meta Information
 title: Web Design
 description: All things web design – News, tutorials and ideas.
+og-image: blog-web-design.png
 ---

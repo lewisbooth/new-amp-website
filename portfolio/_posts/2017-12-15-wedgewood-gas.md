@@ -13,4 +13,5 @@ img: wedgewood.jpg
 # Meta Information
 title: Wedgewood Plumbing and Heating – Web Design
 description: A web design and marketing project for Wedgewood Plumbing and Heating, Stoke-on-Trent.
+og-image: wedgewood.jpg
 ---

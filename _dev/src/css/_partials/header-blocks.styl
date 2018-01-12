@@ -19,27 +19,28 @@
     &-title
         animation fadeInUp 1.2s ease-out
 
+    .header-video-button
+        display none
+
 .header-2
-    display flex
-    align-items center
-    justify-content center
     animation fadeIn 1s ease-in-out forwards
 
     h1, span
-        display block
         text-align center
         margin-bottom 0
+        display block
         animation fadeInUp 1.2s ease-out
 
 .header-3
     height calc(100vh - 13em - 165px)
     min-height 600px
     max-height 800px
-    animation fadeIn 1s ease-in-out
+    animation fadeInDelay 1s ease-in-out
 
 #header-image
     position fixed
     top 0
+    left 0
     height calc(100vh - 13em)
     min-width 100%
     min-height 665px
@@ -142,6 +143,7 @@
         height 300px
         min-height auto
         max-height auto
+        z-index 1
 
         #header-image
             position relative
@@ -158,10 +160,15 @@
             top 50%
             left 50%
             transform translate(-50%, -50%)
+            // absolute positioned animation text fix animation
+            animation fadeInUpAlt 1.2s ease-out
             width 100%
 
             h1, .sub-header
                 text-align center
+
+        .header-video-button
+            display flex
 
     /* scroll down button */
     .scroll-down-button

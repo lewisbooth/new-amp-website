@@ -13,4 +13,5 @@ img: great-bear.jpg
 # Meta Information
 title: Great Bear Tattoo – Image Production
 description: A photography and video project for Great Bear Tattoo, Stoke-on-Trent.
+og-image: great-bear.jpg
 ---

@@ -11,7 +11,8 @@ context: Post in progress, coming very soon!
 
 # Meta Information
 title: Build Faster Websites with Pagespeed Insights
-description:
+description: Learn how to build faster websites with Google's PageSpeed Insights.
+og-image: pagespeed-insights.png
 ---
 
 ## Post in progress, coming very soon!

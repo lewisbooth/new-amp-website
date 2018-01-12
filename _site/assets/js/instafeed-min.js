@@ -372,31 +372,45 @@
       return t;
     });
 }.call(this));
-var feed = new Instafeed({
-  get: "user",
-  after: function() {
-    instagramResize();
-  },
-  userId: "5657939093",
-  clientId: "c1caeb14786a4227bc4ab5a2c4fb657b",
-  accessToken: "5657939093.c1caeb1.f93d91f84d594f8ab865462a35deb7c2",
-  resolution: "low_resolution",
-  sortBy: "most-recent",
-  limit: "6",
-  template:
-    "<a class='social-feed-instagram-post' href={{link}} target=_blank style=\"background-image: url({{image}}); background-size: cover; background-position: center;\"/>"
-});
-feed.run();
 
-function instagramResize() {
-  var instaPosts = document.querySelectorAll(".social-feed-instagram-post");
-  function makeSquare() {
-    for (var i = 0; i < instaPosts.length; i++) {
-      var width = instaPosts[0].offsetWidth;
-      instaPosts[i].style.height = width + "px";
-    }
+var loadInsta = document
+  .querySelector(".social-feed-instagram")
+  .getBoundingClientRect();
+var triggered = false;
+
+window.addEventListener("scroll", () => {
+  if (triggered) {
+    return;
   }
-  makeSquare();
-}
+  if (window.pageYOffset > loadInsta.top - window.innerHeight && !triggered) {
+    triggered = true;
+    var feed = new Instafeed({
+      get: "user",
+      after: function() {
+        instagramResize();
+      },
+      userId: "5657939093",
+      clientId: "c1caeb14786a4227bc4ab5a2c4fb657b",
+      accessToken: "5657939093.c1caeb1.f93d91f84d594f8ab865462a35deb7c2",
+      resolution: "low_resolution",
+      sortBy: "most-recent",
+      limit: "6",
+      template:
+        "<a class='social-feed-instagram-post' href={{link}} target=_blank style=\"background-image: url({{image}}); background-size: cover; background-position: center;\"/>"
+    });
+    feed.run();
 
-window.addEventListener("resize", instagramResize);
+    function instagramResize() {
+      var instaPosts = document.querySelectorAll(".social-feed-instagram-post");
+      function makeSquare() {
+        for (var i = 0; i < instaPosts.length; i++) {
+          var width = instaPosts[0].offsetWidth;
+          instaPosts[i].style.height = width + "px";
+        }
+      }
+      makeSquare();
+    }
+
+    window.addEventListener("resize", instagramResize);
+  }
+});

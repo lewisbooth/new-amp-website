@@ -83,7 +83,7 @@
 
         console.log(statsContainerPosition)
 
-        window.addEventListener("scroll", (e) => {
+        window.addEventListener("scroll", function (e) {
             if (triggered || progressBars.length === 0) return;
             if (window.pageYOffset >= statsContainerPosition) {
                 triggerBars()

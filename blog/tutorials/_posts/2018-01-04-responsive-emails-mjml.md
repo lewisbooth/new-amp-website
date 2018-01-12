@@ -12,6 +12,7 @@ context: If any of you, like myself, have designed and developed bespoke respons
 # Meta Information
 title: Building Responsive Emails with MJML
 description: Learn how to build pixel-perfect responsive emails with MJML.
+og-image: mjml.png
 ---
 
 {:.first}
