@@ -108,7 +108,7 @@ MJML syntax is saved in a .mjml file, which you can transpile into HTML using MJ
 
 I’ll guide you through the process of creating a basic responsive email in MJML locally, which involves using using [Node JS](https://nodejs.org/en/){:target="blank"}, [npm](https://www.npmjs.com/get-npm){:target="blank"} and your terminal. Don’t worry if you haven’t used Node JS, npm or your terminal before, I’ll guide you through this process. I’m using the Mac installation, but if you’re on Windows, feel free to get in touch with me on [Twitter](https://twitter.com/Dan_Mountford?lang=en){:target="blank"} if you need some help installing Node JS, npm or MJML on Windows.
 
-## 2. About Node JS and NPM
+## 2. About Node JS and npm
 
 As you may know, Node JS is the revolutionary JavaScript runtime environment, built with Google’s [V8 engine](https://developers.google.com/v8/){:target="blank"}, that allows JavaScript to be run server-side. This means you can use Node JS to run JavaScript to carry out server-side and even local tasks to improve our development workflow. Npm, or the Node Package Manager, is used to install and manage Node JS programs, code and code dependencies such as and Gulp Babel.
 
