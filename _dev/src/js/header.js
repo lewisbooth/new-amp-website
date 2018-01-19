@@ -1,4 +1,4 @@
-// Fix IE jumpy fixed backgorund
+// Fix IE jumpy fixed background
 
 if (
   navigator.userAgent.match(/Trident\/7\./) ||
