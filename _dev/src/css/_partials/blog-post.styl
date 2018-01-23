@@ -9,6 +9,9 @@ body
         flex-direction column
         align-items center
 
+    h1
+        max-width 800px
+
     &-author
         display inline-flex
         align-items center
@@ -44,6 +47,12 @@ body
     h3
         font-family IBMPlexSerifSemiBold
         font-size 2.2rem
+        margin-bottom -2rem
+
+    h4
+        font-family IBMPlexSerifSemiBold
+        font-size 1.8rem
+        margin-bottom -2rem
 
     li
         color greyMedium
@@ -65,16 +74,13 @@ body
     li:nth-child(n+2)
         margin-top 1rem
 
-    h2:nth-child(n+2)
+    h2:nth-child(n+2), h3:nth-child(n+2)
         margin-top 5rem
 
-    h3:nth-child(n+2)
-        margin-top 5rem
-
-    p:nth-child(n+2)
+    p:nth-child(n+2), h4:nth-child(n+2)
         margin-top 3rem
 
-    p a
+    p a, li a
         color ampPink
         font-family IBMPlexSerifSemiBold
         transition all .2s ease-in-out
@@ -88,11 +94,20 @@ body
         background lightGrey
         text-align center
         margin 5rem 0
+        position relative
 
         p
             text-align center
 
-    blockquote a
+        a.quote-wrapper
+            position absolute
+            width 100%
+            height 100%
+            top 0
+            left 0
+            border-bottom none !important
+
+    blockquote a:last-child
         font-family IBMPlexSerifRegular
         font-size 2.5rem
         line-height 1.5
@@ -104,7 +119,7 @@ body
         -ms-user-select auto
         user-select auto
 
-    blockquote a:after
+    blockquote a:last-child:after
         background-image url("/assets/img/tweet-this.svg")
         background-size 123px 21px
         width 123px
@@ -211,15 +226,24 @@ body
         transition all .2s ease-in-out
         border-bottom 1px solid rgba(0,0,0,0)
 
+.source
+    margin-top -2em !important
+    font-size 1.5rem
+
 
 
 @media screen and (min-width: breakpoint1200)
 
     .post-content, .post-blog-feed
 
-        p a:hover
+        p a:hover, li a:hover
             border-bottom 1px solid ampPink
 
+        blockquote p a.quote-wrapper:hover
+            border-bottom none
+
+        blockquote p a.quote-wrapper:hover + a
+            border-bottom 1px solid ampPink
 
 @media screen and (max-width: breakpoint600)
 
