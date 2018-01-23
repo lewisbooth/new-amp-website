@@ -12,7 +12,7 @@ context: Most digital marketing companies spend weeks of effort and thousands of
 # Meta Information
 title: Why Slow Websites Lose Customers, And How To Fix Them
 description: Learn how to build faster websites with this tutorial from AMP Studio, Digital Marketing Agency, Stoke-on-Trent.
-og-image: pagespeed-insights.png
+og-image: pagespeed.png
 ---
 
 {:.first}
