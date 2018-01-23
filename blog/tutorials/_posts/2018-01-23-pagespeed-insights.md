@@ -15,6 +15,7 @@ description: Learn how to build faster websites with this tutorial from AMP Stud
 og-image: pagespeed-insights.png
 ---
 
+{:.first}
 Most digital marketing companies spend weeks of effort and thousands of pounds on paid search campaigns, generating SEO strategies, posting on social media and building landing pages to squeeze out a few percent more conversions.
 
 All of these things are worthwhile, but often overlook a core problem that’s easy to fix and makes a drastic impact on revenue — your website’s loading speed!
