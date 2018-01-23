@@ -32,9 +32,10 @@
         align-items center
         justify-content center
         padding 20px 6em
+        box-sizing border-box
         
         img
-            max-width 320px
+            width 320px
             margin auto 0
 
     &-post-image-wrapper
@@ -115,6 +116,14 @@
             padding 20px 4em
 
 
+@media screen and (max-width: breakpoint960)
+
+    .blog
+
+        &-post-content
+            padding 4em
+
+
 @media screen and (max-width: breakpoint800)
 
     .blog
@@ -130,6 +139,8 @@
 
             img
                 margin 6em 0
+                width auto
+                max-width 320px
 
         &-post-content
             padding 6em 20px

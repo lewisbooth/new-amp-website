@@ -3,7 +3,7 @@ header: 'Building responsive emails with MJML.'
 date: 2018-01-04 09:00:00 +0000
 author:
     - name: Dan Mountford
-    - img: dan-thumb.jpg
+    - img: dan-thumb1.jpg
 img: mjml.svg
 
 # First paragraph for post description

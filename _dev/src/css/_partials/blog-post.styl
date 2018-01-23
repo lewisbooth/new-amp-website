@@ -107,26 +107,26 @@ body
             left 0
             border-bottom none !important
 
-    blockquote a:last-child
-        font-family IBMPlexSerifRegular
-        font-size 2.5rem
-        line-height 1.5
-        color greyMedium
-        transition all .2s ease-in-out
-        -webkit-user-select auto
-        -khtml-user-select auto
-        -moz-user-select auto
-        -ms-user-select auto
-        user-select auto
+        a:last-child
+            font-family IBMPlexSerifRegular
+            font-size 2.5rem
+            line-height 1.5
+            color greyMedium
+            transition all .2s ease-in-out
+            -webkit-user-select auto
+            -khtml-user-select auto
+            -moz-user-select auto
+            -ms-user-select auto
+            user-select auto
 
-    blockquote a:last-child:after
-        background-image url("/assets/img/tweet-this.svg")
-        background-size 123px 21px
-        width 123px
-        height 21px
-        content ""
-        display block
-        margin 3rem auto 0
+            &:after
+                background-image url("/assets/img/tweet-this.svg")
+                background-size 123px 21px
+                width 123px
+                height 21px
+                content ""
+                display block
+                margin 3rem auto 0
 
     div.highlight
         color #f8f8f2
@@ -245,28 +245,6 @@ body
         blockquote p a.quote-wrapper:hover + a
             border-bottom 1px solid ampPink
 
-@media screen and (max-width: breakpoint600)
-
-    .post-content
-
-        p.quote-block
-            padding 1.5em 2em 2em
-
-        a.quote
-            font-size 2.2rem
-
-        a.quote:after
-            background-image url("/assets/img/tweet-this.svg")
-            background-size 82px 14px
-            width 82px
-            height 14px
-            margin-top 2rem
-
-    .post-blog-feed
-
-        .blog-feed-title
-            align-items center
-
 
 @media screen and (max-width: 700px)
 
@@ -278,6 +256,28 @@ body
             p
                 margin-right 0
                 margin-bottom 0.5em
+
+
+@media screen and (max-width: breakpoint600)
+
+    .post-content
+
+        blockquote
+            padding 2.5rem 3rem
+
+            a:last-child
+                font-size 2.2rem
+
+                &:after
+                    margin-top 2rem
+                    background-size 94px 16px
+                    width 94px
+                    height 16px
+
+    .post-blog-feed
+
+        .blog-feed-title
+            align-items center
 
 
 @media screen and (max-width: 500px)

@@ -3,8 +3,8 @@ header: 'Why slow websites lose customers, and how to fix them.'
 date: 2018-01-23 10:00:00 +0000
 author:
     - name: Lewis Booth
-    - img: lewis-thumb.jpg
-img: pagespeed-insights.svg
+    - img: lewis-thumb1.jpg
+img: pagespeed.svg
 
 # First paragraph for post description
 context: Most digital marketing companies spend weeks of effort and thousands of pounds on paid search campaigns, generating SEO strategies, posting on social media and building landing pages to squeeze out a few percent more conversions.
