@@ -5,12 +5,12 @@
 <body>
     {% include navigation.html %}
     <section class="header-1">
-        <div id="header-image" class="index-header header-fade video-controls">
+        {% comment %} <div id="header-image" class="index-header header-fade video-controls">
             <video poster="/assets/img/loop-animation-poster.jpg" autoplay loop muted>
                 <source src="/assets/img/videos/loop-animation.mp4" type="video/mp4">
             </video>
             <button class="header-video-button" title="Toggle Play"></button>
-        </div>
+        </div> {% endcomment %}
     </section>
 
     <section class="latest-work">
@@ -252,7 +252,7 @@
     {% include footer.html %}
 
     <script>{% include navigation-min.js %}</script>
-    {% comment %} <script>{% include header-min.js %}</script> {% endcomment %}
+    <script>{% include header-min.js %}</script>
     <script>{% include video-play-min.js %}</script>
     {% include instafeed.html %}
     <script>{% include twitterapi-min.js %}</script>
