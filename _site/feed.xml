@@ -1,269 +1,285 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://amp.studio/feed.xml" rel="self" type="application/atom+xml" /><link href="https://amp.studio/" rel="alternate" type="text/html" /><updated>2018-01-24T17:26:57+00:00</updated><id>https://amp.studio/</id><title type="html">AMP Studio</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Why Slow Websites Lose Customers, And How To Fix Them</title><link href="https://amp.studio/blog/tutorials/2018/pagespeed-insights/" rel="alternate" type="text/html" title="Why Slow Websites Lose Customers, And How To Fix Them" /><published>2018-01-23T10:00:00+00:00</published><updated>2018-01-23T10:00:00+00:00</updated><id>https://amp.studio/blog/tutorials/2018/pagespeed-insights</id><content type="html" xml:base="https://amp.studio/blog/tutorials/2018/pagespeed-insights/">{:.first}
-Most digital marketing companies spend weeks of effort and thousands of pounds on paid search campaigns, generating SEO strategies, posting on social media and building landing pages to squeeze out a few percent more conversions.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://amp.studio/feed.xml" rel="self" type="application/atom+xml" /><link href="https://amp.studio/" rel="alternate" type="text/html" /><updated>2018-01-24T17:28:42+00:00</updated><id>https://amp.studio/</id><title type="html">AMP Studio</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Why Slow Websites Lose Customers, And How To Fix Them</title><link href="https://amp.studio/blog/tutorials/2018/pagespeed-insights/" rel="alternate" type="text/html" title="Why Slow Websites Lose Customers, And How To Fix Them" /><published>2018-01-23T10:00:00+00:00</published><updated>2018-01-23T10:00:00+00:00</updated><id>https://amp.studio/blog/tutorials/2018/pagespeed-insights</id><content type="html" xml:base="https://amp.studio/blog/tutorials/2018/pagespeed-insights/">&lt;p class=&quot;first&quot;&gt;Most digital marketing companies spend weeks of effort and thousands of pounds on paid search campaigns, generating SEO strategies, posting on social media and building landing pages to squeeze out a few percent more conversions.&lt;/p&gt;
 
-All of these things are worthwhile, but often overlook a core problem that’s easy to fix and makes a drastic impact on revenue — your website’s loading speed!
+&lt;p&gt;All of these things are worthwhile, but often overlook a core problem that’s easy to fix and makes a drastic impact on revenue — your website’s loading speed!&lt;/p&gt;
 
-&gt; [“There’s no beating around the bush anymore: you should work on making your site as fast and accessible as possible. Don’t wait, do it now. I mean it. Work on your mobile SEO.&quot;](#){:target=&quot;blank&quot;}
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;#&quot; target=&quot;blank&quot;&gt;“There’s no beating around the bush anymore: you should work on making your site as fast and accessible as possible. Don’t wait, do it now. I mean it. Work on your mobile SEO.”&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
-{: .source}
-[Yoast](https://yoast.com/page-speed-ranking-factor/){:target=&quot;blank&quot;}, 2017
+&lt;p class=&quot;source&quot;&gt;&lt;a href=&quot;https://yoast.com/page-speed-ranking-factor/&quot; target=&quot;blank&quot;&gt;Yoast&lt;/a&gt;, 2017&lt;/p&gt;
 
-Every millisecond is an opportunity for users leave your site in frustration, and it happens more than you might expect. **If your web pages take more than half a second to load, revenue is being lost.** After crossing 3 seconds, 50% of your visitors may have [already left](https://www.doubleclickbygoogle.com/articles/mobile-speed-matters/){:target=&quot;blank&quot;} before viewing the page!
+&lt;p&gt;Every millisecond is an opportunity for users leave your site in frustration, and it happens more than you might expect. &lt;strong&gt;If your web pages take more than half a second to load, revenue is being lost.&lt;/strong&gt; After crossing 3 seconds, 50% of your visitors may have &lt;a href=&quot;https://www.doubleclickbygoogle.com/articles/mobile-speed-matters/&quot; target=&quot;blank&quot;&gt;already left&lt;/a&gt; before viewing the page!&lt;/p&gt;
 
-Slow websites can be caused by everything from lazy developers to rogue plugins, content management systems, tight deadlines, lack of awareness and bad server configuration, and can severely hamstring the revenue potential of your website.
+&lt;p&gt;Slow websites can be caused by everything from lazy developers to rogue plugins, content management systems, tight deadlines, lack of awareness and bad server configuration, and can severely hamstring the revenue potential of your website.&lt;/p&gt;
 
-We’re often challenged by our clients to explain the _value_ in spending extra time optimising for speed, so we’ve written this post as an in-depth guide laying out the problems facing bloated websites, why clients should care and how developers can set up their websites and servers for maximum effectiveness.
+&lt;p&gt;We’re often challenged by our clients to explain the &lt;em&gt;value&lt;/em&gt; in spending extra time optimising for speed, so we’ve written this post as an in-depth guide laying out the problems facing bloated websites, why clients should care and how developers can set up their websites and servers for maximum effectiveness.&lt;/p&gt;
 
-Reach out to us on [Twitter](https://twitter.com/ampstudiouk){:target=&quot;blank&quot;} if you have any questions or tips for us.
+&lt;p&gt;Reach out to us on &lt;a href=&quot;https://twitter.com/ampstudiouk&quot; target=&quot;blank&quot;&gt;Twitter&lt;/a&gt; if you have any questions or tips for us.&lt;/p&gt;
 
-## Setting high standards
+&lt;h2 id=&quot;setting-high-standards&quot;&gt;Setting high standards&lt;/h2&gt;
 
-We build our websites for [ludicrous speed](https://www.youtube.com/watch?v=ygE01sOhzz0){:target=&quot;blank&quot;}. As a baseline, we aim for **[100/100 Google PageSpeed](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Famp.studio){:target=&quot;blank&quot;}** ranking and a load time of **under 300 milliseconds** (top 1% of all sites) in Google Chrome desktop over a good UK broadband connection. We also use [Pingdom](https://tools.pingdom.com/){:target=&quot;blank&quot;} and [GTmetrix](https://gtmetrix.com/){:target=&quot;blank&quot;} for additional testing.
+&lt;p&gt;We build our websites for &lt;a href=&quot;https://www.youtube.com/watch?v=ygE01sOhzz0&quot; target=&quot;blank&quot;&gt;ludicrous speed&lt;/a&gt;. As a baseline, we aim for &lt;strong&gt;&lt;a href=&quot;https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Famp.studio&quot; target=&quot;blank&quot;&gt;100/100 Google PageSpeed&lt;/a&gt;&lt;/strong&gt; ranking and a load time of &lt;strong&gt;under 300 milliseconds&lt;/strong&gt; (top 1% of all sites) in Google Chrome desktop over a good UK broadband connection. We also use &lt;a href=&quot;https://tools.pingdom.com/&quot; target=&quot;blank&quot;&gt;Pingdom&lt;/a&gt; and &lt;a href=&quot;https://gtmetrix.com/&quot; target=&quot;blank&quot;&gt;GTmetrix&lt;/a&gt; for additional testing.&lt;/p&gt;
 
-![AMP website PageSpeed Insights](/assets/img/blog/pagespeed/image-1.jpg &quot;AMP website PageSpeed Insights&quot;)
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/pagespeed/image-1.jpg&quot; alt=&quot;AMP website PageSpeed Insights&quot; title=&quot;AMP website PageSpeed Insights&quot; /&gt;&lt;/p&gt;
 
-Call it overkill, but there’s a huge difference in conversions when a website is literally 10x faster than it’s competitors, and if you build for speed from the start it’s not too difficult to do.
+&lt;p&gt;Call it overkill, but there’s a huge difference in conversions when a website is literally 10x faster than it’s competitors, and if you build for speed from the start it’s not too difficult to do.&lt;/p&gt;
 
-### Why benchmarks matter
+&lt;h3 id=&quot;why-benchmarks-matter&quot;&gt;Why benchmarks matter&lt;/h3&gt;
 
-Of course, **benchmarks are not the measure of a good website**, nor should they be a primary focus for the client. The design still has to be fit for purpose and easy to navigate.
+&lt;p&gt;Of course, &lt;strong&gt;benchmarks are not the measure of a good website&lt;/strong&gt;, nor should they be a primary focus for the client. The design still has to be fit for purpose and easy to navigate.&lt;/p&gt;
 
-Benchmarks expose any technical issues to present an objective, detailed breakdown of where your site could improve, thereby enforcing best practices for web developers.
+&lt;p&gt;Benchmarks expose any technical issues to present an objective, detailed breakdown of where your site could improve, thereby enforcing best practices for web developers.&lt;/p&gt;
 
-We consider a PageSpeed score of **at least 80** and a load time of under 1 second to be realistic and beneficial for any website. Top marks aren’t necessary, but there’s no excuse for not following most of the guidelines.
+&lt;p&gt;We consider a PageSpeed score of &lt;strong&gt;at least 80&lt;/strong&gt; and a load time of under 1 second to be realistic and beneficial for any website. Top marks aren’t necessary, but there’s no excuse for not following most of the guidelines.&lt;/p&gt;
 
-**Developers** — we recommend building at least one website against these metrics, even as a side project. Just understanding them can change the way you code in the future. We’re constantly shocked at how many websites fail to address basic rules like caching and compression that make a huge difference to loading speed!
+&lt;p&gt;&lt;strong&gt;Developers&lt;/strong&gt; — we recommend building at least one website against these metrics, even as a side project. Just understanding them can change the way you code in the future. We’re constantly shocked at how many websites fail to address basic rules like caching and compression that make a huge difference to loading speed!&lt;/p&gt;
 
-## So what?
+&lt;h2 id=&quot;so-what&quot;&gt;So what?&lt;/h2&gt;
 
-Put simply, a faster, mobile-friendly website directly leads to **more revenue**, **more conversions**, **better SEO ranking** and **more time spent** on your site.
+&lt;p&gt;Put simply, a faster, mobile-friendly website directly leads to &lt;strong&gt;more revenue&lt;/strong&gt;, &lt;strong&gt;more conversions&lt;/strong&gt;, &lt;strong&gt;better SEO ranking&lt;/strong&gt; and &lt;strong&gt;more time spent&lt;/strong&gt; on your site.&lt;/p&gt;
 
-If you’re selling products or trying to convert leads, optimising your site’s loading speed should be your first priority. You can’t capture customers if they’re leaving in frustration!
+&lt;p&gt;If you’re selling products or trying to convert leads, optimising your site’s loading speed should be your first priority. You can’t capture customers if they’re leaving in frustration!&lt;/p&gt;
 
-&gt; [“2 seconds is the threshold for e-commerce website acceptability. At Google, we aim for under a half second.&quot;](#){:target=&quot;blank&quot;}
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;#&quot; target=&quot;blank&quot;&gt;“2 seconds is the threshold for e-commerce website acceptability. At Google, we aim for under a half second.”&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
-{: .source}
-[Maile Ohye](https://www.youtube.com/watch?v=OpMfx_Zie2g){:target=&quot;blank&quot;}, Google Search Team
+&lt;p class=&quot;source&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=OpMfx_Zie2g&quot; target=&quot;blank&quot;&gt;Maile Ohye&lt;/a&gt;, Google Search Team&lt;/p&gt;
 
-Watch Maile Ohye’s [Site Performance For Webmasters](https://www.youtube.com/watch?v=OpMfx_Zie2g){:target=&quot;blank&quot;} for a chart-filled dive into how loading times affect e-commerce sales (spoiler: it matters a _lot_).
+&lt;p&gt;Watch Maile Ohye’s &lt;a href=&quot;https://www.youtube.com/watch?v=OpMfx_Zie2g&quot; target=&quot;blank&quot;&gt;Site Performance For Webmasters&lt;/a&gt; for a chart-filled dive into how loading times affect e-commerce sales (spoiler: it matters a &lt;em&gt;lot&lt;/em&gt;).&lt;/p&gt;
 
-### Direct revenue gains
+&lt;h3 id=&quot;direct-revenue-gains&quot;&gt;Direct revenue gains&lt;/h3&gt;
 
-Even before the mobile internet boom, the internet giants were [testing relentlessly](https://www.slideshare.net/stoyan/yslow-20-presentation/4-The_importance_of_performance_ulli500){:target=&quot;blank&quot;} to make sure that their web pages performed optimally. Many of them have written about how faster pages substantially increase their metrics.
+&lt;p&gt;Even before the mobile internet boom, the internet giants were &lt;a href=&quot;https://www.slideshare.net/stoyan/yslow-20-presentation/4-The_importance_of_performance_ulli500&quot; target=&quot;blank&quot;&gt;testing relentlessly&lt;/a&gt; to make sure that their web pages performed optimally. Many of them have written about how faster pages substantially increase their metrics.&lt;/p&gt;
 
-* Amazon gains 1% more sales for every 100ms decrease in loading time
-* Google lost 20% of their traffic by adding 500ms to their loading time
-* The BBC loses [10% of their visitors](http://www.creativebloq.com/features/how-the-bbc-builds-websites-that-scale) for every second of load time
-* Trainline boosted sales by [£8 million per year](https://www.youtube.com/watch?v=ai-6qwT6ES8&amp;feature=youtu.be&amp;t=462){:target=&quot;blank&quot;} with a 300ms speed-up
-* Yahoo suffered up to a 9% drop in traffic from a 400ms increase in loading time
-* Facebook saw up to [25% more page views](https://www.facebook.com/note.php?note_id=122869103919){:target=&quot;blank&quot;} and higher engagement in casual users after speeding up their news feed
-* AliExpress [gained](https://edge.akamai.com/ec/us/highlights/keynote-speakers.jsp#edge2016futureofcommercemodal){:target=&quot;blank&quot;} 10.5% more orders and a 27% increase in conversion rates for new customers after shaving 36% off their load times
+&lt;ul&gt;
+  &lt;li&gt;Amazon gains 1% more sales for every 100ms decrease in loading time&lt;/li&gt;
+  &lt;li&gt;Google lost 20% of their traffic by adding 500ms to their loading time&lt;/li&gt;
+  &lt;li&gt;The BBC loses &lt;a href=&quot;http://www.creativebloq.com/features/how-the-bbc-builds-websites-that-scale&quot;&gt;10% of their visitors&lt;/a&gt; for every second of load time&lt;/li&gt;
+  &lt;li&gt;Trainline boosted sales by &lt;a href=&quot;https://www.youtube.com/watch?v=ai-6qwT6ES8&amp;amp;feature=youtu.be&amp;amp;t=462&quot; target=&quot;blank&quot;&gt;£8 million per year&lt;/a&gt; with a 300ms speed-up&lt;/li&gt;
+  &lt;li&gt;Yahoo suffered up to a 9% drop in traffic from a 400ms increase in loading time&lt;/li&gt;
+  &lt;li&gt;Facebook saw up to &lt;a href=&quot;https://www.facebook.com/note.php?note_id=122869103919&quot; target=&quot;blank&quot;&gt;25% more page views&lt;/a&gt; and higher engagement in casual users after speeding up their news feed&lt;/li&gt;
+  &lt;li&gt;AliExpress &lt;a href=&quot;https://edge.akamai.com/ec/us/highlights/keynote-speakers.jsp#edge2016futureofcommercemodal&quot; target=&quot;blank&quot;&gt;gained&lt;/a&gt; 10.5% more orders and a 27% increase in conversion rates for new customers after shaving 36% off their load times&lt;/li&gt;
+&lt;/ul&gt;
 
-### Conversion Rates
+&lt;h3 id=&quot;conversion-rates&quot;&gt;Conversion Rates&lt;/h3&gt;
 
-Walmart’s internal [research](http://www.webperformancetoday.com/2012/02/28/4-awesome-slides-showing-how-page-speed-correlates-to-business-metrics-at-walmart-com/) shows a clear decline in conversions due to higher loading times. Note the huge drop-off from 1-2 seconds!
+&lt;p&gt;Walmart’s internal &lt;a href=&quot;http://www.webperformancetoday.com/2012/02/28/4-awesome-slides-showing-how-page-speed-correlates-to-business-metrics-at-walmart-com/&quot;&gt;research&lt;/a&gt; shows a clear decline in conversions due to higher loading times. Note the huge drop-off from 1-2 seconds!&lt;/p&gt;
 
-![Walmart website insights](/assets/img/blog/pagespeed/image-2.png &quot;Walmart website insights&quot;)
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/pagespeed/image-2.png&quot; alt=&quot;Walmart website insights&quot; title=&quot;Walmart website insights&quot; /&gt;&lt;/p&gt;
 
-TagMan found that every second of delay can cause a huge [7% drop](https://blog.kissmetrics.com/loading-time/){:target=&quot;blank&quot;} in sales. This can easily amount to thousands or millions of pounds lost every year for an e-commerce website, and sometimes a single line in a configuration file is all it takes to re-capture it.
+&lt;p&gt;TagMan found that every second of delay can cause a huge &lt;a href=&quot;https://blog.kissmetrics.com/loading-time/&quot; target=&quot;blank&quot;&gt;7% drop&lt;/a&gt; in sales. This can easily amount to thousands or millions of pounds lost every year for an e-commerce website, and sometimes a single line in a configuration file is all it takes to re-capture it.&lt;/p&gt;
 
-### SEO Ranking
+&lt;h3 id=&quot;seo-ranking&quot;&gt;SEO Ranking&lt;/h3&gt;
 
-As of July 2018 Google will [penalise slow loading times](https://webmasters.googleblog.com/2018/01/using-page-speed-in-mobile-search.html?m=1){:target=&quot;blank&quot;} on mobile in addition to desktop searches, and they already index for [mobile-friendly layouts](https://webmasters.googleblog.com/2016/11/mobile-first-indexing.html){:target=&quot;blank&quot;} first in their search rankings.
+&lt;p&gt;As of July 2018 Google will &lt;a href=&quot;https://webmasters.googleblog.com/2018/01/using-page-speed-in-mobile-search.html?m=1&quot; target=&quot;blank&quot;&gt;penalise slow loading times&lt;/a&gt; on mobile in addition to desktop searches, and they already index for &lt;a href=&quot;https://webmasters.googleblog.com/2016/11/mobile-first-indexing.html&quot; target=&quot;blank&quot;&gt;mobile-friendly layouts&lt;/a&gt; first in their search rankings.&lt;/p&gt;
 
-&gt; [“People want to be able to find answers to their questions as fast as possible — studies show that people really care about the speed of a page… today we’re announcing that starting in July 2018, page speed will be a ranking factor for mobile searches&quot;](#){:target=&quot;blank&quot;}
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;#&quot; target=&quot;blank&quot;&gt;“People want to be able to find answers to their questions as fast as possible — studies show that people really care about the speed of a page… today we’re announcing that starting in July 2018, page speed will be a ranking factor for mobile searches”&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
-{: .source}
-[Google](https://webmasters.googleblog.com/2018/01/using-page-speed-in-mobile-search.html?m=1){:target=&quot;blank&quot;}, 2018
+&lt;p class=&quot;source&quot;&gt;&lt;a href=&quot;https://webmasters.googleblog.com/2018/01/using-page-speed-in-mobile-search.html?m=1&quot; target=&quot;blank&quot;&gt;Google&lt;/a&gt;, 2018&lt;/p&gt;
 
-It makes sense — mobile devices took over [50% share of page views](https://www.statista.com/statistics/277125/share-of-website-traffic-coming-from-mobile-devices/){:target=&quot;blank&quot;} globally last year, and the impact of loading speed is more obvious on slow mobile networks. Users browse longer, view more pages and are more likely to return if a website is fast, all of which affects SEO. Google intend to start by only penalising the slowest websites, but the direction that they’re moving is obvious.
+&lt;p&gt;It makes sense — mobile devices took over &lt;a href=&quot;https://www.statista.com/statistics/277125/share-of-website-traffic-coming-from-mobile-devices/&quot; target=&quot;blank&quot;&gt;50% share of page views&lt;/a&gt; globally last year, and the impact of loading speed is more obvious on slow mobile networks. Users browse longer, view more pages and are more likely to return if a website is fast, all of which affects SEO. Google intend to start by only penalising the slowest websites, but the direction that they’re moving is obvious.&lt;/p&gt;
 
-It’s quickly becoming table stakes to have a fast mobile-responsive website, and competitors who invest in the area will quickly gain an edge over slower sites.
+&lt;p&gt;It’s quickly becoming table stakes to have a fast mobile-responsive website, and competitors who invest in the area will quickly gain an edge over slower sites.&lt;/p&gt;
 
-### Lost visitors &amp; bounce rates
+&lt;h3 id=&quot;lost-visitors--bounce-rates&quot;&gt;Lost visitors &amp;amp; bounce rates&lt;/h3&gt;
 
-According to [DoubleClick by Google](https://www.doubleclickbygoogle.com/articles/mobile-speed-matters/){:target=&quot;blank&quot;}, more than **50% of visitors abandon a website** during the first 3 seconds of loading, affecting your revenue and SEO rank. Given that the average mobile site takes over [19 seconds](https://www.doubleclickbygoogle.com/articles/mobile-speed-matters/){:target=&quot;blank&quot;} to load, there’s a good chance that your site is leaking visitors that could easily be recovered with a few tweaks.
+&lt;p&gt;According to &lt;a href=&quot;https://www.doubleclickbygoogle.com/articles/mobile-speed-matters/&quot; target=&quot;blank&quot;&gt;DoubleClick by Google&lt;/a&gt;, more than &lt;strong&gt;50% of visitors abandon a website&lt;/strong&gt; during the first 3 seconds of loading, affecting your revenue and SEO rank. Given that the average mobile site takes over &lt;a href=&quot;https://www.doubleclickbygoogle.com/articles/mobile-speed-matters/&quot; target=&quot;blank&quot;&gt;19 seconds&lt;/a&gt; to load, there’s a good chance that your site is leaking visitors that could easily be recovered with a few tweaks.&lt;/p&gt;
 
-![DoubleClick by Google](/assets/img/blog/pagespeed/image-3.png &quot;DoubleClick by Google&quot;)
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/pagespeed/image-3.png&quot; alt=&quot;DoubleClick by Google&quot; title=&quot;DoubleClick by Google&quot; /&gt;&lt;/p&gt;
 
-Visitors are more likely to browse around your website, find what they’re looking for and stay for longer if your pages load quickly, leading to lower bounce rates and improving SEO rank.
+&lt;p&gt;Visitors are more likely to browse around your website, find what they’re looking for and stay for longer if your pages load quickly, leading to lower bounce rates and improving SEO rank.&lt;/p&gt;
 
-Additionally, Google Analytics found that mobile websites that load in 5 seconds compared to 19 seconds [gain](https://www.doubleclickbygoogle.com/articles/mobile-speed-matters/){:target=&quot;blank&quot;}:
+&lt;p&gt;Additionally, Google Analytics found that mobile websites that load in 5 seconds compared to 19 seconds &lt;a href=&quot;https://www.doubleclickbygoogle.com/articles/mobile-speed-matters/&quot; target=&quot;blank&quot;&gt;gain&lt;/a&gt;:&lt;/p&gt;
 
-* Up to 100% more ad revenue
-* 25% higher ad viewability
-* 70% longer average sessions
-* 35% lower bounce rates
+&lt;ul&gt;
+  &lt;li&gt;Up to 100% more ad revenue&lt;/li&gt;
+  &lt;li&gt;25% higher ad viewability&lt;/li&gt;
+  &lt;li&gt;70% longer average sessions&lt;/li&gt;
+  &lt;li&gt;35% lower bounce rates&lt;/li&gt;
+&lt;/ul&gt;
 
-It’s clear from Google’s own research that any time shaved off a page’s loading speed makes a difference to the number of people who stick around, leading to more conversions, lower bounce rates and a higher SEO ranking.
+&lt;p&gt;It’s clear from Google’s own research that any time shaved off a page’s loading speed makes a difference to the number of people who stick around, leading to more conversions, lower bounce rates and a higher SEO ranking.&lt;/p&gt;
 
-&gt; [“Whilst increased conversions and revenue are more than sufficient reasons to make this an area of investment, other benefits that cannot be overlooked include increased customer satisfaction, loyalty, confidence and trust.&quot;](#){:target=&quot;blank&quot;}
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;#&quot; target=&quot;blank&quot;&gt;“Whilst increased conversions and revenue are more than sufficient reasons to make this an area of investment, other benefits that cannot be overlooked include increased customer satisfaction, loyalty, confidence and trust.”&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
-{: .source}
-[iCrossing](http://www.icrossing.com/uk/ideas/slow-pages-lose-users), 2012
+&lt;p class=&quot;source&quot;&gt;&lt;a href=&quot;http://www.icrossing.com/uk/ideas/slow-pages-lose-users&quot;&gt;iCrossing&lt;/a&gt;, 2012&lt;/p&gt;
 
-### Lower operating costs
+&lt;h3 id=&quot;lower-operating-costs&quot;&gt;Lower operating costs&lt;/h3&gt;
 
-A well-optimised website uses much less bandwidth and server resources than a bloated one, resulting in lower hosting charges and the ability to handle more traffic. This is great on busy e-commerce websites where hosting can cost hundreds or thousands of pounds per month.
+&lt;p&gt;A well-optimised website uses much less bandwidth and server resources than a bloated one, resulting in lower hosting charges and the ability to handle more traffic. This is great on busy e-commerce websites where hosting can cost hundreds or thousands of pounds per month.&lt;/p&gt;
 
-### No more crashing
+&lt;h3 id=&quot;no-more-crashing&quot;&gt;No more crashing&lt;/h3&gt;
 
-Even a small web server can handle thousands of simple requests per second, but a bloated WordPress or Magento site can become overwhelmed under a small burst of visitors, even if it’s only 10 people clicking around at one time. That’s the last thing you need when your products get featured on a popular blog!
+&lt;p&gt;Even a small web server can handle thousands of simple requests per second, but a bloated WordPress or Magento site can become overwhelmed under a small burst of visitors, even if it’s only 10 people clicking around at one time. That’s the last thing you need when your products get featured on a popular blog!&lt;/p&gt;
 
-## Why are websites so slow? 🐌
+&lt;h2 id=&quot;why-are-websites-so-slow-&quot;&gt;Why are websites so slow? 🐌&lt;/h2&gt;
 
-There are dozens of technical reasons for slow websites, but in our experience it comes down to tight deadlines, over-prescription of WordPress for cheap/quick projects (leading to the dreaded plugin/theme hell) or developers just being lazy.
+&lt;p&gt;There are dozens of technical reasons for slow websites, but in our experience it comes down to tight deadlines, over-prescription of WordPress for cheap/quick projects (leading to the dreaded plugin/theme hell) or developers just being lazy.&lt;/p&gt;
 
-### Not testing on slow devices
+&lt;h3 id=&quot;not-testing-on-slow-devices&quot;&gt;Not testing on slow devices&lt;/h3&gt;
 
-Many developers are accustomed to testing their work over fast broadband connections on a high-end development computer, but neglect to test on an old Android phone over 3G internet.
+&lt;p&gt;Many developers are accustomed to testing their work over fast broadband connections on a high-end development computer, but neglect to test on an old Android phone over 3G internet.&lt;/p&gt;
 
-We once audited a website for a popular restaurant that took 4 seconds to load on a 2017 MacBook using our office broadband, but 35 seconds over 3G. Why would your customers wait 35 seconds to find a phone number?!
+&lt;p&gt;We once audited a website for a popular restaurant that took 4 seconds to load on a 2017 MacBook using our office broadband, but 35 seconds over 3G. Why would your customers wait 35 seconds to find a phone number?!&lt;/p&gt;
 
-### Avoiding the problem
+&lt;h3 id=&quot;avoiding-the-problem&quot;&gt;Avoiding the problem&lt;/h3&gt;
 
-Slow loading is glossed over by clients and developers alike, because it’s a messy problem that’s **easy to sweep under the rug**, especially once the project is already underway. Few clients want to spend their budget on tweaking the loading times when there are features to be added!
+&lt;p&gt;Slow loading is glossed over by clients and developers alike, because it’s a messy problem that’s &lt;strong&gt;easy to sweep under the rug&lt;/strong&gt;, especially once the project is already underway. Few clients want to spend their budget on tweaking the loading times when there are features to be added!&lt;/p&gt;
 
-Just like avoiding chores it’s a nagging problem that builds over time until facing it becomes a large upfront cost, but if controlled and built in from the start it’s easily manageable.
+&lt;p&gt;Just like avoiding chores it’s a nagging problem that builds over time until facing it becomes a large upfront cost, but if controlled and built in from the start it’s easily manageable.&lt;/p&gt;
 
-### Lazy developers
+&lt;h3 id=&quot;lazy-developers&quot;&gt;Lazy developers&lt;/h3&gt;
 
-It’s developer’s job to set up hosting correctly, keep on top of a site’s performance and ensure that modern standards are met. Unfortunately we come across websites every single day that are hamstrung by misconfigured servers, uncompressed images and bad coding.
+&lt;p&gt;It’s developer’s job to set up hosting correctly, keep on top of a site’s performance and ensure that modern standards are met. Unfortunately we come across websites every single day that are hamstrung by misconfigured servers, uncompressed images and bad coding.&lt;/p&gt;
 
-These things can be fixed quickly and should have been set up in the first place, but are overlooked due to lack of awareness, tight deadlines or just laziness — as long as it _works_, the client can’t tell if a server is set up badly.
+&lt;p&gt;These things can be fixed quickly and should have been set up in the first place, but are overlooked due to lack of awareness, tight deadlines or just laziness — as long as it &lt;em&gt;works&lt;/em&gt;, the client can’t tell if a server is set up badly.&lt;/p&gt;
 
-### WordPress &amp; CMS bloat
+&lt;h3 id=&quot;wordpress--cms-bloat&quot;&gt;WordPress &amp;amp; CMS bloat&lt;/h3&gt;
 
-Popular CMS and e-commerce platforms such as [WordPress](https://wordpress.org/){:target=&quot;blank&quot;}, [WooCommerce](https://woocommerce.com/){:target=&quot;blank&quot;}, [SquareSpace](https://www.squarespace.com/){:target=&quot;blank&quot;}, [Magento](https://magento.com/){:target=&quot;blank&quot;} and [Shopify](https://www.shopify.co.uk/){:target=&quot;blank&quot;} offer great tools for building websites and are used as the default option by many agencies, but they often run on enormous code bases that are slow to load and grow **more sluggish over time** due to 3rd party plugins, heavy themes and layers of upgrades.
+&lt;p&gt;Popular CMS and e-commerce platforms such as &lt;a href=&quot;https://wordpress.org/&quot; target=&quot;blank&quot;&gt;WordPress&lt;/a&gt;, &lt;a href=&quot;https://woocommerce.com/&quot; target=&quot;blank&quot;&gt;WooCommerce&lt;/a&gt;, &lt;a href=&quot;https://www.squarespace.com/&quot; target=&quot;blank&quot;&gt;SquareSpace&lt;/a&gt;, &lt;a href=&quot;https://magento.com/&quot; target=&quot;blank&quot;&gt;Magento&lt;/a&gt; and &lt;a href=&quot;https://www.shopify.co.uk/&quot; target=&quot;blank&quot;&gt;Shopify&lt;/a&gt; offer great tools for building websites and are used as the default option by many agencies, but they often run on enormous code bases that are slow to load and grow &lt;strong&gt;more sluggish over time&lt;/strong&gt; due to 3rd party plugins, heavy themes and layers of upgrades.&lt;/p&gt;
 
-It’s common to see developers install fully-featured plugins and themes to solve simple tasks, saving their own time at the cost of their end users’ frustration. Eventually this grows into a soul-sucking, tangled mess that becomes painful to work with, where modifying plugins feels like disabling a bomb that could bring the whole site down at any point.
+&lt;p&gt;It’s common to see developers install fully-featured plugins and themes to solve simple tasks, saving their own time at the cost of their end users’ frustration. Eventually this grows into a soul-sucking, tangled mess that becomes painful to work with, where modifying plugins feels like disabling a bomb that could bring the whole site down at any point.&lt;/p&gt;
 
-It’s possible to [optimise WordPress](https://www.keycdn.com/blog/google-pagespeed-insights-wordpress/){:target=&quot;blank&quot;} and even achieve 100 PageSpeed score, but it rarely works out that way. Developers have to spend extra time and budget fighting against the inbuilt mess rather than working with it.
+&lt;p&gt;It’s possible to &lt;a href=&quot;https://www.keycdn.com/blog/google-pagespeed-insights-wordpress/&quot; target=&quot;blank&quot;&gt;optimise WordPress&lt;/a&gt; and even achieve 100 PageSpeed score, but it rarely works out that way. Developers have to spend extra time and budget fighting against the inbuilt mess rather than working with it.&lt;/p&gt;
 
-More modern alternatives include [Grav](https://getgrav.org/){:target=&quot;blank&quot;}, [Perch](https://grabaperch.com/){:target=&quot;blank&quot;} and [Craft](https://craftcms.com/){:target=&quot;blank&quot;}, though these options have fewer pre-made themes and plugins.
+&lt;p&gt;More modern alternatives include &lt;a href=&quot;https://getgrav.org/&quot; target=&quot;blank&quot;&gt;Grav&lt;/a&gt;, &lt;a href=&quot;https://grabaperch.com/&quot; target=&quot;blank&quot;&gt;Perch&lt;/a&gt; and &lt;a href=&quot;https://craftcms.com/&quot; target=&quot;blank&quot;&gt;Craft&lt;/a&gt;, though these options have fewer pre-made themes and plugins.&lt;/p&gt;
 
-We sometimes build 100% bespoke content management systems using [NodeJS](https://nodejs.org/en/){:target=&quot;blank&quot;}, [MongoDB](https://www.mongodb.com/){:target=&quot;blank&quot;}/[MySQL](https://www.mysql.com/){:target=&quot;blank&quot;} and [Express](https://expressjs.com/){:target=&quot;blank&quot;}, which are tailored for client needs and lightning fast. Our [MSD Vehicles](https://amp.studio/portfolio/2017/msd-vehicles/){:target=&quot;blank&quot;} hire/sales website can finish loading in the browser in _less than 200ms_ under normal conditions when deployed, even with a database of users and vehicles.
+&lt;p&gt;We sometimes build 100% bespoke content management systems using &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;blank&quot;&gt;NodeJS&lt;/a&gt;, &lt;a href=&quot;https://www.mongodb.com/&quot; target=&quot;blank&quot;&gt;MongoDB&lt;/a&gt;/&lt;a href=&quot;https://www.mysql.com/&quot; target=&quot;blank&quot;&gt;MySQL&lt;/a&gt; and &lt;a href=&quot;https://expressjs.com/&quot; target=&quot;blank&quot;&gt;Express&lt;/a&gt;, which are tailored for client needs and lightning fast. Our &lt;a href=&quot;https://amp.studio/portfolio/2017/msd-vehicles/&quot; target=&quot;blank&quot;&gt;MSD Vehicles&lt;/a&gt; hire/sales website can finish loading in the browser in &lt;em&gt;less than 200ms&lt;/em&gt; under normal conditions when deployed, even with a database of users and vehicles.&lt;/p&gt;
 
-## How to speed up your website
+&lt;h2 id=&quot;how-to-speed-up-your-website&quot;&gt;How to speed up your website&lt;/h2&gt;
 
-Now for the good stuff — we’ll run through the most common methods of increasing website performance and how developers can implement them. If you have any questions just [reach out](https://amp.studio/contact/){:target=&quot;blank&quot;} to us, we’ll talk your ears off about this topic all day.
+&lt;p&gt;Now for the good stuff — we’ll run through the most common methods of increasing website performance and how developers can implement them. If you have any questions just &lt;a href=&quot;https://amp.studio/contact/&quot; target=&quot;blank&quot;&gt;reach out&lt;/a&gt; to us, we’ll talk your ears off about this topic all day.&lt;/p&gt;
 
-If you want a thorough checklist for development, David Dias’ [Front-End Checklist](https://github.com/thedaviddias/Front-End-Checklist){:target=&quot;blank&quot;} is a great place to start.
+&lt;p&gt;If you want a thorough checklist for development, David Dias’ &lt;a href=&quot;https://github.com/thedaviddias/Front-End-Checklist&quot; target=&quot;blank&quot;&gt;Front-End Checklist&lt;/a&gt; is a great place to start.&lt;/p&gt;
 
-Start by running your website through [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/){:target=&quot;blank&quot;} , which results in a detailed list of where your website could improve, along with tutorials and a useful .zip of your optimised images and CSS/JS assets.
+&lt;p&gt;Start by running your website through &lt;a href=&quot;https://developers.google.com/speed/pagespeed/insights/&quot; target=&quot;blank&quot;&gt;Google PageSpeed Insights&lt;/a&gt; , which results in a detailed list of where your website could improve, along with tutorials and a useful .zip of your optimised images and CSS/JS assets.&lt;/p&gt;
 
-Here’s the overview in rough order of priority, then we’ll break the topics down individually:
+&lt;p&gt;Here’s the overview in rough order of priority, then we’ll break the topics down individually:&lt;/p&gt;
 
-**Configure your web server**
+&lt;p&gt;&lt;strong&gt;Configure your web server&lt;/strong&gt;&lt;/p&gt;
 
-* Cache static content
-* Enable gzip compression
-* HTTP/2 &amp; SSL
-* Use a CDN
+&lt;ul&gt;
+  &lt;li&gt;Cache static content&lt;/li&gt;
+  &lt;li&gt;Enable gzip compression&lt;/li&gt;
+  &lt;li&gt;HTTP/2 &amp;amp; SSL&lt;/li&gt;
+  &lt;li&gt;Use a CDN&lt;/li&gt;
+&lt;/ul&gt;
 
-**Compress images**
+&lt;p&gt;&lt;strong&gt;Compress images&lt;/strong&gt;&lt;/p&gt;
 
-* Reduce file size
-* Use responsive images
-* Use compression plugins
+&lt;ul&gt;
+  &lt;li&gt;Reduce file size&lt;/li&gt;
+  &lt;li&gt;Use responsive images&lt;/li&gt;
+  &lt;li&gt;Use compression plugins&lt;/li&gt;
+&lt;/ul&gt;
 
-**Optimise CSS &amp; JS**
+&lt;p&gt;&lt;strong&gt;Optimise CSS &amp;amp; JS&lt;/strong&gt;&lt;/p&gt;
 
-* Strip unnecessary code
-* Scrap jQuery
-* Async load JavaScript
+&lt;ul&gt;
+  &lt;li&gt;Strip unnecessary code&lt;/li&gt;
+  &lt;li&gt;Scrap jQuery&lt;/li&gt;
+  &lt;li&gt;Async load JavaScript&lt;/li&gt;
+&lt;/ul&gt;
 
-**Reduce HTTP requests**
+&lt;p&gt;&lt;strong&gt;Reduce HTTP requests&lt;/strong&gt;&lt;/p&gt;
 
-* Bundle &amp; minify assets
-* Lazy load content
-* Use sprite sheets
-* Watch your WordPress plugins
+&lt;ul&gt;
+  &lt;li&gt;Bundle &amp;amp; minify assets&lt;/li&gt;
+  &lt;li&gt;Lazy load content&lt;/li&gt;
+  &lt;li&gt;Use sprite sheets&lt;/li&gt;
+  &lt;li&gt;Watch your WordPress plugins&lt;/li&gt;
+&lt;/ul&gt;
 
-**Prioritise visible content**
+&lt;p&gt;&lt;strong&gt;Prioritise visible content&lt;/strong&gt;&lt;/p&gt;
 
-* Inline critical CSS &amp; JS
-* Set above-the-fold dimensions in CSS
-* Optimise the waterfall
+&lt;ul&gt;
+  &lt;li&gt;Inline critical CSS &amp;amp; JS&lt;/li&gt;
+  &lt;li&gt;Set above-the-fold dimensions in CSS&lt;/li&gt;
+  &lt;li&gt;Optimise the waterfall&lt;/li&gt;
+&lt;/ul&gt;
 
-**Reduce time-to-first-byte**
+&lt;p&gt;&lt;strong&gt;Reduce time-to-first-byte&lt;/strong&gt;&lt;/p&gt;
 
-* Cache dynamic content
-* Check server latency
-* Try a static site generator
+&lt;ul&gt;
+  &lt;li&gt;Cache dynamic content&lt;/li&gt;
+  &lt;li&gt;Check server latency&lt;/li&gt;
+  &lt;li&gt;Try a static site generator&lt;/li&gt;
+&lt;/ul&gt;
 
-### Configure your web server
+&lt;h3 id=&quot;configure-your-web-server&quot;&gt;Configure your web server&lt;/h3&gt;
 
-Your web server is the perfect place to start optimising, because sometimes all it takes is a single line or block of code to make a huge difference.
+&lt;p&gt;Your web server is the perfect place to start optimising, because sometimes all it takes is a single line or block of code to make a huge difference.&lt;/p&gt;
 
-Start by taking control of your hosting — we host in the cloud using [Amazon Web Services](https://aws.amazon.com/){:target=&quot;blank&quot;}, or [DigitalOcean](https://www.digitalocean.com/){:target=&quot;blank&quot;} is a great alternative.
+&lt;p&gt;Start by taking control of your hosting — we host in the cloud using &lt;a href=&quot;https://aws.amazon.com/&quot; target=&quot;blank&quot;&gt;Amazon Web Services&lt;/a&gt;, or &lt;a href=&quot;https://www.digitalocean.com/&quot; target=&quot;blank&quot;&gt;DigitalOcean&lt;/a&gt; is a great alternative.&lt;/p&gt;
 
-Sometimes clients will buy a domain name with shared hosting included, but these packages are limited in terms of speed, location and configuration. They also add extra management overhead when it comes to switching between projects.
+&lt;p&gt;Sometimes clients will buy a domain name with shared hosting included, but these packages are limited in terms of speed, location and configuration. They also add extra management overhead when it comes to switching between projects.&lt;/p&gt;
 
-We prefer using [Nginx](https://www.nginx.com/){:target=&quot;blank&quot;} installed on a Ubuntu EC2 instance which hosts multiple websites, and we’ll use this setup for the following sections. This way we can control exactly where our server is, how powerful it needs to be, what software is installed, how it’s configured and what’s being hosted on it.
+&lt;p&gt;We prefer using &lt;a href=&quot;https://www.nginx.com/&quot; target=&quot;blank&quot;&gt;Nginx&lt;/a&gt; installed on a Ubuntu EC2 instance which hosts multiple websites, and we’ll use this setup for the following sections. This way we can control exactly where our server is, how powerful it needs to be, what software is installed, how it’s configured and what’s being hosted on it.&lt;/p&gt;
 
-When you’ve made any changes to the config files, remember to use the following command to reload the config:
+&lt;p&gt;When you’ve made any changes to the config files, remember to use the following command to reload the config:&lt;/p&gt;
 
-```bash
-sudo service nginx restart
-```
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;service nginx restart
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-#### Cache static content
+&lt;h4 id=&quot;cache-static-content&quot;&gt;Cache static content&lt;/h4&gt;
 
-When a browser wants to download an external resource such as an image or script, it checks a local cache to see if it’s been downloaded recently.
+&lt;p&gt;When a browser wants to download an external resource such as an image or script, it checks a local cache to see if it’s been downloaded recently.&lt;/p&gt;
 
-You can control the exact amount of time that each file stays in the user’s browser cache before expiring by setting the `Cache-Control` HTTP header. If no header is set, the browser will **re-download the file on every page**, which slows performance unnecessarily. This header alone can greatly speed up a website.
+&lt;p&gt;You can control the exact amount of time that each file stays in the user’s browser cache before expiring by setting the &lt;code class=&quot;highlighter-rouge&quot;&gt;Cache-Control&lt;/code&gt; HTTP header. If no header is set, the browser will &lt;strong&gt;re-download the file on every page&lt;/strong&gt;, which slows performance unnecessarily. This header alone can greatly speed up a website.&lt;/p&gt;
 
-Here’s how I set a maximum expiry date inside an Nginx server block:
+&lt;p&gt;Here’s how I set a maximum expiry date inside an Nginx server block:&lt;/p&gt;
 
-```
-location ~* \.(?:css|js|jpg|jpeg|gif|png|ico|cur|gz|svg|svgz|mp4|ogg|ogv|webm|htc|woff|woff2|ttf|otf)$ {
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;location ~* \.(?:css|js|jpg|jpeg|gif|png|ico|cur|gz|svg|svgz|mp4|ogg|ogv|webm|htc|woff|woff2|ttf|otf)$ {
   expires 1y;
   access_log off;
   add_header Cache-Control &quot;public&quot;;
 }
-```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-With this setup the browser will keep static files for a year before re-downloading them. You’ll need to cache files for at least a week before PageSpeed stops yelling about it.
+&lt;p&gt;With this setup the browser will keep static files for a year before re-downloading them. You’ll need to cache files for at least a week before PageSpeed stops yelling about it.&lt;/p&gt;
 
-Just be aware that if you update the files on your server, browsers that have already cached the file will keep using their outdated version. To force a reload, you can change the name of the URL or version it manually with a query string like so:
+&lt;p&gt;Just be aware that if you update the files on your server, browsers that have already cached the file will keep using their outdated version. To force a reload, you can change the name of the URL or version it manually with a query string like so:&lt;/p&gt;
 
-```html
-&lt;script src=“/script.js?v=1.0”&gt;
-```
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;“/script.js?v=1.0”&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-It’s also possible to add a [file hash](https://www.npmjs.com/package/gulp-hash){:target=&quot;blank&quot;} to the URL using Gulp for automatic versioning.
+&lt;p&gt;It’s also possible to add a &lt;a href=&quot;https://www.npmjs.com/package/gulp-hash&quot; target=&quot;blank&quot;&gt;file hash&lt;/a&gt; to the URL using Gulp for automatic versioning.&lt;/p&gt;
 
-You can’t control the cache duration for files that you don’t host, such as scripts or fonts loaded from an official repository. It’s usually best to try and host them yourself, but some resources like Google Analytics need to be loaded from Google servers which set a 2 hour expiry time, knocking 1 point from your PageSpeed Insights score.
+&lt;p&gt;You can’t control the cache duration for files that you don’t host, such as scripts or fonts loaded from an official repository. It’s usually best to try and host them yourself, but some resources like Google Analytics need to be loaded from Google servers which set a 2 hour expiry time, knocking 1 point from your PageSpeed Insights score.&lt;/p&gt;
 
-#### Enable gzip compression
+&lt;h4 id=&quot;enable-gzip-compression&quot;&gt;Enable gzip compression&lt;/h4&gt;
 
-[gzip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer){:target=&quot;blank&quot;} tells your server to compress text assets like HTML, CSS and JS before sending them across the network, reducing their size by **up to 90%!** There’s really no reason to have this disabled, and it’s included in all modern web servers.
+&lt;p&gt;&lt;a href=&quot;https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer&quot; target=&quot;blank&quot;&gt;gzip&lt;/a&gt; tells your server to compress text assets like HTML, CSS and JS before sending them across the network, reducing their size by &lt;strong&gt;up to 90%!&lt;/strong&gt; There’s really no reason to have this disabled, and it’s included in all modern web servers.&lt;/p&gt;
 
-Find your `nginx.conf` file and make sure this line isn’t commented out with a `#`:
+&lt;p&gt;Find your &lt;code class=&quot;highlighter-rouge&quot;&gt;nginx.conf&lt;/code&gt; file and make sure this line isn’t commented out with a &lt;code class=&quot;highlighter-rouge&quot;&gt;#&lt;/code&gt;:&lt;/p&gt;
 
-```
-gzip on;
-```
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gzip on;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-Although not required, you can add `gzip_min_length 256;` on a new line to avoid compressing tiny files that don’t benefit from gzip. The rest of the gzip lines are fine staying commented out unless you want to change them.
+&lt;p&gt;Although not required, you can add &lt;code class=&quot;highlighter-rouge&quot;&gt;gzip_min_length 256;&lt;/code&gt; on a new line to avoid compressing tiny files that don’t benefit from gzip. The rest of the gzip lines are fine staying commented out unless you want to change them.&lt;/p&gt;
 
-#### HTTP/2 and SSL
+&lt;h4 id=&quot;http2-and-ssl&quot;&gt;HTTP/2 and SSL&lt;/h4&gt;
 
-Back in ye olde days of 2015, HTTP/1.1 was the protocol that all websites used to transfer files. It was released in 1999, and was quickly becoming a bottleneck for speed due to being designed for simpler times.
+&lt;p&gt;Back in ye olde days of 2015, HTTP/1.1 was the protocol that all websites used to transfer files. It was released in 1999, and was quickly becoming a bottleneck for speed due to being designed for simpler times.&lt;/p&gt;
 
-[HTTP/2](https://developers.google.com/web/fundamentals/performance/http2/){:target=&quot;blank&quot;} brings a huge speed boost to the underlying protocol of the internet. It’s backwards compatible and easy to set up so it should be used by default for all new sites.
+&lt;p&gt;&lt;a href=&quot;https://developers.google.com/web/fundamentals/performance/http2/&quot; target=&quot;blank&quot;&gt;HTTP/2&lt;/a&gt; brings a huge speed boost to the underlying protocol of the internet. It’s backwards compatible and easy to set up so it should be used by default for all new sites.&lt;/p&gt;
 
-* **Multiplexing** — Many requests can be made at the same time over the same connection, previously only 6 files could be downloaded at once
-* **Single TCP connection** — Just one persistent connection is needed to download all website resources, rather than a new one for every file
-* **File priority** — The server can prioritise some requests above others
-* **Server push** — The server can push files to the client without them requesting it, usually files that they’ll need later
-* **Header compression** — Saves bandwidth rather than re-sending the same headers with every request
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Multiplexing&lt;/strong&gt; — Many requests can be made at the same time over the same connection, previously only 6 files could be downloaded at once&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Single TCP connection&lt;/strong&gt; — Just one persistent connection is needed to download all website resources, rather than a new one for every file&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;File priority&lt;/strong&gt; — The server can prioritise some requests above others&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Server push&lt;/strong&gt; — The server can push files to the client without them requesting it, usually files that they’ll need later&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Header compression&lt;/strong&gt; — Saves bandwidth rather than re-sending the same headers with every request&lt;/li&gt;
+&lt;/ul&gt;
 
-Here’s a basic HTTP/2 Nginx set up to go inside your server block. The only difference is the inclusion of `http2` in each listen line.
+&lt;p&gt;Here’s a basic HTTP/2 Nginx set up to go inside your server block. The only difference is the inclusion of &lt;code class=&quot;highlighter-rouge&quot;&gt;http2&lt;/code&gt; in each listen line.&lt;/p&gt;
 
-```
-listen 80 default_server;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;listen 80 default_server;
 listen [::]:80 default_server;
 listen 443 ssl http2 default_server;
 listen [::]:443 ssl http2 default_server;
@@ -276,273 +292,267 @@ ssl_certificate_key path_to_key.pem;
 if ($scheme != &quot;https&quot;) {
   return 301 https://$host$request_uri;
 }
-```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-All HTTP/2 connections **require SSL encryption** to work, but with the rise of [Let’s Encrypt](https://letsencrypt.org/){:target=&quot;blank&quot;} you can do this for free in about 2 minutes. If you have SSH access to your server, [Certbot](https://certbot.eff.org/){:target=&quot;blank&quot;} will automagically detect the websites you’re hosting, generate and install your certificates, update your server config and renew your certificates every 90 days… we love automation 🤖
+&lt;p&gt;All HTTP/2 connections &lt;strong&gt;require SSL encryption&lt;/strong&gt; to work, but with the rise of &lt;a href=&quot;https://letsencrypt.org/&quot; target=&quot;blank&quot;&gt;Let’s Encrypt&lt;/a&gt; you can do this for free in about 2 minutes. If you have SSH access to your server, &lt;a href=&quot;https://certbot.eff.org/&quot; target=&quot;blank&quot;&gt;Certbot&lt;/a&gt; will automagically detect the websites you’re hosting, generate and install your certificates, update your server config and renew your certificates every 90 days… we love automation 🤖&lt;/p&gt;
 
-Certbot is super easy to install on Ubuntu via SSH:
+&lt;p&gt;Certbot is super easy to install on Ubuntu via SSH:&lt;/p&gt;
 
-```bash
-sudo apt install certbot
-sudo certbot
-```
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt install certbot
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;certbot
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-The `certbot` command will give you a list of any websites that it can detect on your server, ask you which ones you want to secure and whether you want to redirect all traffic to HTTPS (which you probably should). It’s as easy as that! If you run into problems, the [official documentation](https://certbot.eff.org/docs/intro.html#installation){:target=&quot;blank&quot;} covers manual setup.
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;certbot&lt;/code&gt; command will give you a list of any websites that it can detect on your server, ask you which ones you want to secure and whether you want to redirect all traffic to HTTPS (which you probably should). It’s as easy as that! If you run into problems, the &lt;a href=&quot;https://certbot.eff.org/docs/intro.html#installation&quot; target=&quot;blank&quot;&gt;official documentation&lt;/a&gt; covers manual setup.&lt;/p&gt;
 
-#### Use a CDN
+&lt;h4 id=&quot;use-a-cdn&quot;&gt;Use a CDN&lt;/h4&gt;
 
-A Content Delivery Network such as [Cloudflare](https://www.cloudflare.com/){:target=&quot;blank&quot;} or [CloudFront](https://aws.amazon.com/cloudfront/){:target=&quot;blank&quot;} sits in front of your main web server (called the origin), distributing its content to dozens of cache locations around the world.
+&lt;p&gt;A Content Delivery Network such as &lt;a href=&quot;https://www.cloudflare.com/&quot; target=&quot;blank&quot;&gt;Cloudflare&lt;/a&gt; or &lt;a href=&quot;https://aws.amazon.com/cloudfront/&quot; target=&quot;blank&quot;&gt;CloudFront&lt;/a&gt; sits in front of your main web server (called the origin), distributing its content to dozens of cache locations around the world.&lt;/p&gt;
 
-![AWS CloudFront cache locations](/assets/img/blog/pagespeed/image-4.png &quot;AWS CloudFront cache locations&quot;)
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/pagespeed/image-4.png&quot; alt=&quot;AWS CloudFront cache locations&quot; title=&quot;AWS CloudFront cache locations&quot; /&gt;&lt;/p&gt;
 
-{: .source}
-AWS CloudFront [cache locations](https://aws.amazon.com/cloudfront/details/){:target=&quot;blank&quot;}, 2018
+&lt;p class=&quot;source&quot;&gt;AWS CloudFront &lt;a href=&quot;https://aws.amazon.com/cloudfront/details/&quot; target=&quot;blank&quot;&gt;cache locations&lt;/a&gt;, 2018&lt;/p&gt;
 
-When a user visits your website, they are routed to the nearest cache which serves your static files if it has them. If the files have expired or they’re not in the cache, they are fetched the origin server and forwarded on to the user. This is ideal if you have heavy traffic or visitors from around the world trying to access your content.
+&lt;p&gt;When a user visits your website, they are routed to the nearest cache which serves your static files if it has them. If the files have expired or they’re not in the cache, they are fetched the origin server and forwarded on to the user. This is ideal if you have heavy traffic or visitors from around the world trying to access your content.&lt;/p&gt;
 
-CDNs take a huge amount of load off your web server and can handle **virtually unlimited traffic**, so they’re perfect for serving up images, videos, scripts and other static content.
+&lt;p&gt;CDNs take a huge amount of load off your web server and can handle &lt;strong&gt;virtually unlimited traffic&lt;/strong&gt;, so they’re perfect for serving up images, videos, scripts and other static content.&lt;/p&gt;
 
-You can also cache dynamic HTML responses, even if it’s for 1 second, so that your server isn’t crushed by a flood of traffic.
+&lt;p&gt;You can also cache dynamic HTML responses, even if it’s for 1 second, so that your server isn’t crushed by a flood of traffic.&lt;/p&gt;
 
-A slight downside is that it can take up to half an hour to force a re-distribution of cached files that haven’t yet expired. We also tested CloudFront for our website and found that the page actually loaded ~100ms slower than when hosted directly on our Ubuntu server.
+&lt;p&gt;A slight downside is that it can take up to half an hour to force a re-distribution of cached files that haven’t yet expired. We also tested CloudFront for our website and found that the page actually loaded ~100ms slower than when hosted directly on our Ubuntu server.&lt;/p&gt;
 
-### Compress images
+&lt;h3 id=&quot;compress-images&quot;&gt;Compress images&lt;/h3&gt;
 
-Most websites have some level of image bloat, and in the worst cases multiple photos are uploaded straight out of the camera weighing 5-10MB or more. We’ve seen a gallery with 50 images serving full camera resolution images as the thumbnails for a 220MB total page size 🤦‍♂️
+&lt;p&gt;Most websites have some level of image bloat, and in the worst cases multiple photos are uploaded straight out of the camera weighing 5-10MB or more. We’ve seen a gallery with 50 images serving full camera resolution images as the thumbnails for a 220MB total page size 🤦‍♂️&lt;/p&gt;
 
-#### Reduce file size
+&lt;h4 id=&quot;reduce-file-size&quot;&gt;Reduce file size&lt;/h4&gt;
 
-Saving your images in the correct format at the exact size they will be displayed is crucial. Photoshop and Sketch have great tools for this, and setting the JPEG quality to 50 is usually enough.
+&lt;p&gt;Saving your images in the correct format at the exact size they will be displayed is crucial. Photoshop and Sketch have great tools for this, and setting the JPEG quality to 50 is usually enough.&lt;/p&gt;
 
-Another option is to save your images at max quality with the correct dimensions, then run them through an online tool like [TinyPNG](https://tinypng.com/){:target=&quot;blank&quot;} or [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/){:target=&quot;blank&quot;}.
+&lt;p&gt;Another option is to save your images at max quality with the correct dimensions, then run them through an online tool like &lt;a href=&quot;https://tinypng.com/&quot; target=&quot;blank&quot;&gt;TinyPNG&lt;/a&gt; or &lt;a href=&quot;https://developers.google.com/speed/pagespeed/insights/&quot; target=&quot;blank&quot;&gt;PageSpeed Insights&lt;/a&gt;.&lt;/p&gt;
 
-* **JPEG** — photos and soft edges
-* **PNG** — hard lines, text and solid colours, reduce the number of colours to the minimum without banding
-* **SVG** — vector-based logos, illustrations and animations, use over PNG where possible
-* **MP4** — any video or animated content
-* **GIF** — probably never due to massive file sizes, use PNG for stills and MP4 for animations
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;JPEG&lt;/strong&gt; — photos and soft edges&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;PNG&lt;/strong&gt; — hard lines, text and solid colours, reduce the number of colours to the minimum without banding&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;SVG&lt;/strong&gt; — vector-based logos, illustrations and animations, use over PNG where possible&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;MP4&lt;/strong&gt; — any video or animated content&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;GIF&lt;/strong&gt; — probably never due to massive file sizes, use PNG for stills and MP4 for animations&lt;/li&gt;
+&lt;/ul&gt;
 
-#### Use responsive images
+&lt;h4 id=&quot;use-responsive-images&quot;&gt;Use responsive images&lt;/h4&gt;
 
-Loading optimised versions of the same image for each screen size can be a big bandwidth saver. No need to load a 2000px banner image for a mobile site! It’s possible to shave seconds off your mobile load times with these methods.
+&lt;p&gt;Loading optimised versions of the same image for each screen size can be a big bandwidth saver. No need to load a 2000px banner image for a mobile site! It’s possible to shave seconds off your mobile load times with these methods.&lt;/p&gt;
 
-The `&lt;picture&gt;` tag can set different image sources using CSS media queries. Old browsers will fall back to the nested `&lt;img&gt;` tag.
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;picture&amp;gt;&lt;/code&gt; tag can set different image sources using CSS media queries. Old browsers will fall back to the nested &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;img&amp;gt;&lt;/code&gt; tag.&lt;/p&gt;
 
-```html
-&lt;picture&gt;
-  &lt;source srcset=&quot;mobile_banner.jpg&quot; media=&quot;(max-width: 400px)&quot;&gt;
-  &lt;source srcset=&quot;small_banner.jpg&quot; media=&quot;(max-width: 768px)&quot;&gt;
-  &lt;source srcset=&quot;med_banner.jpg&quot; media=&quot;(max-width: 1024px)&quot;&gt;
-  &lt;source srcset=&quot;dektop_banner.jpg&quot; media=&quot;(min-width: 1025px)&quot;&gt;
-  &lt;img srcset=&quot;dektop_banner.jpg&quot; alt=&quot;Banner Image&quot;&gt;
-&lt;/picture&gt;
-```
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;picture&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;source&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;srcset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mobile_banner.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;media=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;(max-width: 400px)&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;source&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;srcset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;small_banner.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;media=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;(max-width: 768px)&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;source&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;srcset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;med_banner.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;media=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;(max-width: 1024px)&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;source&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;srcset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dektop_banner.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;media=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;(min-width: 1025px)&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;srcset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;dektop_banner.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Banner Image&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/picture&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-You can use `max-width`, `min-width`, `max-height`, `min-height`, `orientation` and more in the media queries.
+&lt;p&gt;You can use &lt;code class=&quot;highlighter-rouge&quot;&gt;max-width&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;min-width&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;max-height&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;min-height&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;orientation&lt;/code&gt; and more in the media queries.&lt;/p&gt;
 
-It’s also possible to do a simpler version inside a single `&lt;img&gt;` tag:
+&lt;p&gt;It’s also possible to do a simpler version inside a single &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;img&amp;gt;&lt;/code&gt; tag:&lt;/p&gt;
 
-```html
-&lt;img src=&quot;mobile_banner.jpg&quot; srcset=&quot;small_banner.jpg 1.8x, med_banner.jpg 2.5x desktop_banner.jpg 3.5x&quot; alt=&quot;Banner Image&quot; width=&quot;400px&quot; /&gt;
-```
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mobile_banner.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;srcset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;small_banner.jpg 1.8x, med_banner.jpg 2.5x desktop_banner.jpg 3.5x&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Banner Image&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;400px&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-#### Image compression plugins
+&lt;h4 id=&quot;image-compression-plugins&quot;&gt;Image compression plugins&lt;/h4&gt;
 
-Uncompressed images usually appear on content-managed websites with no [image optimisation plugins](https://en-gb.wordpress.org/plugins/wp-smushit/){:target=&quot;blank&quot;}. The client shouldn’t be expected to know how to compress their images, so make sure the website takes care of it automatically.
+&lt;p&gt;Uncompressed images usually appear on content-managed websites with no &lt;a href=&quot;https://en-gb.wordpress.org/plugins/wp-smushit/&quot; target=&quot;blank&quot;&gt;image optimisation plugins&lt;/a&gt;. The client shouldn’t be expected to know how to compress their images, so make sure the website takes care of it automatically.&lt;/p&gt;
 
-### Optimise CSS &amp; JS
+&lt;h3 id=&quot;optimise-css--js&quot;&gt;Optimise CSS &amp;amp; JS&lt;/h3&gt;
 
-Large front-end frameworks such as Bootstrap, Foundation, jQuery, Angular and React are fine on their own and can lead to faster development times, however they’re often used as a crutch for simple tasks like drop-down menus or basic animations, and include huge amounts of unused code.
+&lt;p&gt;Large front-end frameworks such as Bootstrap, Foundation, jQuery, Angular and React are fine on their own and can lead to faster development times, however they’re often used as a crutch for simple tasks like drop-down menus or basic animations, and include huge amounts of unused code.&lt;/p&gt;
 
-#### Strip unnecessary code
+&lt;h4 id=&quot;strip-unnecessary-code&quot;&gt;Strip unnecessary code&lt;/h4&gt;
 
-Do a full audit of the frameworks and libraries that you’re using, and strip out or rewrite functionality as necessary. It goes without saying that this is easier to do at the start of a project!
+&lt;p&gt;Do a full audit of the frameworks and libraries that you’re using, and strip out or rewrite functionality as necessary. It goes without saying that this is easier to do at the start of a project!&lt;/p&gt;
 
-Try minimal libraries like [Pure CSS](https://purecss.io/){:target=&quot;blank&quot;} and [HyperApp](https://hyperapp.js.org/){:target=&quot;blank&quot;}, or write your code from scratch. If you’re using Bootstrap, [customise it](https://getbootstrap.com/docs/3.3/customize/){:target=&quot;blank&quot;} to reduce the file size!
+&lt;p&gt;Try minimal libraries like &lt;a href=&quot;https://purecss.io/&quot; target=&quot;blank&quot;&gt;Pure CSS&lt;/a&gt; and &lt;a href=&quot;https://hyperapp.js.org/&quot; target=&quot;blank&quot;&gt;HyperApp&lt;/a&gt;, or write your code from scratch. If you’re using Bootstrap, &lt;a href=&quot;https://getbootstrap.com/docs/3.3/customize/&quot; target=&quot;blank&quot;&gt;customise it&lt;/a&gt; to reduce the file size!&lt;/p&gt;
 
-#### Scrap jQuery
+&lt;h4 id=&quot;scrap-jquery&quot;&gt;Scrap jQuery&lt;/h4&gt;
 
-With the rise of CSS animations and [ES6](https://es6.io/){:target=&quot;blank&quot;} JavaScript, we have powerful tools already built into browsers. If you’re pulling in 85KB of jQuery just to animate a dropdown, it’s probably time to upgrade your code!
+&lt;p&gt;With the rise of CSS animations and &lt;a href=&quot;https://es6.io/&quot; target=&quot;blank&quot;&gt;ES6&lt;/a&gt; JavaScript, we have powerful tools already built into browsers. If you’re pulling in 85KB of jQuery just to animate a dropdown, it’s probably time to upgrade your code!&lt;/p&gt;
 
-jQuery is great for making AJAX requests easier, but if that’s all you need then [axios](https://github.com/axios/axios){:target=&quot;blank&quot;} is even smoother to use at 4.7KB gzipped and `.fetch()` is supported natively in [all modern browsers](https://caniuse.com/#search=fetch){:target=&quot;blank&quot;} except IE11.
+&lt;p&gt;jQuery is great for making AJAX requests easier, but if that’s all you need then &lt;a href=&quot;https://github.com/axios/axios&quot; target=&quot;blank&quot;&gt;axios&lt;/a&gt; is even smoother to use at 4.7KB gzipped and &lt;code class=&quot;highlighter-rouge&quot;&gt;.fetch()&lt;/code&gt; is supported natively in &lt;a href=&quot;https://caniuse.com/#search=fetch&quot; target=&quot;blank&quot;&gt;all modern browsers&lt;/a&gt; except IE11.&lt;/p&gt;
 
-```javascript
-// jQuery (ES5)
-$.ajax({
-	url: &quot;/data&quot;,
-	success: function(result) {
-	  doSomething(result)
-	}
-})
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// jQuery (ES5)&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ajax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+	&lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;/data&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;na&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	  &lt;span class=&quot;nx&quot;&gt;doSomething&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
 
-// axios (ES6)
-axios.get('/data').then(result) =&gt; {
-	doSomething(result)
-})
+&lt;span class=&quot;c1&quot;&gt;// axios (ES6)&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;axios&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'/data'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;doSomething&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
 
-// fetch (ES6)
-fetch('/data').then(result) =&gt; {
-	doSomething(result)
-})
-```
+&lt;span class=&quot;c1&quot;&gt;// fetch (ES6)&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;fetch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'/data'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;doSomething&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-Websites like [You Might Not Need jQuery](http://youmightnotneedjquery.com/) and [PlainJS](https://plainjs.com/){:target=&quot;blank&quot;} are fantastic resources for replacing heavy libraries with small snippets of vanilla JavaScript code. If you need to boost your JS skills, [Wes Bos](http://wesbos.com/) has some phenomenal courses that we love and use.
+&lt;p&gt;Websites like &lt;a href=&quot;http://youmightnotneedjquery.com/&quot;&gt;You Might Not Need jQuery&lt;/a&gt; and &lt;a href=&quot;https://plainjs.com/&quot; target=&quot;blank&quot;&gt;PlainJS&lt;/a&gt; are fantastic resources for replacing heavy libraries with small snippets of vanilla JavaScript code. If you need to boost your JS skills, &lt;a href=&quot;http://wesbos.com/&quot;&gt;Wes Bos&lt;/a&gt; has some phenomenal courses that we love and use.&lt;/p&gt;
 
-#### Async load JavaScript
+&lt;h4 id=&quot;async-load-javascript&quot;&gt;Async load JavaScript&lt;/h4&gt;
 
-Most scripts aren’t necessary to render the initial page, but by default all `&lt;script&gt;` tags **force the browser to pause rendering**, download the external file and run it _before_ continuing with the page.
+&lt;p&gt;Most scripts aren’t necessary to render the initial page, but by default all &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt; tags &lt;strong&gt;force the browser to pause rendering&lt;/strong&gt;, download the external file and run it &lt;em&gt;before&lt;/em&gt; continuing with the page.&lt;/p&gt;
 
-Move non-critical `&lt;script&gt;` tags to the footer and add an `async` property to stop them blocking the page load. This allows the browser to move on with rendering whilst sending out the request asynchronously, and the script will be run whenever it gets back from the server.
+&lt;p&gt;Move non-critical &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt; tags to the footer and add an &lt;code class=&quot;highlighter-rouge&quot;&gt;async&lt;/code&gt; property to stop them blocking the page load. This allows the browser to move on with rendering whilst sending out the request asynchronously, and the script will be run whenever it gets back from the server.&lt;/p&gt;
 
-Just bear in mind that with this approach you can’t guarantee the order or time in which your scripts will be run. We prefer inlining any small scripts, which we’ll get to later.
+&lt;p&gt;Just bear in mind that with this approach you can’t guarantee the order or time in which your scripts will be run. We prefer inlining any small scripts, which we’ll get to later.&lt;/p&gt;
 
-### Reduce HTTP requests
+&lt;h3 id=&quot;reduce-http-requests&quot;&gt;Reduce HTTP requests&lt;/h3&gt;
 
-Every external request your browser sends out takes extra time, and is affected by the latency between you and the server. On a 3G network latency can easily hit 200ms per request, so every request counts.
+&lt;p&gt;Every external request your browser sends out takes extra time, and is affected by the latency between you and the server. On a 3G network latency can easily hit 200ms per request, so every request counts.&lt;/p&gt;
 
-#### Bundle &amp; minify assets
+&lt;h4 id=&quot;bundle--minify-assets&quot;&gt;Bundle &amp;amp; minify assets&lt;/h4&gt;
 
-[Gulp](https://gulpjs.com/){:target=&quot;blank&quot;} will supercharge your front-end workflow, and it’s hard to imagine life without it. Use it to [minify](https://www.npmjs.com/package/gulp-uglify){:target=&quot;blank&quot;} and pre-process your [JS](https://www.npmjs.com/package/gulp-babel){:target=&quot;blank&quot;} &amp; [CSS](https://www.npmjs.com/package/gulp-stylus){:target=&quot;blank&quot;}, [concatenate](https://www.npmjs.com/package/gulp-concat){:target=&quot;blank&quot;} them into a single package, [auto-inject changes](https://www.npmjs.com/package/browser-sync){:target=&quot;blank&quot;} into your browser without reloading (absolute godsend 🙏) and a whole lot more.
+&lt;p&gt;&lt;a href=&quot;https://gulpjs.com/&quot; target=&quot;blank&quot;&gt;Gulp&lt;/a&gt; will supercharge your front-end workflow, and it’s hard to imagine life without it. Use it to &lt;a href=&quot;https://www.npmjs.com/package/gulp-uglify&quot; target=&quot;blank&quot;&gt;minify&lt;/a&gt; and pre-process your &lt;a href=&quot;https://www.npmjs.com/package/gulp-babel&quot; target=&quot;blank&quot;&gt;JS&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://www.npmjs.com/package/gulp-stylus&quot; target=&quot;blank&quot;&gt;CSS&lt;/a&gt;, &lt;a href=&quot;https://www.npmjs.com/package/gulp-concat&quot; target=&quot;blank&quot;&gt;concatenate&lt;/a&gt; them into a single package, &lt;a href=&quot;https://www.npmjs.com/package/browser-sync&quot; target=&quot;blank&quot;&gt;auto-inject changes&lt;/a&gt; into your browser without reloading (absolute godsend 🙏) and a whole lot more.&lt;/p&gt;
 
-We recently wrote about using Gulp to easily generate [responsive emails with MJML](https://amp.studio/blog/tutorials/2018/responsive-emails-mjml/){:target=&quot;blank&quot;}, and we’ll probably do a full modern front-end workflow post in the future.
+&lt;p&gt;We recently wrote about using Gulp to easily generate &lt;a href=&quot;https://amp.studio/blog/tutorials/2018/responsive-emails-mjml/&quot; target=&quot;blank&quot;&gt;responsive emails with MJML&lt;/a&gt;, and we’ll probably do a full modern front-end workflow post in the future.&lt;/p&gt;
 
-It’s a whole topic in itself, but well worth digging into. Sitepoint’s [Introduction to Gulp.js](https://www.sitepoint.com/introduction-gulp-js/){:target=&quot;blank&quot;} is a good place to start.
+&lt;p&gt;It’s a whole topic in itself, but well worth digging into. Sitepoint’s &lt;a href=&quot;https://www.sitepoint.com/introduction-gulp-js/&quot; target=&quot;blank&quot;&gt;Introduction to Gulp.js&lt;/a&gt; is a good place to start.&lt;/p&gt;
 
-#### Lazy load images
+&lt;h4 id=&quot;lazy-load-images&quot;&gt;Lazy load images&lt;/h4&gt;
 
-If you have an image-heavy site, consider [lazy loading](https://appelsiini.net/projects/lazyload/){:target=&quot;blank&quot;} them as they’re scrolled into view, otherwise they’ll be eating up the bandwidth during the initial page load that should be used for above-the-fold content. If you have a carousel banner, make sure that your code/plugin lazy loads the remaining images as they’re needed.
+&lt;p&gt;If you have an image-heavy site, consider &lt;a href=&quot;https://appelsiini.net/projects/lazyload/&quot; target=&quot;blank&quot;&gt;lazy loading&lt;/a&gt; them as they’re scrolled into view, otherwise they’ll be eating up the bandwidth during the initial page load that should be used for above-the-fold content. If you have a carousel banner, make sure that your code/plugin lazy loads the remaining images as they’re needed.&lt;/p&gt;
 
-#### Generate a sprite sheet
+&lt;h4 id=&quot;generate-a-sprite-sheet&quot;&gt;Generate a sprite sheet&lt;/h4&gt;
 
-If you have lots of small images or an icon set that requires multiple HTTP requests, consider packing them all into one sprite sheet. [ZeroSprites](http://zerosprites.com/) is our weapon of choice here.
+&lt;p&gt;If you have lots of small images or an icon set that requires multiple HTTP requests, consider packing them all into one sprite sheet. &lt;a href=&quot;http://zerosprites.com/&quot;&gt;ZeroSprites&lt;/a&gt; is our weapon of choice here.&lt;/p&gt;
 
-This generates a single PNG file with all of your icons included, which then gets cropped using the supplied CSS classes.
+&lt;p&gt;This generates a single PNG file with all of your icons included, which then gets cropped using the supplied CSS classes.&lt;/p&gt;
 
-```css
-.sprites {
-  background: url(sprites.png) no-repeat;
-}
-.435264 {
-  width: 704px;
-  height: 371px;
-  background-position: 0 0;
-}
-.435264 {
-  width: 704px;
-  height: 371px;
-  background-position: 0 -372px;
-}
-/* ...More icon classes */
-```
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.sprites&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(sprites.png)&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;no-repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.435264&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;704px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;371px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background-position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.435264&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;704px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;371px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background-position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-372px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;/* ...More icon classes */&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-#### Watch your WordPress plugins
+&lt;h4 id=&quot;watch-your-wordpress-plugins&quot;&gt;Watch your WordPress plugins&lt;/h4&gt;
 
-WordPress (noticing a theme here?) plugins are notorious for loading masses of extra code into the browser, and it’s hard to weed them back out without breaking things. We recently came across a brand new WordPress site for an agency that _sells website development_. Here’s just one portion of the `&lt;head&gt;` code:
+&lt;p&gt;WordPress (noticing a theme here?) plugins are notorious for loading masses of extra code into the browser, and it’s hard to weed them back out without breaking things. We recently came across a brand new WordPress site for an agency that &lt;em&gt;sells website development&lt;/em&gt;. Here’s just one portion of the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;head&amp;gt;&lt;/code&gt; code:&lt;/p&gt;
 
-![How not to load website resources](/assets/img/blog/pagespeed/image-5.png &quot;How not to load website resources&quot;)
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/pagespeed/image-5.png&quot; alt=&quot;How not to load website resources&quot; title=&quot;How not to load website resources&quot; /&gt;&lt;/p&gt;
 
-In total, there are 53 Javascript and 33 CSS files which block the page and take a full 6 seconds to load on Virgin’s fastest 400Mbit broadband, and **44 seconds** on 3G internet. The page has a 1.2 second TTFB, no `gzip` and no `Cache-Control` header so all of the assets are uncompressed and re-downloaded on every page! 😡😡😡
+&lt;p&gt;In total, there are 53 Javascript and 33 CSS files which block the page and take a full 6 seconds to load on Virgin’s fastest 400Mbit broadband, and &lt;strong&gt;44 seconds&lt;/strong&gt; on 3G internet. The page has a 1.2 second TTFB, no &lt;code class=&quot;highlighter-rouge&quot;&gt;gzip&lt;/code&gt; and no &lt;code class=&quot;highlighter-rouge&quot;&gt;Cache-Control&lt;/code&gt; header so all of the assets are uncompressed and re-downloaded on every page! 😡😡😡&lt;/p&gt;
 
-A staggering portion of these are coming from a single 3rd party Instagram feed plugin, yet the page has no Instagram content. 🤔
+&lt;p&gt;A staggering portion of these are coming from a single 3rd party Instagram feed plugin, yet the page has no Instagram content. 🤔&lt;/p&gt;
 
-Audit your plugins!
+&lt;p&gt;Audit your plugins!&lt;/p&gt;
 
-### Prioritise visible content
+&lt;h3 id=&quot;prioritise-visible-content&quot;&gt;Prioritise visible content&lt;/h3&gt;
 
-Pay close attention to the order in which your CSS, JS and images are loading, and try to minimise the time it takes for the browser to render above-the-fold content. Google have [excellent advice](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/){:target=&quot;blank&quot;} for optimising the critical render path.
+&lt;p&gt;Pay close attention to the order in which your CSS, JS and images are loading, and try to minimise the time it takes for the browser to render above-the-fold content. Google have &lt;a href=&quot;https://developers.google.com/web/fundamentals/performance/critical-rendering-path/&quot; target=&quot;blank&quot;&gt;excellent advice&lt;/a&gt; for optimising the critical render path.&lt;/p&gt;
 
-#### Inline critical CSS &amp; JS
+&lt;h4 id=&quot;inline-critical-css--js&quot;&gt;Inline critical CSS &amp;amp; JS&lt;/h4&gt;
 
-If your CSS weighs less than 100KB or so we recommend just inlining the minified version directly into the HTML using Gulp or your templating system of choice. This way the browser can instantly start laying out the page with the just first HTML response rather than waiting for an external file request to return, and the page feels much snappier as a result.
+&lt;p&gt;If your CSS weighs less than 100KB or so we recommend just inlining the minified version directly into the HTML using Gulp or your templating system of choice. This way the browser can instantly start laying out the page with the just first HTML response rather than waiting for an external file request to return, and the page feels much snappier as a result.&lt;/p&gt;
 
-See [The Guardian’s](https://www.theguardian.com/uk){:target=&quot;blank&quot;} recently redesigned website for an example of inlining the main payload of CSS.
+&lt;p&gt;See &lt;a href=&quot;https://www.theguardian.com/uk&quot; target=&quot;blank&quot;&gt;The Guardian’s&lt;/a&gt; recently redesigned website for an example of inlining the main payload of CSS.&lt;/p&gt;
 
-With this method you don’t get the benefit of having CSS cached in the browser because it’s re-downloaded on every page, but once gzipped 100KB of CSS turns into ~15KB and is transferred in an instant. We’re still seeing &lt; 200ms load times with this approach. If you’re able to separate your above-the-fold CSS and just inline that part, go for it!
+&lt;p&gt;With this method you don’t get the benefit of having CSS cached in the browser because it’s re-downloaded on every page, but once gzipped 100KB of CSS turns into ~15KB and is transferred in an instant. We’re still seeing &amp;lt; 200ms load times with this approach. If you’re able to separate your above-the-fold CSS and just inline that part, go for it!&lt;/p&gt;
 
-We also inline most of our small JavaScript files to reduce HTTP requests and increase the overall page speed.
+&lt;p&gt;We also inline most of our small JavaScript files to reduce HTTP requests and increase the overall page speed.&lt;/p&gt;
 
-#### Set above-the-fold dimensions in CSS
+&lt;h4 id=&quot;set-above-the-fold-dimensions-in-css&quot;&gt;Set above-the-fold dimensions in CSS&lt;/h4&gt;
 
-Everybody’s tried to click on something the _instant_ after an advert or image pops in causing the page to re-arrange itself, and felt the internal rage that follows as you mash the back button too many times.
+&lt;p&gt;Everybody’s tried to click on something the &lt;em&gt;instant&lt;/em&gt; after an advert or image pops in causing the page to re-arrange itself, and felt the internal rage that follows as you mash the back button too many times.&lt;/p&gt;
 
-I spent hours trying to figure out why PageSpeed Insights was knocking my score down for Prioritise Visible Content, and this turned out to be the reason (and an important lesson).
+&lt;p&gt;I spent hours trying to figure out why PageSpeed Insights was knocking my score down for Prioritise Visible Content, and this turned out to be the reason (and an important lesson).&lt;/p&gt;
 
-If you have images above the fold, make sure the height attribute is clearly defined in your CSS. By default the browser will render the `&lt;img&gt;` element at 0 height until the image file loads, at which point it will calculate the width/height ratio and resize the element to fit, causing the page content to jump around.
+&lt;p&gt;If you have images above the fold, make sure the height attribute is clearly defined in your CSS. By default the browser will render the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;img&amp;gt;&lt;/code&gt; element at 0 height until the image file loads, at which point it will calculate the width/height ratio and resize the element to fit, causing the page content to jump around.&lt;/p&gt;
 
-![MSD vehicles website paints](/assets/img/blog/pagespeed/image-6.jpg &quot;MSD vehicles website paints&quot;)
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/pagespeed/image-6.jpg&quot; alt=&quot;MSD vehicles website paints&quot; title=&quot;MSD vehicles website paints&quot; /&gt;&lt;/p&gt;
 
-Notice on the [MSD Vehicles](https://amp.studio/portfolio/2017/msd-vehicles/){:target=&quot;blank&quot;} website how even before the text and images have loaded, the page is laid out with exactly the right dimensions to accommodate them. This doesn’t strictly make the page load faster, but it _feels_ faster once you’ve done it because the content blocks are visually in place sooner. The final paint happens in just 140ms because we’ve spent time optimising for visible content.
+&lt;p&gt;Notice on the &lt;a href=&quot;https://amp.studio/portfolio/2017/msd-vehicles/&quot; target=&quot;blank&quot;&gt;MSD Vehicles&lt;/a&gt; website how even before the text and images have loaded, the page is laid out with exactly the right dimensions to accommodate them. This doesn’t strictly make the page load faster, but it &lt;em&gt;feels&lt;/em&gt; faster once you’ve done it because the content blocks are visually in place sooner. The final paint happens in just 140ms because we’ve spent time optimising for visible content.&lt;/p&gt;
 
-You can use the Network tab in Chrome’s developer tools to [capture screenshots](https://developers.google.com/web/tools/chrome-devtools/network-performance/){:target=&quot;blank&quot;} of each paint stage and analyse where content is jumping around, and try to fix the dimensions in CSS.
+&lt;p&gt;You can use the Network tab in Chrome’s developer tools to &lt;a href=&quot;https://developers.google.com/web/tools/chrome-devtools/network-performance/&quot; target=&quot;blank&quot;&gt;capture screenshots&lt;/a&gt; of each paint stage and analyse where content is jumping around, and try to fix the dimensions in CSS.&lt;/p&gt;
 
-This also goes for advertising blocks. _Especially_ for advertising blocks.
+&lt;p&gt;This also goes for advertising blocks. &lt;em&gt;Especially&lt;/em&gt; for advertising blocks.&lt;/p&gt;
 
-#### Optimise the waterfall
+&lt;h4 id=&quot;optimise-the-waterfall&quot;&gt;Optimise the waterfall&lt;/h4&gt;
 
-Most browser developer tools have a Network tab that shows a waterfall graph of all the HTTP requests made whilst the tab is set to record, along with details of the file sizes, number of requests and loading times for different stages. It’s extremely useful for analysing the order in which files are requested and spotting issues.
+&lt;p&gt;Most browser developer tools have a Network tab that shows a waterfall graph of all the HTTP requests made whilst the tab is set to record, along with details of the file sizes, number of requests and loading times for different stages. It’s extremely useful for analysing the order in which files are requested and spotting issues.&lt;/p&gt;
 
-In the Network tab, you can turn off your browser cache to force all assets to re-download and artificially limit your network speed to simulate mobile devices on 3G and see how that affects the graph.
+&lt;p&gt;In the Network tab, you can turn off your browser cache to force all assets to re-download and artificially limit your network speed to simulate mobile devices on 3G and see how that affects the graph.&lt;/p&gt;
 
-Here’s the AMP homepage waterfall in Chrome, without the video that streams in afterwards:
+&lt;p&gt;Here’s the AMP homepage waterfall in Chrome, without the video that streams in afterwards:&lt;/p&gt;
 
-![AMP homepage waterfall in Chrome](/assets/img/blog/pagespeed/image-7.png &quot;AMP homepage waterfall in Chrome&quot;)
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/pagespeed/image-7.png&quot; alt=&quot;AMP homepage waterfall in Chrome&quot; title=&quot;AMP homepage waterfall in Chrome&quot; /&gt;&lt;/p&gt;
 
-Most of the HTTP requests are made in bulk as early as possible because they’re included in the first HTML response, resulting in a 233ms load time for this particular page.
+&lt;p&gt;Most of the HTTP requests are made in bulk as early as possible because they’re included in the first HTML response, resulting in a 233ms load time for this particular page.&lt;/p&gt;
 
-Inlining CSS allows the browser to request background images, icons and fonts immediately, rather than waiting for the external CSS to download, parse and request the files in a second round.
+&lt;p&gt;Inlining CSS allows the browser to request background images, icons and fonts immediately, rather than waiting for the external CSS to download, parse and request the files in a second round.&lt;/p&gt;
 
-This is where HTTP/2 helps massively, allowing us to process hundreds of files in one go. When using HTTP/1.1 the requests get bottlenecked and staggered across time due to a limit of 6 requests.
+&lt;p&gt;This is where HTTP/2 helps massively, allowing us to process hundreds of files in one go. When using HTTP/1.1 the requests get bottlenecked and staggered across time due to a limit of 6 requests.&lt;/p&gt;
 
-The 4 font files at the top load in earlier than everything else because we’ve added preload links to the `&lt;head&gt;`, before the inlined CSS. This helps the text to render as early as possible in [supported browsers](https://caniuse.com/#search=preload){:target=&quot;blank&quot;}. You can preload any files you like to get the requests sent off before the rest of the HTML or CSS is parsed.
+&lt;p&gt;The 4 font files at the top load in earlier than everything else because we’ve added preload links to the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;head&amp;gt;&lt;/code&gt;, before the inlined CSS. This helps the text to render as early as possible in &lt;a href=&quot;https://caniuse.com/#search=preload&quot; target=&quot;blank&quot;&gt;supported browsers&lt;/a&gt;. You can preload any files you like to get the requests sent off before the rest of the HTML or CSS is parsed.&lt;/p&gt;
 
-```html
-&lt;link rel=&quot;preload&quot; href=&quot;/assets/fonts/ibmplexserif-semibold.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot;&gt;
-&lt;link rel=&quot;preload&quot; href=&quot;/assets/fonts/ibmplexserif-regular.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot;&gt;
-&lt;link rel=&quot;preload&quot; href=&quot;/assets/fonts/montserrat-semibold.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot;&gt;
-&lt;link rel=&quot;preload&quot; href=&quot;/assets/fonts/montserrat-regular.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot;&gt;
-```
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;preload&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/assets/fonts/ibmplexserif-semibold.woff2&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;as=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;font&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;font/woff2&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;preload&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/assets/fonts/ibmplexserif-regular.woff2&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;as=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;font&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;font/woff2&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;preload&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/assets/fonts/montserrat-semibold.woff2&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;as=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;font&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;font/woff2&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;preload&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/assets/fonts/montserrat-regular.woff2&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;as=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;font&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;font/woff2&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-I can’t quite work out why Chrome loads in all of the favicon sizes separately at the bottom of the graph, but it doesn’t seem to affect the loading time which is marked buy a vertical red line.
+&lt;p&gt;I can’t quite work out why Chrome loads in all of the favicon sizes separately at the bottom of the graph, but it doesn’t seem to affect the loading time which is marked buy a vertical red line.&lt;/p&gt;
 
-### Reduce TTFB (time-to-first-byte)
+&lt;h3 id=&quot;reduce-ttfb-time-to-first-byte&quot;&gt;Reduce TTFB (time-to-first-byte)&lt;/h3&gt;
 
-TTFB measures the delay between your browser asking for a webpage and receiving the initial HTML response from the web server. A faster TTFB means that a visitor’s browser can parse the HTML and send out the requests for all of the external images and scripts earlier.
+&lt;p&gt;TTFB measures the delay between your browser asking for a webpage and receiving the initial HTML response from the web server. A faster TTFB means that a visitor’s browser can parse the HTML and send out the requests for all of the external images and scripts earlier.&lt;/p&gt;
 
-#### Cache dynamic content
+&lt;h4 id=&quot;cache-dynamic-content&quot;&gt;Cache dynamic content&lt;/h4&gt;
 
-In a CMS all of the page content is usually stored in a database, so this needs to be fetched, processed and dynamically placed into a template before serving the resulting HTML back to the user, increasing the TTFB.
+&lt;p&gt;In a CMS all of the page content is usually stored in a database, so this needs to be fetched, processed and dynamically placed into a template before serving the resulting HTML back to the user, increasing the TTFB.&lt;/p&gt;
 
-The problem is that many websites serve exactly the same page to each user, but the server still has to **render the page every single time!** Each page can take half a second even on a fresh WordPress site with no plugins.
+&lt;p&gt;The problem is that many websites serve exactly the same page to each user, but the server still has to &lt;strong&gt;render the page every single time!&lt;/strong&gt; Each page can take half a second even on a fresh WordPress site with no plugins.&lt;/p&gt;
 
-Using a plugin like [WP Super Cache](https://en-gb.wordpress.org/plugins/wp-super-cache/){:target=&quot;blank&quot;} for WordPress helps to save the server from re-rendering the same content for every visitor, reducing the TTFB.
+&lt;p&gt;Using a plugin like &lt;a href=&quot;https://en-gb.wordpress.org/plugins/wp-super-cache/&quot; target=&quot;blank&quot;&gt;WP Super Cache&lt;/a&gt; for WordPress helps to save the server from re-rendering the same content for every visitor, reducing the TTFB.&lt;/p&gt;
 
-#### Check server latency
+&lt;h4 id=&quot;check-server-latency&quot;&gt;Check server latency&lt;/h4&gt;
 
-Make sure that your website is hosted in the same country that it’s being primarily accessed from to reduce the time spent waiting for a response. Our servers are in London, so we’re getting speedy ~20-30 millisecond responses to our Stoke-on-Trent office 150 miles away. There’s no set goal for ping, but lower is always better.
+&lt;p&gt;Make sure that your website is hosted in the same country that it’s being primarily accessed from to reduce the time spent waiting for a response. Our servers are in London, so we’re getting speedy ~20-30 millisecond responses to our Stoke-on-Trent office 150 miles away. There’s no set goal for ping, but lower is always better.&lt;/p&gt;
 
-```bash
-ping www.amp.studio
-```
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ping www.amp.studio
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-Using a CDN (discussed earlier) will help to reduce latency internationally.
+&lt;p&gt;Using a CDN (discussed earlier) will help to reduce latency internationally.&lt;/p&gt;
 
-#### Try a static site generator
+&lt;h4 id=&quot;try-a-static-site-generator&quot;&gt;Try a static site generator&lt;/h4&gt;
 
-For maximum performance, consider building a completely pre-rendered website from scratch with a static site generator such as [Jekyll](https://jekyllrb.com/){:target=&quot;blank&quot;} (like this website) or [Hugo](https://gohugo.io/){:target=&quot;blank&quot;}. This approach offers ultimate control and speed for developers, but lacks the ability for clients to control the content.
+&lt;p&gt;For maximum performance, consider building a completely pre-rendered website from scratch with a static site generator such as &lt;a href=&quot;https://jekyllrb.com/&quot; target=&quot;blank&quot;&gt;Jekyll&lt;/a&gt; (like this website) or &lt;a href=&quot;https://gohugo.io/&quot; target=&quot;blank&quot;&gt;Hugo&lt;/a&gt;. This approach offers ultimate control and speed for developers, but lacks the ability for clients to control the content.&lt;/p&gt;
 
-We’ve found that some clients rarely if ever update their websites even with access to a CMS, so in these cases we prefer building static websites. The client can ask the developer to update the website on the rare occasion that it needs doing, and it’s usually cheaper for the client overall because the initial build takes less time.
+&lt;p&gt;We’ve found that some clients rarely if ever update their websites even with access to a CMS, so in these cases we prefer building static websites. The client can ask the developer to update the website on the rare occasion that it needs doing, and it’s usually cheaper for the client overall because the initial build takes less time.&lt;/p&gt;
 
-You can still have dynamically generated blog posts and project pages, they’re just rendered into HTML on your development computer instead of on the server every time the page is requested. For the Twitter feed on our otherwise static homepage, we pull the data in via AJAX from a custom API.
+&lt;p&gt;You can still have dynamically generated blog posts and project pages, they’re just rendered into HTML on your development computer instead of on the server every time the page is requested. For the Twitter feed on our otherwise static homepage, we pull the data in via AJAX from a custom API.&lt;/p&gt;
 
-Our own website has a ~25ms TTFB when deployed because the pages are already rendered into static HTML files, so the web server can instantly respond without processing any PHP or backend logic.
+&lt;p&gt;Our own website has a ~25ms TTFB when deployed because the pages are already rendered into static HTML files, so the web server can instantly respond without processing any PHP or backend logic.&lt;/p&gt;
 
-## Conclusion
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
-Whew, that was a long one.
+&lt;p&gt;Whew, that was a long one.&lt;/p&gt;
 
-Hopefully this post encourages clients and developers alike to start taking speed seriously when it comes to increasing the revenue and SEO ranking of a website.
+&lt;p&gt;Hopefully this post encourages clients and developers alike to start taking speed seriously when it comes to increasing the revenue and SEO ranking of a website.&lt;/p&gt;
 
-We’re barely scratching the surface and each topic could easily be a post on its own, so [email us](https://amp.studio/contact){:target=&quot;blank&quot;} or reach out on [Twitter](https://twitter.com/ampstudiouk){:target=&quot;blank&quot;} with any questions or comments.</content><author><name>[{&quot;name&quot;=&gt;&quot;Lewis Booth&quot;}, {&quot;img&quot;=&gt;&quot;lewis-thumb1.jpg&quot;}]</name></author><summary type="html">Most digital marketing companies spend weeks of effort and thousands of pounds on paid search campaigns, generating SEO strategies, posting on social media and building landing pages to squeeze out a few percent more conversions.</summary></entry><entry><title type="html">Building Responsive Emails with MJML</title><link href="https://amp.studio/blog/tutorials/2018/responsive-emails-mjml/" rel="alternate" type="text/html" title="Building Responsive Emails with MJML" /><published>2018-01-04T09:00:00+00:00</published><updated>2018-01-04T09:00:00+00:00</updated><id>https://amp.studio/blog/tutorials/2018/responsive-emails-mjml</id><content type="html" xml:base="https://amp.studio/blog/tutorials/2018/responsive-emails-mjml/">&lt;p class=&quot;first&quot;&gt;If any of you, like myself, have designed and developed bespoke responsive emails on a regular basis you’ll understand the difficulties in trying to get an engaging, aesthetically pleasing responsive email to render correctly in every major email client, including those pesky legacy email clients – yes we’re all looking at you Outlook, you pile of 💩 .&lt;/p&gt;
+&lt;p&gt;We’re barely scratching the surface and each topic could easily be a post on its own, so &lt;a href=&quot;https://amp.studio/contact&quot; target=&quot;blank&quot;&gt;email us&lt;/a&gt; or reach out on &lt;a href=&quot;https://twitter.com/ampstudiouk&quot; target=&quot;blank&quot;&gt;Twitter&lt;/a&gt; with any questions or comments.&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Lewis Booth&quot;}, {&quot;img&quot;=&gt;&quot;lewis-thumb1.jpg&quot;}]</name></author><summary type="html">Most digital marketing companies spend weeks of effort and thousands of pounds on paid search campaigns, generating SEO strategies, posting on social media and building landing pages to squeeze out a few percent more conversions.</summary></entry><entry><title type="html">Building Responsive Emails with MJML</title><link href="https://amp.studio/blog/tutorials/2018/responsive-emails-mjml/" rel="alternate" type="text/html" title="Building Responsive Emails with MJML" /><published>2018-01-04T09:00:00+00:00</published><updated>2018-01-04T09:00:00+00:00</updated><id>https://amp.studio/blog/tutorials/2018/responsive-emails-mjml</id><content type="html" xml:base="https://amp.studio/blog/tutorials/2018/responsive-emails-mjml/">&lt;p class=&quot;first&quot;&gt;If any of you, like myself, have designed and developed bespoke responsive emails on a regular basis you’ll understand the difficulties in trying to get an engaging, aesthetically pleasing responsive email to render correctly in every major email client, including those pesky legacy email clients – yes we’re all looking at you Outlook, you pile of 💩 .&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/blog/responsive-emails-mjml-image-1.svg&quot; alt=&quot;Introducing MJML&quot; title=&quot;Introducing MJML&quot; /&gt;&lt;/p&gt;
 
@@ -896,28 +906,28 @@ We’re barely scratching the surface and each topic could easily be a post on i
 
 &lt;h2 id=&quot;final-words&quot;&gt;Final Words&lt;/h2&gt;
 
-&lt;p&gt;I hope this tutorial has helped you to see the good side of responsive email development. As always, I’d highly recommend testing all your emails before sending either with &lt;a href=&quot;https://litmus.com/&quot; target=&quot;blank&quot;&gt;Litmus&lt;/a&gt; or Litmus’s free email sending tool &lt;a href=&quot;https://putsmail.com/&quot; target=&quot;blank&quot;&gt;PutsMail&lt;/a&gt;. Enjoy your email development adventure and please share this article!&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Dan Mountford&quot;}, {&quot;img&quot;=&gt;&quot;dan-thumb1.jpg&quot;}]</name></author><summary type="html">If any of you, like myself, have designed and developed bespoke responsive emails on a regular basis you’ll understand the difficulties in trying to get an engaging, aesthetically pleasing responsive email to render correctly in every major email client, including those pesky legacy email clients – yes we’re all looking at you Outlook, you pile of 💩 .</summary></entry><entry><title type="html">MB Living – Web Design</title><link href="https://amp.studio/portfolio/2018/mb-living/" rel="alternate" type="text/html" title="MB Living – Web Design" /><published>2018-01-04T00:00:00+00:00</published><updated>2018-01-04T00:00:00+00:00</updated><id>https://amp.studio/portfolio/2018/mb-living</id><content type="html" xml:base="https://amp.studio/portfolio/2018/mb-living/"></content><author><name></name></author><category term="web-design" /><summary type="html"></summary></entry><entry><title type="html">IBM’s New Typeface – IBM Plex</title><link href="https://amp.studio/blog/design-news/2018/ibm-plex/" rel="alternate" type="text/html" title="IBM’s New Typeface – IBM Plex" /><published>2018-01-02T15:54:35+00:00</published><updated>2018-01-02T15:54:35+00:00</updated><id>https://amp.studio/blog/design-news/2018/ibm-plex</id><content type="html" xml:base="https://amp.studio/blog/design-news/2018/ibm-plex/">{:.first}
-Since the 1960s, [IBM](https://www.ibm.com) have favoured Helvetica as their favoured type family – until now. [Mike Abbink](https://www.linkedin.com/in/mike-abbink-8550072/), Executive Creative Director of Brand Experience and Design at IBM, along with an in-house team have developed a completely new type family to replace Helvetica across the IBM's visual identity. Say hello to [IBM Plex](https://github.com/IBM/type).
+&lt;p&gt;I hope this tutorial has helped you to see the good side of responsive email development. As always, I’d highly recommend testing all your emails before sending either with &lt;a href=&quot;https://litmus.com/&quot; target=&quot;blank&quot;&gt;Litmus&lt;/a&gt; or Litmus’s free email sending tool &lt;a href=&quot;https://putsmail.com/&quot; target=&quot;blank&quot;&gt;PutsMail&lt;/a&gt;. Enjoy your email development adventure and please share this article!&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Dan Mountford&quot;}, {&quot;img&quot;=&gt;&quot;dan-thumb1.jpg&quot;}]</name></author><summary type="html">If any of you, like myself, have designed and developed bespoke responsive emails on a regular basis you’ll understand the difficulties in trying to get an engaging, aesthetically pleasing responsive email to render correctly in every major email client, including those pesky legacy email clients – yes we’re all looking at you Outlook, you pile of 💩 .</summary></entry><entry><title type="html">MB Living – Web Design</title><link href="https://amp.studio/portfolio/2018/mb-living/" rel="alternate" type="text/html" title="MB Living – Web Design" /><published>2018-01-04T00:00:00+00:00</published><updated>2018-01-04T00:00:00+00:00</updated><id>https://amp.studio/portfolio/2018/mb-living</id><content type="html" xml:base="https://amp.studio/portfolio/2018/mb-living/"></content><author><name></name></author><category term="web-design" /><summary type="html"></summary></entry><entry><title type="html">IBM’s New Typeface – IBM Plex</title><link href="https://amp.studio/blog/design-news/2018/ibm-plex/" rel="alternate" type="text/html" title="IBM’s New Typeface – IBM Plex" /><published>2018-01-02T15:54:35+00:00</published><updated>2018-01-02T15:54:35+00:00</updated><id>https://amp.studio/blog/design-news/2018/ibm-plex</id><content type="html" xml:base="https://amp.studio/blog/design-news/2018/ibm-plex/">&lt;p class=&quot;first&quot;&gt;Since the 1960s, &lt;a href=&quot;https://www.ibm.com&quot;&gt;IBM&lt;/a&gt; have favoured Helvetica as their favoured type family – until now. &lt;a href=&quot;https://www.linkedin.com/in/mike-abbink-8550072/&quot;&gt;Mike Abbink&lt;/a&gt;, Executive Creative Director of Brand Experience and Design at IBM, along with an in-house team have developed a completely new type family to replace Helvetica across the IBM’s visual identity. Say hello to &lt;a href=&quot;https://github.com/IBM/type&quot;&gt;IBM Plex&lt;/a&gt;.&lt;/p&gt;
 
-## Getting Back on Track
+&lt;h2 id=&quot;getting-back-on-track&quot;&gt;Getting Back on Track&lt;/h2&gt;
 
-IBM initially chose Helvetica as their global type family at the beginning of the computing era, which was considered to be &quot;the future&quot; (we can't argue with that!). Now in 2018, Helvetica is the most popular corporate typeface on the planet and computing technology has taken over – the future is here! But what does this mean for IBM? Has their initial ambitious, modernist story been obscured? Maybe. IBM Plex aims to regain its typeface mojo with the release of a new, mechanical-inspired typeface that has the flexibility of Helvetica but the personality of IBM.
+&lt;p&gt;IBM initially chose Helvetica as their global type family at the beginning of the computing era, which was considered to be “the future” (we can’t argue with that!). Now in 2018, Helvetica is the most popular corporate typeface on the planet and computing technology has taken over – the future is here! But what does this mean for IBM? Has their initial ambitious, modernist story been obscured? Maybe. IBM Plex aims to regain its typeface mojo with the release of a new, mechanical-inspired typeface that has the flexibility of Helvetica but the personality of IBM.&lt;/p&gt;
 
-&gt; [“Asking why a typeface matters is like asking why a tie matters.&quot;](#){:target=&quot;blank&quot;}
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;#&quot; target=&quot;blank&quot;&gt;“Asking why a typeface matters is like asking why a tie matters.”&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
-{: .source}
-[Mike Abbink](https://www.ibm.com/thought-leadership/innovation_explanations/article/mike-abbink.html){:target=&quot;blank&quot;}, 2017
+&lt;p class=&quot;source&quot;&gt;&lt;a href=&quot;https://www.ibm.com/thought-leadership/innovation_explanations/article/mike-abbink.html&quot; target=&quot;blank&quot;&gt;Mike Abbink&lt;/a&gt;, 2017&lt;/p&gt;
 
-## Introducing IBM Plex
+&lt;h2 id=&quot;introducing-ibm-plex&quot;&gt;Introducing IBM Plex&lt;/h2&gt;
 
-IBM has been in the making for over 2 years, and we can see why – It's comprehensive and full of flavour. IBM need a typeface that can go across the board: packaging, print, digital and online, so IBM Plex comes in 3 styles (sans, sans-serif and mono-sans) each with 8 line weights, in homage to the eight-bar IBM logo.
+&lt;p&gt;IBM has been in the making for over 2 years, and we can see why – It’s comprehensive and full of flavour. IBM need a typeface that can go across the board: packaging, print, digital and online, so IBM Plex comes in 3 styles (sans, sans-serif and mono-sans) each with 8 line weights, in homage to the eight-bar IBM logo.&lt;/p&gt;
 
-![IBM Plex](/assets/img/blog/ibm-plex/image-1.svg &quot;IBM Plex&quot;)
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/ibm-plex/image-1.svg&quot; alt=&quot;IBM Plex&quot; title=&quot;IBM Plex&quot; /&gt;&lt;/p&gt;
 
-### What Do We Think?
+&lt;h3 id=&quot;what-do-we-think&quot;&gt;What Do We Think?&lt;/h3&gt;
 
-Yes. We love it. We've even incorporated IBM Plex into our branding at AMP. The mechanical, tech-inspired, super usable type family is perfect for a group of nerdy designers and developers like us (they even designed a mono-sans so we can have a pretty new typeface to develop with!). We love new technology at AMP and think our story shares similarities to that of IBM.
+&lt;p&gt;Yes. We love it. We’ve even incorporated IBM Plex into our branding at AMP. The mechanical, tech-inspired, super usable type family is perfect for a group of nerdy designers and developers like us (they even designed a mono-sans so we can have a pretty new typeface to develop with!). We love new technology at AMP and think our story shares similarities to that of IBM.&lt;/p&gt;
 
-### IBM Plex is Free to Use!
+&lt;h3 id=&quot;ibm-plex-is-free-to-use&quot;&gt;IBM Plex is Free to Use!&lt;/h3&gt;
 
-Yes, IBM have open-sourced their new typeface, so head over to the IBM Plex [Github page](https://github.com/IBM/type) and try it out for yourself.</content><author><name>[{&quot;name&quot;=&gt;&quot;Dan Mountford&quot;}, {&quot;img&quot;=&gt;&quot;dan-thumb1.jpg&quot;}]</name></author><summary type="html">Since the 1960s, IBM have favoured Helvetica as their favoured type family – until now. Mike Abbink, Executive Creative Director of Brand Experience and Design at IBM, along with an in-house team have developed a completely new type family to replace Helvetica across the IBM’s visual identity. Say hello to IBM Plex.</summary></entry><entry><title type="html">Great Bear Tattoo – Image Production</title><link href="https://amp.studio/portfolio/2018/great-bear/" rel="alternate" type="text/html" title="Great Bear Tattoo – Image Production" /><published>2018-01-02T00:00:00+00:00</published><updated>2018-01-02T00:00:00+00:00</updated><id>https://amp.studio/portfolio/2018/great-bear</id><content type="html" xml:base="https://amp.studio/portfolio/2018/great-bear/"></content><author><name></name></author><category term="image-production" /><category term="marketing" /><summary type="html"></summary></entry><entry><title type="html">Upspring Community – Branding &amp;amp; Web Design</title><link href="https://amp.studio/portfolio/2018/upspring/" rel="alternate" type="text/html" title="Upspring Community – Branding &amp; Web Design" /><published>2018-01-01T00:00:00+00:00</published><updated>2018-01-01T00:00:00+00:00</updated><id>https://amp.studio/portfolio/2018/upspring</id><content type="html" xml:base="https://amp.studio/portfolio/2018/upspring/"></content><author><name></name></author><category term="graphic-design" /><category term="web-design" /><summary type="html"></summary></entry><entry><title type="html">MSD Vehicles – Branding &amp;amp; Web Design</title><link href="https://amp.studio/portfolio/2017/msd-vehicles/" rel="alternate" type="text/html" title="MSD Vehicles – Branding &amp; Web Design" /><published>2017-12-05T00:00:00+00:00</published><updated>2017-12-05T00:00:00+00:00</updated><id>https://amp.studio/portfolio/2017/msd-vehicles</id><content type="html" xml:base="https://amp.studio/portfolio/2017/msd-vehicles/"></content><author><name></name></author><category term="web-design" /><summary type="html"></summary></entry><entry><title type="html">Architectural Renders – Image Production</title><link href="https://amp.studio/portfolio/2017/architectural-renders/" rel="alternate" type="text/html" title="Architectural Renders – Image Production" /><published>2017-12-02T00:00:00+00:00</published><updated>2017-12-02T00:00:00+00:00</updated><id>https://amp.studio/portfolio/2017/architectural-renders</id><content type="html" xml:base="https://amp.studio/portfolio/2017/architectural-renders/"></content><author><name></name></author><category term="image-production" /><summary type="html"></summary></entry><entry><title type="html">Wedgewood Plumbing and Heating – Web Design</title><link href="https://amp.studio/portfolio/2017/wedgewood-gas/" rel="alternate" type="text/html" title="Wedgewood Plumbing and Heating – Web Design" /><published>2017-12-01T00:00:00+00:00</published><updated>2017-12-01T00:00:00+00:00</updated><id>https://amp.studio/portfolio/2017/wedgewood-gas</id><content type="html" xml:base="https://amp.studio/portfolio/2017/wedgewood-gas/"></content><author><name></name></author><category term="web-design" /><category term="marketing" /><summary type="html"></summary></entry></feed>
+&lt;p&gt;Yes, IBM have open-sourced their new typeface, so head over to the IBM Plex &lt;a href=&quot;https://github.com/IBM/type&quot;&gt;Github page&lt;/a&gt; and try it out for yourself.&lt;/p&gt;</content><author><name>[{&quot;name&quot;=&gt;&quot;Dan Mountford&quot;}, {&quot;img&quot;=&gt;&quot;dan-thumb1.jpg&quot;}]</name></author><summary type="html">Since the 1960s, IBM have favoured Helvetica as their favoured type family – until now. Mike Abbink, Executive Creative Director of Brand Experience and Design at IBM, along with an in-house team have developed a completely new type family to replace Helvetica across the IBM’s visual identity. Say hello to IBM Plex.</summary></entry><entry><title type="html">Great Bear Tattoo – Image Production</title><link href="https://amp.studio/portfolio/2018/great-bear/" rel="alternate" type="text/html" title="Great Bear Tattoo – Image Production" /><published>2018-01-02T00:00:00+00:00</published><updated>2018-01-02T00:00:00+00:00</updated><id>https://amp.studio/portfolio/2018/great-bear</id><content type="html" xml:base="https://amp.studio/portfolio/2018/great-bear/"></content><author><name></name></author><category term="image-production" /><category term="marketing" /><summary type="html"></summary></entry><entry><title type="html">Upspring Community – Branding &amp;amp; Web Design</title><link href="https://amp.studio/portfolio/2018/upspring/" rel="alternate" type="text/html" title="Upspring Community – Branding &amp; Web Design" /><published>2018-01-01T00:00:00+00:00</published><updated>2018-01-01T00:00:00+00:00</updated><id>https://amp.studio/portfolio/2018/upspring</id><content type="html" xml:base="https://amp.studio/portfolio/2018/upspring/"></content><author><name></name></author><category term="graphic-design" /><category term="web-design" /><summary type="html"></summary></entry><entry><title type="html">MSD Vehicles – Branding &amp;amp; Web Design</title><link href="https://amp.studio/portfolio/2017/msd-vehicles/" rel="alternate" type="text/html" title="MSD Vehicles – Branding &amp; Web Design" /><published>2017-12-05T00:00:00+00:00</published><updated>2017-12-05T00:00:00+00:00</updated><id>https://amp.studio/portfolio/2017/msd-vehicles</id><content type="html" xml:base="https://amp.studio/portfolio/2017/msd-vehicles/"></content><author><name></name></author><category term="web-design" /><summary type="html"></summary></entry><entry><title type="html">Architectural Renders – Image Production</title><link href="https://amp.studio/portfolio/2017/architectural-renders/" rel="alternate" type="text/html" title="Architectural Renders – Image Production" /><published>2017-12-02T00:00:00+00:00</published><updated>2017-12-02T00:00:00+00:00</updated><id>https://amp.studio/portfolio/2017/architectural-renders</id><content type="html" xml:base="https://amp.studio/portfolio/2017/architectural-renders/"></content><author><name></name></author><category term="image-production" /><summary type="html"></summary></entry><entry><title type="html">Wedgewood Plumbing and Heating – Web Design</title><link href="https://amp.studio/portfolio/2017/wedgewood-gas/" rel="alternate" type="text/html" title="Wedgewood Plumbing and Heating – Web Design" /><published>2017-12-01T00:00:00+00:00</published><updated>2017-12-01T00:00:00+00:00</updated><id>https://amp.studio/portfolio/2017/wedgewood-gas</id><content type="html" xml:base="https://amp.studio/portfolio/2017/wedgewood-gas/"></content><author><name></name></author><category term="web-design" /><category term="marketing" /><summary type="html"></summary></entry></feed>
