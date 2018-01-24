@@ -36,6 +36,7 @@
     "gulp-htmlmin": "^3.0.0",
     "gulp-pug": "^3.3.0",
     "gulp-rename": "^1.2.2",
-    "gulp-strip-comments": "^2.5.1"
+    "gulp-strip-comments": "^2.5.1",
+    "node-cron": "^1.2.1"
   }
 }
