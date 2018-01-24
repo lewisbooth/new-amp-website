@@ -4,7 +4,7 @@
 
 <body>
     {% include navigation.html %}
-    <section class="header-1" style="height: 600px;">
+    <section class="header-1">
         <div id="header-image" class="index-header header-fade video-controls">
             <video poster="/assets/img/loop-animation-poster.jpg" autoplay loop muted>
                 <source src="/assets/img/videos/loop-animation.mp4" type="video/mp4">
@@ -252,7 +252,7 @@
     {% include footer.html %}
 
     <script>{% include navigation-min.js %}</script>
-    <script>{% include header-min.js %}</script>
+    {% comment %} <script>{% include header-min.js %}</script> {% endcomment %}
     <script>{% include video-play-min.js %}</script>
     {% include instafeed.html %}
     <script>{% include twitterapi-min.js %}</script>
