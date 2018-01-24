@@ -67,7 +67,11 @@ defaults:
 exclude: ["_dev",
             "gulpfile.js",
             "node_modules",
-            "package.json"]
+            "package.json",
+            "package-lock.json",
+            "analytics.js",
+            "Gemfile",
+            "Gemfile.lock"]
 
 # Include font assets
 assets:

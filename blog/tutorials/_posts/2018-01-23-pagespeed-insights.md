@@ -357,7 +357,7 @@ The `<picture>` tag can set different image sources using CSS media queries. Old
 
 You can use `max-width`, `min-width`, `max-height`, `min-height`, `orientation` and more in the media queries.
 
-It’s also possible to do a simpler version inside a single <img> tag:
+It’s also possible to do a simpler version inside a single `<img>` tag:
 
 ```html
 <img src="mobile_banner.jpg" srcset="small_banner.jpg 1.8x, med_banner.jpg 2.5x desktop_banner.jpg 3.5x" alt="Banner Image" width="400px" />
