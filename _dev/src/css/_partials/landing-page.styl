@@ -1,0 +1,423 @@
+h1 sup
+    font-size 2rem
+
+.landing
+    background #ffffff
+    padding-bottom 10rem
+
+    &-container
+        display flex
+        align-items flex-end
+        justify-content space-between
+
+    &-contact
+
+            h2
+                margin-bottom 2rem
+
+    &-contact-info
+        display flex
+
+        &-block
+            box-sizing border-box
+            width 400px
+            display flex
+            align-items center
+            padding 2.5rem
+            border 1px solid lineGrey
+
+            &:last-child
+                margin-left -1px
+
+            img 
+                width 50px
+                height 50px
+                margin-right 2rem
+
+            h3
+                font-size 2.4rem
+                font-family IBMPlexSerifSemiBold
+                line-height 1.2
+
+            h4
+                font-family montserratRegular
+
+    &-image
+        
+        img
+            width 500px
+            margin-top -7rem
+
+    &-form-container
+        margin-top 4rem
+        align-items flex-start
+
+    &-form
+        overflow hidden
+        position relative
+        width 800px
+        box-sizing border-box
+        padding 4rem 2.5rem 2.5rem
+        background lightGrey 
+        border 1px solid lineGrey
+        z-index 1
+
+        input, textarea
+            box-sizing border-box
+            position relative
+            background #ffffff
+            border 1px solid lineGrey
+            padding 1rem 1.5rem
+            font-family IBMPlexSerifRegular
+            font-size 1.8rem
+
+        input
+            width 365px
+
+        textarea
+            width 100%
+            resize vertical
+
+        input:focus, textarea:focus
+            box-shadow: 0 2px 0 0 ampPink;
+
+        h3
+            font-size 2.4rem
+            font-family IBMPlexSerifSemiBold
+            line-height 1.2
+            margin-bottom 3rem
+
+        label
+            font-family montserratRegular
+            font-size 1.6rem
+            margin-bottom 1rem
+
+        &-row
+            display flex
+            justify-content space-between
+            margin-bottom 3rem
+
+            &:last-child
+                margin-bottom 0
+
+        &-input
+            display flex
+            flex-direction column
+            
+        .text-area
+            width 100%
+
+        button
+            height 3.5em
+            cursor pointer
+
+        &-response
+            display flex
+            align-items center
+            
+            img
+                width 16px
+                margin-right 1.5rem
+
+    &-usp
+
+        h2
+            width 500px
+            margin-bottom 2rem
+
+        h3
+            -webkit-font-smoothing antialiased
+	        -moz-osx-font-smoothing grayscale
+
+        h3, p
+            color #ffffff
+
+        &-block
+            width 500px
+            border none
+            background ampPinkBlog
+            margin-bottom 1.5rem
+
+            &:last-child
+                margin-bottom 0
+
+.landing-services
+    position relative
+    z-index 1
+
+    .button-1
+        margin-top 4rem
+
+    ul li:first-child
+        font-family montserratSemiBold !important
+
+.websites-795-image
+    background-image url("/assets/img/landing-pages/websites-795-image.jpg")
+
+.latest-websites
+    padding 12em 0
+
+#web
+    position absolute
+    right -100%
+
+@media screen and (max-width: breakpoint1400)
+
+    .landing
+
+        &-container
+            flex-direction column
+            align-items center
+        
+        &-contact
+            order 2
+
+        &-contact-info
+
+            &-block
+                width 450px
+
+        &-form-container
+            margin-top -1px
+
+        &-form
+            width 900px
+
+            input
+                width 415px
+
+        &-usp
+            margin-top 4rem
+            display flex
+            flex-wrap wrap
+            justify-content space-between
+            width 900px
+
+            h2
+                width 900px
+
+            &-block
+                width 440px
+                margin-bottom 0
+
+                &:nth-child(-n+3)
+                    margin-bottom 20px
+
+    .latest-websites
+        padding 8em 0
+
+
+@media screen and (max-width: breakpoint1200)
+
+    .landing
+
+        &-image
+
+            img
+                margin-top -4rem
+
+
+@media screen and (max-width: breakpoint960)
+
+    .landing
+        padding-bottom 6rem
+
+        &-contact
+            width 100%
+
+            h2
+                margin-bottom 20px
+
+        &-contact-info
+
+            &-block
+                width 50%
+
+        &-form
+            width 100%
+            padding 4rem 1rem
+
+            h3
+                margin-left 1rem
+
+            input
+                width 100%
+
+            .button-1
+                margin-left 1rem
+
+        &-form-input
+            width 100%
+            padding 0 10px
+            box-sizing border-box
+
+        &-usp
+            width 100%
+
+            h2
+                width 100%
+
+            &-block
+                width calc(50% - 5px)
+
+                &:nth-child(-n+3)
+                    margin-bottom 10px
+
+                p
+                    font-size 1.6rem
+
+    .latest-websites
+        padding 6em 0
+
+
+@media screen and (max-width: 850px)
+
+    .landing
+        padding-bottom 20px
+        
+        &-contact
+
+            h2
+                text-align center
+
+        &-contact-info-block
+
+            img
+                width 35px
+
+            &-text
+
+                h3
+                    font-size 2rem
+
+        &-image
+
+            img
+                width 350px
+                margin-top -5rem
+
+        &-form
+            padding 3rem 1rem
+
+            h3
+                font-size 2rem
+
+        &-usp
+
+            &-block
+                flex-direction column
+                text-align center
+
+                img
+                    width 35px
+
+                p
+                    font-size 1.6rem
+
+    .latest-websites
+        padding 6em 0
+
+
+@media screen and (max-width: 660px)
+
+    .landing
+        padding-bottom 20px
+        
+        &-contact
+
+            h2
+                text-align center
+
+        &-contact-info
+            flex-direction column
+
+        &-contact-info-block
+            width 100%
+            margin-top -1px
+
+            &:last-child
+                margin-left 0
+
+            img
+                width 35px
+
+            &-text
+
+                h3
+                    font-size 2rem
+
+        &-usp-block
+            margin-bottom 10px
+
+    .latest-websites
+        padding 4em 0
+
+        .latest-work-title
+            margin-bottom 10px
+
+
+@media screen and (max-width: 600px)
+
+    .landing
+
+        &-image
+
+            img
+                margin-top -3rem
+                width 250px
+
+
+@media screen and (max-width: 500px)
+
+    .landing
+
+        &-contact
+            margin-top 1rem
+
+        &-form
+            padding 3rem 5px
+
+        &-form-input
+            padding 0 5px
+
+        &-form-response
+
+            p
+                font-size 1.5rem
+            
+            img
+                width 14px
+                margin-right 8px
+
+        &-usp
+            margin-top 3rem
+            text-align center
+
+
+@media screen and (max-width: 500px)
+
+    .landing
+
+        &-contact-info-block
+            padding 1.5rem 2rem
+
+        &-form
+            padding 20px 5px
+            
+            h3
+                margin-bottom 20px
+
+        &-form-row
+            flex-direction column
+            align-items flex-start
+            margin-bottom 20px
+
+        &-form-input:nth-child(2)
+            margin-top 20px
+
+        .button-1
+            width auto
+
+        &-form-response
+            margin-top 20px
+            margin-left 1rem

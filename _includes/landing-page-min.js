@@ -1,0 +1,1 @@
+"use strict";var form=document.querySelector("form");form.addEventListener("submit",function(t){t.preventDefault();var e={name:t.target[0].value,email:t.target[1].value,company:t.target[2].value,industry:t.target[3].value,details:t.target[4].value};axios.post("https://api.amp.studio/contact/websites-from-795",e).then(function(t){200===t.status&&success()})});

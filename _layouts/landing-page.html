@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% include head.html %}
+
+<body>
+    {% include navigation.html %}
+
+    <section class="header-2 bg web-design-bg pl">
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <span class="sub-header">{{ page.subtitle }}</span>
+            <h1>{{ page.header }}<sup>*</sup></h1>
+        </div>
+    </section>
+
+    <section class="landing">
+        <div class="container landing-container">
+                <div class="landing-contact">
+                    <h2>Let's Talk</h2>
+                    <div class="landing-contact-info">
+                        <div class="landing-contact-info-block">
+                            <img src="/assets/img/call-icon.svg" />
+                            <div class="landing-contact-info-block-text">
+                                <h4>Call us:</h4>
+                                <h3>01782 853973</h3>
+                            </div>
+                        </div>
+                        <div class="landing-contact-info-block">
+                            <img src="/assets/img/email-icon.svg" />
+                            <div class="landing-contact-info-block-text">
+                                <h4>Email us:</h4>
+                                <h3>enquiries@amp.studio</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="landing-image">
+                    <img src="/assets/img/landing-pages/wedgewood-macbook.png" />
+                </div>
+        </div>
+        <div class="container landing-container landing-form-container">
+            <div class="landing-form">
+                <h3>Enquire Online:</h3>
+                <form name="landing-page">
+                    <div class="landing-form-row">
+                        <div class="landing-form-input">
+                            <label for="name">Your name:</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="landing-form-input">
+                            <label for="email">Your email:</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                    </div>
+                    <div class="landing-form-row">
+                        <div class="landing-form-input">
+                            <label for="company">Company name:</label>
+                            <input type="text" name="company" id="company">
+                        </div>
+                        <div class="landing-form-input">
+                            <label for="industry">Industry:</label>
+                            <input type="text" name="industry" id="industry">
+                        </div>
+                    </div>
+                    <div class="landing-form-row">
+                        <div class="landing-form-input text-area">
+                            <label for="details">Describe your new website:</label>
+                            <textarea rows="4" type="text" name="details" id="details"></textarea>
+                        </div>
+                    </div>
+                    <input type="text" name="web" id="web">
+                    <div class="landing-form-row">
+                        <button class="button-1">
+                            <span>Submit</span>
+                            <span>
+                                <img src="/assets/img/arrow-right.svg">
+                            </span>
+                        </button>
+                        <div class="landing-form-response">
+                            <img src="/assets/img/hourglass.svg" />
+                            <p>We usually respond within 1 hour.</p>
+                        </div>
+                    <div class="landing-form-row">
+                </form>
+            </div>
+            <div class="landing-usp">
+                <h2>What's Included</h2>
+                <div class="landing-contact-info-block landing-usp-block">
+                    <img src="/assets/img/padlock-pink.svg" />
+                    <div class="landing-contact-info-block-text">
+                        <h3>Free SSL Security</h3>
+                        <p>On any website we host for you.</p>
+                    </div>
+                </div>
+                <div class="landing-contact-info-block landing-usp-block">
+                    <img src="/assets/img/spanner-pink.svg" />
+                    <div class="landing-contact-info-block-text">
+                        <h3>Tailored Design</h3>
+                        <p>Every website is 100% bespoke.</p>
+                    </div>
+                </div>
+                <div class="landing-contact-info-block landing-usp-block">
+                    <img src="/assets/img/responsive-pink.svg" />
+                    <div class="landing-contact-info-block-text">
+                        <h3>Mobile Friendly</h3>
+                        <p>Built for all screen sizes by default.</p>
+                    </div>
+                </div>
+                <div class="landing-contact-info-block landing-usp-block">
+                    <img src="/assets/img/cog-pink.svg" />
+                    <div class="landing-contact-info-block-text">
+                        <h3>Free Support</h3>
+                        <p>We’re always here to help.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-values landing-services">
+        <div class="service">
+            <div class="service-text-wrapper">
+                <div class="service-text">
+                    <h2>Website Services</h2>
+                    <p>We use the latest technologies to build fast and reliable websites that deliver content efficiently on any device, supported by a range of carefully crafted bespoke content management and marketing addons.
+                    </p>
+                    <a class="button-1 dark" href="/services/web/">
+                        <span>All Web Services</span>
+                        <span>
+                            <img src="/assets/img/arrow-white.svg">
+                        </span>
+                    </a>
+                    <div class="line-break dark"></div>
+                    <ul>
+                        <li>Popular services:</li>
+                        <li>Ecommerce websites</li>
+                        <li>Content management systems</li>
+                        <li>Search engine optimisation</li>
+                        <li>Social media marketing</li>
+                        <li>Email marketing</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service-image websites-795-image"></div>
+        </div>
+    </section>
+
+    <section class="latest-work latest-websites">
+        <div class="container">
+            <div class="latest-work-title">
+                <h2>Latest Websites</h2>
+                <a href="/our-work/" class="text-link">
+                    <span>More Projects</span>
+                    <span>
+                        <img src="/assets/img/arrow-pink.svg">
+                    </span>
+                </a>
+            </div>
+            <div class="latest-work-container">
+                <div class="latest-work-post">
+                    <a class="latest-work-post-wrapper-top" href="/portfolio/2017/wedgewood-gas/"></a>
+                    <div class="latest-work-post-hover hide-1200">
+                        <div class="latest-work-post-hover-title">
+                            <h2>Wedgewood Gas</h2>
+                            <p class="main-nav-link">Website Design &amp; Marketing</p>
+                        </div>
+                        <div class="latest-work-post-arrow">
+                            <span>
+                                <img src="/assets/img/arrow-right.svg">
+                            </span>
+                        </div>
+                        <a class="latest-work-post-wrapper-bottom"></a>
+                    </div>
+                    <img src="/assets/img/portfolio/wedgewood.jpg" alt="Wedgewood Plumbing and Heating – Web Design">
+                </div>
+                <div class="latest-work-post">
+                    <a class="latest-work-post-wrapper-top" href="/portfolio/2018/mb-living/"></a>
+                    <div class="latest-work-post-hover hide-1200">
+                        <div class="latest-work-post-hover-title">
+                            <h2>MB Living</h2>
+                            <p class="main-nav-link">Website Design</p>
+                        </div>
+                        <div class="latest-work-post-arrow">
+                            <span>
+                                <img src="/assets/img/arrow-right.svg">
+                            </span>
+                        </div>
+                        <a class="latest-work-post-wrapper-bottom"></a>
+                    </div>
+                    <img src="/assets/img/portfolio/mb-living.jpg" alt="MB Living – Web Design">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    {% include footer.html %}
+
+    <script>{% include navigation-min.js %}</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.min.js" async></script>
+    
+    <script src="/assets/js/landing-page-min.js"></script>
+
+</body>
+
+</html>
