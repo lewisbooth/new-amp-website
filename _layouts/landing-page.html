@@ -40,15 +40,26 @@
         </div>
         <div class="container landing-container landing-form-container">
             <div class="landing-form">
-                <h3>Enquire Online:</h3>
-                <form name="landing-page">
+            <div class="landing-form-overlay animate">
+            <h2>Meesage sent, thanks!</h2>
+            <p>We will get back to you within the hour.</p>
+                <a href="/" class="button-1">
+                    <span>Home Page</span>
+                    <span>
+                        <img src="/assets/img/arrow-right.svg">
+                    </span>
+                </a>
+                <a href="/offers/websites-from-795" class="text-link">Send Another Message</a>
+            </div>
+                <h3 class="animate">Enquire Online:</h3>
+                <form class="animate" method="post" action="/contact/landing-page" name="landing-page">
                     <div class="landing-form-row">
                         <div class="landing-form-input">
-                            <label for="name">Your name:</label>
+                            <label for="name" id="name-label">Your name:</label>
                             <input type="text" name="name" id="name">
                         </div>
                         <div class="landing-form-input">
-                            <label for="email">Your email:</label>
+                            <label for="email" id="email-label">Your email:</label>
                             <input type="email" name="email" id="email">
                         </div>
                     </div>
@@ -64,23 +75,23 @@
                     </div>
                     <div class="landing-form-row">
                         <div class="landing-form-input text-area">
-                            <label for="details">Describe your new website:</label>
-                            <textarea rows="4" type="text" name="details" id="details"></textarea>
+                            <label for="message" id="message-label">Describe your new website:</label>
+                            <textarea rows="4" type="text" name="message" id="message"></textarea>
                         </div>
                     </div>
-                    <input type="text" name="web" id="web">
-                    <div class="landing-form-row">
+                    <input type="text" name="web" id="web" tabindex="-1">
+                    <input type="text" name="title" id="title" value="Websites from £795" tabindex="-2">
+                    <div class="landing-form-row response">
                         <button class="button-1">
                             <span>Submit</span>
                             <span>
                                 <img src="/assets/img/arrow-right.svg">
                             </span>
                         </button>
-                        <div class="landing-form-response">
+                        <div id="response" class="landing-form-response">
                             <img src="/assets/img/hourglass.svg" />
                             <p>We usually respond within 1 hour.</p>
                         </div>
-                    <div class="landing-form-row">
                 </form>
             </div>
             <div class="landing-usp">

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>error</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="play/ic_launcher_APP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-261.000000, -331.000000)">
+        <g id="error" transform="translate(261.000000, 331.000000)">
+            <path d="M40,20 C40,31.047 31.047,40 20,40 C8.953,40 0,31.047 0,20 C0,8.953 8.953,0 20,0 C31.047,0 40,8.953 40,20 Z" id="Fill-1" fill="#D50000"></path>
+            <path d="M12.801,27.199 L27.199,12.801 M12.801,12.801 L27.199,27.199" id="Stroke-4" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>
