@@ -30,7 +30,7 @@ form.addEventListener("submit", e => {
   };
 
   axios
-    .post("http://localhost:9001/contact/landing-page", data)
+    .post("https://api.amp.studio/contact/landing-page", data)
     .then(response => {
       const errors = response.data;
 
