@@ -20,13 +20,17 @@ form.addEventListener("submit", e => {
   const company = e.target[2].value;
   const industry = e.target[3].value;
   const message = e.target[4].value;
+  const title = e.target[6].value;
+
+  console.log(e);
 
   const data = {
     name,
     email,
     company,
     industry,
-    message
+    message,
+    title
   };
 
   axios
