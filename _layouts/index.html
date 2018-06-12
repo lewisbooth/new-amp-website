@@ -40,7 +40,7 @@
                 </a>
             </div>
             <div class="latest-work-container">
-                {% for post in site.categories.portfolio limit:2 %}
+                {% for post in site.categories.portfolio limit:4 %}
                 <div class="latest-work-post">
                     <a class="latest-work-post-wrapper-top" href="{{ post.url }}"></a>
                     <div class="latest-work-post-hover hide-1200">
@@ -205,6 +205,12 @@
                     </div>
                 </div>
                 <div id="instafeed" class="social-feed-instagram-wrapper">
+                    <a class="social-feed-instagram-post" href=""></a>
+                    <a class="social-feed-instagram-post" href=""></a>
+                    <a class="social-feed-instagram-post" href=""></a>
+                    <a class="social-feed-instagram-post" href=""></a>
+                    <a class="social-feed-instagram-post" href=""></a>
+                    <a class="social-feed-instagram-post" href=""></a>
                 </div>
             </div>
             <div class="line-break mm"></div>
@@ -250,12 +256,12 @@
     </section>
 
     {% include footer.html %}
-
-    <script>{% include navigation-min.js %}</script>
-    <script>{% include header-min.js %}</script>
-    <script>{% include video-play-min.js %}</script>
+    <script async src="/assets/js/navigation-min.js" /></script>
+    <script async src="/assets/js/header-min.js" /></script>
+    <script async src="/assets/js/video-play-min.js" /></script>
+    <script async src="/assets/js/twitterapi-min.js" /></script>
     {% include instafeed.html %}
-    <script>{% include twitterapi-min.js %}</script>
+    <script async src="/assets/js/instafeed-min.js" /></script>
 
 </body>
 

@@ -7,11 +7,11 @@ window.addEventListener("scroll", () => {
   if (trigger) {
     return;
   }
-  if (window.pageYOffset > loadTwitter.top - window.innerHeight && !trigger) {
+  if (window.pageYOffset > loadTwitter.top - window.innerHeight - 500 && !trigger) {
     trigger = true;
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://api.amp.studio/twitter", true);
-    xhr.onload = function(e) {
+    xhr.onload = function (e) {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
           var postFeed = JSON.parse(xhr.responseText);
@@ -22,7 +22,7 @@ window.addEventListener("scroll", () => {
       }
     };
 
-    xhr.onerror = function(e) {
+    xhr.onerror = function (e) {
       console.error(xhr.statusText);
     };
 
