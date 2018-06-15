@@ -35,15 +35,13 @@ const base_path = "./",
     ]
   }
 
-// HTML Task
-// gulp.task("compile-html", () => gulp
-//   .src(paths.html)
-//   .pipe(strip())
-//   .pipe(htmlmin({ collapseWhitespace: true }))
-//   .pipe(gulp.dest("./_site/"))
-// )
+gulp.task("compile-html", () => gulp
+  .src(paths.html)
+  .pipe(strip())
+  .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(gulp.dest("./_site/"))
+)
 
-// JS Task
 gulp.task("compile-scripts", () => gulp
   .src([paths.js])
   .pipe(plumber())
@@ -57,13 +55,11 @@ gulp.task("compile-scripts", () => gulp
   .pipe(gulp.dest("./"))
 )
 
-// Distribute JS to includes
 gulp.task("distjs", () => gulp
   .src(dist + "/js/*")
   .pipe(gulp.dest("_includes/"))
 )
 
-// CSS Task
 gulp.task("compile-stylus", () => {
   var plugins = [
     autoprefixer({ browsers: ["last 3 versions"] }),
@@ -78,20 +74,18 @@ gulp.task("compile-stylus", () => {
     .pipe(gulp.dest("./"))
 })
 
-// Distribute CSS to includes
 gulp.task("distcss", () => gulp
   .src(dist + "/css/*")
   .pipe(gulp.dest("_includes/"))
 )
 
-// Build Jekyll
 gulp.task("build-jekyll", code => cp
-  .spawn("jekyll", ["build", "--incremental"], { stdio: "inherit" }) // Adding incremental reduces build time apparently.
+  // Adding incremental reduces build time apparently.
+  .spawn("jekyll", ["build", "--incremental"], { stdio: "inherit" })
   .on("error", error => gutil.log(gutil.colors.red(error.message)))
   .on("close", code)
 )
 
-// Server
 gulp.task("server", () =>
   browserSync.init({
     server: {
@@ -105,16 +99,13 @@ gulp.task("server", () =>
   })
 )
 
-// Watch files
 gulp.task("watch", () => {
-  // gulp.watch(paths.html, ["compile-html"])
   gulp.watch(paths.js, ["compile-scripts", "distjs"])
   gulp.watch("./_dev/src/css/**/*.styl", ["compile-stylus", "distcss"])
   gulp.watch(paths.jekyll, ["build-jekyll"])
   gulp.watch(["./_site/assets/*"]).on("change", browserSync.reload)
 })
 
-// Start Everything with the default task
 gulp.task("default", [
   // "compile-html",
   "compile-scripts",

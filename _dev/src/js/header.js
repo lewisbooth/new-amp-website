@@ -5,7 +5,7 @@ if (
   navigator.userAgent.match(/Edge\/\d./)
 ) {
   var body = document.querySelector("body");
-  body.addEventListener("mousewheel", function(event) {
+  body.addEventListener("mousewheel", function (event) {
     // remove default behavior
     event.preventDefault();
 
@@ -22,7 +22,7 @@ var headerFade = document.querySelectorAll(".header-fade");
 if (window.innerWidth > 600) {
   window.addEventListener(
     "scroll",
-    function() {
+    function () {
       var fade = window.pageYOffset / window.innerHeight * 1.8;
       for (var i = 0; i < headerFade.length; i++) {
         headerFade[i].style.opacity = 1 - fade;
@@ -33,7 +33,7 @@ if (window.innerWidth > 600) {
 } else {
   window.addEventListener(
     "scroll",
-    function() {
+    function () {
       var fade = window.pageYOffset / window.innerHeight * 2.5;
       for (var i = 0; i < headerFade.length; i++) {
         if (headerFade[i].classList.contains("page-header")) {
@@ -51,7 +51,7 @@ var scrollButton = document.querySelector(".scroll-down-button");
 var scrollButtonContainer = scrollButton.getBoundingClientRect();
 var scrollButtonPos = scrollButtonContainer.top - window.innerHeight / 3;
 
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
   if (window.pageYOffset > scrollButtonPos) {
     scrollButton.classList.add("active");
   } else {
