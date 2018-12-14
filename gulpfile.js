@@ -81,7 +81,7 @@ gulp.task("distcss", () => gulp
 
 gulp.task("build-jekyll", code => cp
   // Adding incremental reduces build time apparently.
-  .spawn("jekyll", ["build", "--incremental"], { stdio: "inherit" })
+  .spawn("bundle", ["exec", "jekyll", "build", "--incremental"], { stdio: "inherit" })
   .on("error", error => gutil.log(gutil.colors.red(error.message)))
   .on("close", code)
 )
@@ -103,11 +103,11 @@ gulp.task("watch", () => {
   gulp.watch(paths.js, ["compile-scripts", "distjs"])
   gulp.watch("./_dev/src/css/**/*.styl", ["compile-stylus", "distcss"])
   gulp.watch(paths.jekyll, ["build-jekyll"])
+  gulp.watch(paths.html, ["compile-html"])
   gulp.watch(["./_site/assets/*"]).on("change", browserSync.reload)
 })
 
 gulp.task("default", [
-  // "compile-html",
   "compile-scripts",
   "compile-stylus",
   "build-jekyll",
